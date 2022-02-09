@@ -1,20 +1,14 @@
-.font-300 {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 300;
-    font-style: normal;
+@font-face {
+    font-family: 'Neue-Haas-Grotesk-Regular';
+    src: url('fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
 }
 
-.font-700 {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+@font-face {
+    font-family: 'Neue-Haas-Grotesk-Medium';
+    src: url('fonts/NHaasGroteskTXPro-65Md.ttf') format('truetype');
 }
 
-.font-italic {
-    font-style: italic;
-}
-
-.aligncenter {
-    margin: 0 auto;
-    display: flex;
+@font-face {
+    font-family: 'Neue-Haas-Grotesk-Bold';
+    src: url('fonts/NHaasGroteskTXPro-75Bd.ttf') format('truetype');
 }
