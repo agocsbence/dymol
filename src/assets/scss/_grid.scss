@@ -1,0 +1,96 @@
+.grid {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    display: grid !important;
+    &>[style^='--aspect-ratio']::before {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 0;
+        padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    &.header-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo logo logo logo icons icons icons icons" "logo logo logo logo search search search search";
+        @media screen and (min-width: $tablet) {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "menu logo logo logo logo logo logo logo logo search search search search search icons icons icons";
+            &.nav-header {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+    &.grid-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        @media screen and (min-width: $tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &.grid-3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        @media screen and (min-width: $tablet) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    &.grid-4 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        @media screen and (min-width: $tablet) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    &.grid-2-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        @media screen and (min-width: $tablet) {
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+    &.grid-gap-1 {
+        grid-gap: 1rem;
+    }
+    &.grid-gap-2 {
+        grid-gap: 2rem;
+    }
+    .item {
+        background: #ccc;
+    }
+}
+
+.flex {
+    display: flex !important;
+    &.flex-row {
+        flex-direction: row;
+    }
+    &.flex-column {
+        flex-direction: column;
+    }
+    &.flex-row-center {
+        align-items: center;
+    }
+    &.flex-row-start {
+        align-items: flex-start;
+    }
+    &.flex-space-between {
+        justify-content: space-between;
+    }
+    &.flex-justify-center {
+        justify-content: center;
+    }
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
+    &.flex-m-column {
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+        }
+    }
+    &.flex-m-column-reverse {
+        @media screen and (max-width: $tablet) {
+            flex-direction: column-reverse;
+        }
+    }
+}

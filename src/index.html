@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenderlánc</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="grid header-grid">
+        <div class="header-logo">
+            <img src="assets/img/logo.svg" alt="Kenderlánc">
+        </div>
+        <div class="header-icons">
+            <div class="header-icon"><img src="assets/img/icons/profile.svg" alt="Profil"></div>
+            <div class="header-icon"><img src="assets/img/icons/cart.svg" alt="Kosár"></div>
+            <div class="header-icon"><img src="assets/img/icons/heart.svg" alt="Kedvencek"></div>
+            <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="assets/img/icons/menu.svg" alt="Menü"></div>
+        </div>
+        <div id="desktopMenuToggler" class="header-menu desktop-only menu-toggler">
+            <img src="assets/img/icons/menu.svg" alt="Menü">
+        </div>
+        <div class="header-search">
+            <input type="text" name="s" id="searchInput">
+        </div>
+    </header>
+    <div class="navbar" id="navbar">
+        <div class="nav-header grid header-grid">
+            <div class="header-logo">
+                <img src="assets/img/logo.svg" alt="Kenderlánc">
+            </div>
+            <div class="header-icons">
+                <div id="mobileMenuClose" class="header-icon mobile-only menu-toggler"><img src="assets/img/icons/close.svg" alt="Bezár"></div>
+            </div>
+        </div>
+        <nav>
+            <a href="" class="nav-item">Termékek</a>
+            <a href="" class="nav-item">Szolgáltatások</a>
+            <a href="" class="nav-item">Magazin</a>
+        </nav>
+        <div class="sub-menu">
+            <a href="">Partnerek</a>
+            <a href="">Rólunk</a>
+            <a href="">Kapcsolat</a>
+            <a href="">Nagyker</a>
+            <a href="">Ügyfélszolgálat</a>
+        </div>
+    </div>
+    <main>
+        <section id="home-hero">
+            <div class="container">
+                <h1>Magyar ipari kender a hétköznapokra.</h1>
+                <div class="grid grid--home-tiles">
+                    <a href="" class="grid-tile big-tile title-top bg--image" style="background-image: url('assets/img/szolgaltatasok.png');">
+                        <h2>Szolgáltatások</h2>
+                    </a>
+                    <a href="" class="grid-tile bg--color bg--color-orange">
+                        <h2>Tudástár</h2>
+                    </a>
+                    <a href="" class="grid-tile bg--image" style="background-image: url('assets/img/nepszeru_termekek.png');">
+                        <h2>Népszerű Termékek</h2>
+                    </a>
+                    <a href="" id="grid-extra" class="grid-tile big-tile text-dark">
+                        <img src="assets/img/extra_tartalmak.svg" alt="Extra tartalmak">
+                        <h2>Extra tartalmak</h2>
+                    </a>
+                    <a href="" class="grid-tile bg--image" style="background-image: url('assets/img/partnereink.png');">
+                        <h2>Partnereink</h2>
+                    </a>
+                    <a href="" class="grid-tile bg--color bg--color-green">
+                        <h2>Lexikon</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <div class="footer-icons">
+                        <div class="icon-list flex flex-row flex-row-center mb-1">
+                            <a href="" class="mr-1"><img src="assets/img/icons/facebook.svg" alt="Facebook"></a>
+                            <a href="" class="mr-1"><img src="assets/img/icons/youtube.svg" alt="Youtube"></a>
+                            <a href="" class="mr-1"><img src="assets/img/icons/instagram.svg" alt="Instagram"></a>
+                        </div>
+                        <img src="assets/img/icons/cards.png" alt="Fizetési módok" class="mb-1">
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-newsletter">
+                        <label for="email">Iratkozz fel hírlevelünkre:</label>
+                        <input type="email" placeholder="E-mail cím" class="mt-1 mb-2">
+                        <span class="">2021 &copy; Kenderlánc</span>
+                    </div>
+                    <div class="footer-menu flex flex-row flex-space-between mt-2">
+                        <a href="">Adatvédelmi nyilatkozat</a>
+                        <a href="">Cookie szabályzat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

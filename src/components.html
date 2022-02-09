@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenderlánc</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="grid header-grid" id="header">
+        <div class="header-logo">
+            <img src="assets/img/logo.svg" alt="Kenderlánc">
+        </div>
+        <div class="header-icons">
+            <div class="header-icon"><img src="assets/img/icons/profile.svg" alt="Profil"></div>
+            <div class="header-icon"><img src="assets/img/icons/cart.svg" alt="Kosár"></div>
+            <div class="header-icon"><img src="assets/img/icons/heart.svg" alt="Kedvencek"></div>
+            <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="assets/img/icons/menu.svg" alt="Menü"></div>
+        </div>
+        <div id="desktopMenuToggler" class="header-menu desktop-only menu-toggler">
+            <img src="assets/img/icons/menu.svg" alt="Menü">
+        </div>
+        <div class="header-search">
+            <input type="text" name="s" id="searchInput">
+        </div>
+    </header>
+    <div class="navbar" id="navbar">
+        <div class="nav-header grid header-grid">
+            <div class="header-logo">
+                <img src="assets/img/logo.svg" alt="Kenderlánc">
+            </div>
+            <div class="header-icons">
+                <div id="mobileMenuClose" class="header-icon mobile-only menu-toggler"><img src="assets/img/icons/close.svg" alt="Bezár"></div>
+            </div>
+        </div>
+        <nav>
+            <a href="" class="nav-item">Termékek</a>
+            <a href="" class="nav-item">Szolgáltatások</a>
+            <a href="" class="nav-item">Magazin</a>
+        </nav>
+        <div class="sub-menu">
+            <a href="">Partnerek</a>
+            <a href="">Rólunk</a>
+            <a href="">Kapcsolat</a>
+            <a href="">Nagyker</a>
+            <a href="">Ügyfélszolgálat</a>
+        </div>
+    </div>
+    <main>
+        <section class="container py-3">
+            <h1>H1 Heading</h1>
+            <h2>H2 Heading</h2>
+            <h2 class="sub">H2 sub heading</h2>
+            <h3>H3 Heading</h3>
+            <h3 class="sub">H3 sub heading</h3>
+            <h4>H4 Heading</h4>
+            <h5>H5 Heading</h5>
+            <h6>H6 Heading</h6>
+        </section>
+        <hr>
+        <section class="container py-3">
+            <h1 class="mb-1">Products</h1>
+            <div class="grid grid-4 grid-gap-1">
+                <a href="" class="product-tile">
+                    <img src="./assets/img/szolgaltatasok.png" alt="Termék neve">
+                    <h2 class="product-name">Életvirág szappan</h2>
+                    <p class="product-price">855 Ft</p>
+                </a>
+                <a href="" class="product-tile">
+                    <img src="./assets/img/szolgaltatasok.png" alt="Termék neve">
+                    <h2 class="product-name">Szolgáltatások</h2>
+                    <p class="product-price">855 Ft</p>
+                </a>
+                <a href="" class="product-tile">
+                    <img src="./assets/img/szolgaltatasok.png" alt="Termék neve">
+                    <h2 class="product-name">Szolgáltatások</h2>
+                    <p class="product-price">855 Ft</p>
+                </a>
+                <a href="" class="product-tile">
+                    <img src="./assets/img/szolgaltatasok.png" alt="Termék neve">
+                    <h2 class="product-name">Szolgáltatások</h2>
+                    <p class="product-price">855 Ft</p>
+                </a>
+            </div>
+        </section>
+        <hr>
+        <section class="container py-3">
+            <h1>Buttons</h1>
+            <div class="btn">Kosárba</div>
+            <div class="btn btn-empty">Mégsem</div>
+            <div class="btn">-</div>
+            <div class="btn btn-empty">+</div>
+        </section>
+        <hr>
+        <section class="container py-3">
+            <h1>Filter</h1>
+            <div class="filter-wrapper" id="productFilter">
+                <div class="filter-header" id="toggleFilter">
+                    <img src="./assets/img/icons/filter.svg" alt="Szűrés">
+                </div>
+                <form action="">
+                    <div class="filter-content">
+                        <div class="filter">
+                            <label for="item-1">Item 1</label>
+                            <input type="checkbox" name="item-1" id="" value="item-1">
+                        </div>
+                        <div class="filter">
+                            <label for="item-1">Item 1</label>
+                            <input type="checkbox" name="item-1" id="" value="item-1">
+                        </div>
+                        <div class="filter">
+                            <label for="item-1">Item 1</label>
+                            <input type="checkbox" name="item-1" id="" value="item-1">
+                        </div>
+                        <div class="filter">
+                            <label for="item-1">Item 1</label>
+                            <input type="checkbox" name="item-1" id="" value="item-1">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <hr>
+        <section class="container py-3">
+            <h1 class="mb-1">Accordion</h1>
+            <div class="accordion-wrapper">
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h1>Életvirág szappan</h1>
+                        <div class="accordion-arrow">
+                            <img src="./assets/img/icons/accordion.svg" alt="Megtekint">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
+                        <p><strong>vilhemp.com</strong></p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h1>Életvirág szappan</h1>
+                        <div class="accordion-arrow">
+                            <img src="./assets/img/icons/accordion.svg" alt="Megtekint">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
+                        <p><strong>vilhemp.com</strong></p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h1>Életvirág szappan</h1>
+                        <div class="accordion-arrow">
+                            <img src="./assets/img/icons/accordion.svg" alt="Megtekint">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
+                        <p><strong>vilhemp.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="container py-3">
+            <h1 class="mb-1">Kapcsolat</h1>
+            <form action="" class="form">
+                <div class="fieldset"><input type="text" name="fname" placeholder="Név" required></div>
+                <div class="fieldset"><input type="email" name="femail" placeholder="email" required></div>
+                <div class="fieldset"><textarea name="fmessage" id="" cols="30" rows="10" required placeholder="Megjegyzés"></textarea></div>
+                <div class="fieldset"><textarea name="frequest" id="" cols="30" rows="10"></textarea></div>
+                <div class="fieldset inline-block"><input type="submit" value="Küldés" class="btn"></div>
+            </form>
+        </section>
+        <hr>
+        <section class="container py-3">
+            <h1 class="mb-1">Lexikon</h1>
+            <div class="lexikon-wrapper">
+                <div class="lexikon-alphabet">
+                    <div class="alphabet-letters">
+                        <a href="#a">A</a>
+                        <a href="#b">B</a>
+                        <a href="">C</a>
+                        <a href="">D</a>
+                        <a href="">E</a>
+                        <a href="">F</a>
+                        <a href="">G</a>
+                    </div>
+                </div>
+                <div class="lexikon">
+                    <div class="letter">
+                        <h2 id="a">A</h2>
+                        <div class="lexikon-article">
+                            <h3>Áztatás (Soak)</h3>
+                            <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
+                                szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
+                        </div>
+                    </div>
+                    <div class="letter">
+                        <h2 id="b">B</h2>
+                        <div class="lexikon-article">
+                            <h3>Bakol</h3>
+                            <p>Régies kifejezés. Kendert tilol, tör.</p>
+                        </div>
+                        <div class="lexikon-article">
+                            <h3>Bakóallya</h3>
+                            <p>Régies kifejezés. Az a csomó kender, amelyet egyszerre tesznek a törő alá</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <div class="footer-icons">
+                        <div class="icon-list flex flex-row flex-row-center mb-1">
+                            <a href="" class="mr-1"><img src="assets/img/icons/facebook.svg" alt="Facebook"></a>
+                            <a href="" class="mr-1"><img src="assets/img/icons/youtube.svg" alt="Youtube"></a>
+                            <a href="" class="mr-1"><img src="assets/img/icons/instagram.svg" alt="Instagram"></a>
+                        </div>
+                        <img src="assets/img/icons/cards.png" alt="Fizetési módok" class="mb-1">
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-newsletter">
+                        <label for="email">Iratkozz fel hírlevelünkre:</label>
+                        <input type="email" placeholder="E-mail cím" class="mt-1 mb-2">
+                        <span class="">2021 &copy; Kenderlánc</span>
+                    </div>
+                    <div class="footer-menu flex flex-row flex-space-between mt-2">
+                        <a href="">Adatvédelmi nyilatkozat</a>
+                        <a href="">Cookie szabályzat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/filter.js"></script>
+</body>
+
+</html>

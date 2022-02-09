@@ -1,0 +1,29 @@
+.accordion-wrapper {
+    .accordion {
+        .accordion-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: .6rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid $green-dark;
+            cursor: pointer;
+            &.opened {
+                transition: all .3s ease;
+                img {
+                    transform: rotate(180deg);
+                }
+                &+.accordion-content {
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+        .accordion-content {
+            height: 0;
+            display: none;
+            margin-bottom: 4rem;
+        }
+    }
+}

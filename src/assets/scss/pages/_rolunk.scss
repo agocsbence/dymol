@@ -1,0 +1,24 @@
+.rolunk-lead {
+    @media screen and (min-width: $tablet) {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}
+
+.team-wrapper {
+    .team-member {
+        img {
+            margin: 2rem 0;
+        }
+    }
+    @media screen and (min-width: $tablet) {
+        columns: 2;
+        .team-member {
+            break-inside: avoid-column;
+            img {
+                width: calc(100% - 6rem);
+                margin: 3rem;
+            }
+        }
+    }
+}

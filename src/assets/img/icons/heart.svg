@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="18px" viewBox="0 0 23 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <polygon id="path-1" points="0 0 23 0 23 18 0 18"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile_OP-Copy" transform="translate(-244.000000, -19.000000)">
+            <g id="Group-3" transform="translate(244.000000, 19.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M11.5001402,18 L2.51386663,11.3151777 C1.5231101,10.5783964 0.728974293,9.591563 0.327196913,8.43260073 C-1.3228866,3.67434243 3.53435174,-1.81604506 8.92405548,0.581256475 C9.04856232,0.636500537 9.17306915,0.695815215 9.29669296,0.758909749 L11.5001402,1.88123648 L13.7035874,0.758909749 C13.8272112,0.695815215 13.9514237,0.636500537 14.0759306,0.581256475 C19.4659287,-1.81604506 24.3228726,3.67434243 22.6727891,8.43260073 C22.2710118,9.591563 21.4768759,10.5783964 20.4864138,11.3151777 L11.5001402,18 Z" id="Fill-1" fill="#172D22" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

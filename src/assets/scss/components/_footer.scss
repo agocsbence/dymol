@@ -1,0 +1,16 @@
+footer {
+    background: #d8d8d830;
+    color: $green-dark;
+    padding: 2rem 0;
+    font-weight: bold;
+    input {
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid $green-dark;
+        background: transparent;
+    }
+    label,
+    .footer-menu {
+        font-size: 70%;
+    }
+}

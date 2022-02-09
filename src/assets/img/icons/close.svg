@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Mobile_MENU" transform="translate(-282.000000, -18.000000)" stroke="#172D22" stroke-width="2">
+            <g id="Group" transform="translate(284.000000, 20.000000)">
+                <line x1="17" y1="17" x2="1.81306359e-13" y2="0" id="Line-Copy"></line>
+                <line x1="17" y1="0" x2="0" y2="17" id="Line-Copy-2"></line>
+            </g>
+        </g>
+    </g>
+</svg>
