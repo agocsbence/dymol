@@ -25,7 +25,7 @@ $desktop-large: 2200px;
 @import 'reset';
 @import 'grid';
 @import 'fonts';
-// @import 'woocommerce_custom';
+@import 'woocommerce_custom';
 //import pages and components
 @import 'components/header';
 @import 'components/menu';
