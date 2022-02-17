@@ -724,6 +724,16 @@ input.qty {
 .woocommerce div.product form.cart .variations label {
   font-weight: 400; }
 
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  margin: 0; }
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+  font-weight: 400;
+  padding: 0;
+  color: inherit; }
+  .woocommerce div.product .woocommerce-tabs ul.tabs li a:after, .woocommerce div.product .woocommerce-tabs ul.tabs li a:before {
+    display: none; }
+
 @media screen and (min-width: 991px) {
   .rolunk-lead {
     max-width: 40rem;
