@@ -27,22 +27,6 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 <div>
 	<!-- price -->
-	<h1>insert tab here</h1>
-	<div class="flex">
-		<div class="btn btn-dark" onclick="openTab('description')">Leírás</div>
-		<div class="btn ml-1" onclick="openTab('specs')">Specifikáció</div>
-	</div>
-	<div class="tabs">
-		<div class="tab" id="description">
-			<?php the_content(); ?>
-		</div>
-		<div class="tab" id="specs" style="display: none">
-			<p>Kiszerelés: <?php the_field('kiszereles'); ?>ml</p>
-			<p>Termék/karton: <?php the_field('termekkarton'); ?></p>
-			<p>Termék/raklap: <?php the_field('termekraklap'); ?></p>
-		</div>
-	</div>
-
 	<div class="product-variants">
 		<?php
 		$colors = get_field('szinek');

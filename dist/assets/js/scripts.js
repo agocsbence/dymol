@@ -37,7 +37,7 @@ function openTab(tabName) {
       x[i].style.display = "none";
     }
     document.getElementById(tabName).style.display = "block";
-    this.classList.toggle('clicked');
+    this.classList.add('clicked');
 }
 
 // mobileMenuToggle.addEventListener('click', function() {
