@@ -52,7 +52,7 @@ get_header();
 							<div class="product-details grid grid-2 grid-gap-1">
 								<div class="product-data">
 									<div class="btn"><?php the_title(); ?></div>
-									<div class="btn"><?php $product->get_price(); ?></div>
+									<div class="btn"><?php echo $product->get_price_html(); ?></div>
 								</div>
 								<div class="product-variants">
 									<div class="variant" style="background-color: #FEDE17;"></div>
