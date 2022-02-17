@@ -29,9 +29,6 @@ defined( 'ABSPATH' ) || exit;
             <h1 class="lead mb-2">Jelenleg üres a kosarad!</h1>
             <h3 class="sub">Vásárolj Tőlünk valamit, és legyen szép napod!</h3>
         </div>
-        <div class="image-content">
-            <img src="<?php bloginfo('template_url') ?>/assets/img/empty-cart.png" alt="Üres a kosarad">
-        </div>
     </div>
 </div>
 

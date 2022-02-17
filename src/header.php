@@ -22,7 +22,7 @@
     <meta name="msapplication-TileImage" content="<?php bloginfo('template_url') ?>/assets/icon/mstile-144x144.png">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.0.4">
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.0.5">
 </head>
 
 <body <?php body_class(); ?>>
@@ -44,7 +44,7 @@
                     <a href="" class="nav-item btn btn-dark">Belépés</a>
                     <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
                     <a href="" class="nav-item btn btn-dark">Keresés</a>
-                    <a href="" class="nav-icon">
+                    <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
                         <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
                         <?php
                             global $woocommerce;
@@ -57,7 +57,7 @@
                     </a>
                 </div>
                 <nav>
-                    <a href="" class="nav-item btn">Termékek</a>
+                    <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
                     <a href="" class="nav-item btn">Cégünkről</a>
                     <a href="" class="nav-item btn">Bérgyártás</a>
                     <a href="" class="nav-item btn">Médiatár</a>
