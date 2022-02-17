@@ -27,7 +27,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 <div>
 	<!-- price -->
-	<div class="flex">
+	<div class="flex flex-row-center">
 		<div class="btn"><?php the_title() ?></div>
 		<div class="product-variants ml-1">
 			<?php
