@@ -30,23 +30,21 @@ if ( $product->is_in_stock() ) : ?>
 	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 	<div>
-		<!-- short description -->
-		<div class="woocommerce-product-details__short-description">
-			<h1>insert tab here</h1>
-			<?php
-			$colors = get_field('szinek');
-			if ($colors) {
-				foreach ($colors as $color) {
-					var_dump($color);
-				}
-			}?>
-			<h2>Kiszerelés: <?php the_field('kiszereles'); ?>ml</h2>
-			<h2>Termék/karton: <?php the_field('termekkarton'); ?></h2>
-			<h2>Termék/raklap: <?php the_field('termekraklap'); ?></h2>
-			<?php the_content(); // WPCS: XSS ok. ?>
-		</div>
 		<!-- price -->
-		<h3 class="mb-1 <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></h3>
+		<div class="flex flex-row-center">
+			<div class="btn"><?php the_title() ?></div>
+			<div class="product-variants ml-1">
+				<?php
+				$colors = get_field('szinek');
+				if ($colors) {
+					foreach ($colors as $color) { ?>
+						<div class="variant" style="background-color: <?php echo $color['szin']; ?>;"></div>
+					<? }
+				}?>
+			</div>
+		</div>
+
+		<div class="mb-1 btn <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></div>
 
 		<form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
 			<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
