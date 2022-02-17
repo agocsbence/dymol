@@ -131,3 +131,7 @@ input.qty {
     display: inline-block !important;
     line-height: $font-size;
 }
+
+.woocommerce-product-attributes-item span {
+    color: $black;
+}
