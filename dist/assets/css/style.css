@@ -138,8 +138,8 @@ table {
   width: auto; }
 
 .woocommerce-message {
-  border-top: 2px solid green !important;
-  color: darkgreen !important;
+  border-top: 2px solid #ed1c24 !important;
+  color: #ed1c24 !important;
   display: flex !important;
   flex-direction: row-reverse !important;
   justify-content: space-between !important;
@@ -156,7 +156,7 @@ table {
   margin-top: 6rem; }
 
 .woocommerce a.remove {
-  color: darkgreen !important; }
+  color: #ed1c24 !important; }
 
 .woocommerce #content table.cart td.actions .coupon .button,
 .woocommerce #content table.cart td.actions .coupon .input-text,
@@ -178,10 +178,10 @@ table {
 @media screen and (max-width: 991px) {
   .woocommerce table.shop_table_responsive tr,
   .woocommerce-page table.shop_table_responsive tr {
-    border-top: 2px solid darkgreen; } }
+    border-top: 2px solid #ed1c24; } }
 
 .woocommerce table.shop_table td {
-  border-top: 2px solid darkgreen;
+  border-top: 2px solid #ed1c24;
   padding-top: 3rem;
   font-weight: 700; }
   @media screen and (max-width: 991px) {
