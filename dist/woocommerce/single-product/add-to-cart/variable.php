@@ -27,14 +27,17 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 <div>
 	<!-- price -->
-	<div class="product-variants">
-		<?php
-		$colors = get_field('szinek');
-		if ($colors) {
-			foreach ($colors as $color) { ?>
-				<div class="variant" style="background-color: <?php echo $color['szin']; ?>;"></div>
-			<? }
-		}?>
+	<div class="flex">
+		<div class="btn"><?php the_title() ?></div>
+		<div class="product-variants ml-1">
+			<?php
+			$colors = get_field('szinek');
+			if ($colors) {
+				foreach ($colors as $color) { ?>
+					<div class="variant" style="background-color: <?php echo $color['szin']; ?>;"></div>
+				<? }
+			}?>
+		</div>
 	</div>
 	
 	<div class="mb-1 btn <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></div>

@@ -45,7 +45,7 @@
     background: $red !important;
     color: $white !important;
     border: 2px solid $red !important;
-    font-size: 13px !important;
+    font-size: $font-size !important;
     padding: .8rem !important;
     border-radius: 12px !important;
     font-weight: 700 !important;
@@ -59,9 +59,9 @@
 input.qty {
     background: $white !important;
     color: $red !important;
-    border: 2px solid $red !important;
-    font-size: 13px !important;
-    padding: .8rem !important;
+    border: 1px solid $red !important;
+    font-size: $font-size !important;
+    padding: 3px 12px !important;
     border-radius: 12px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
@@ -74,8 +74,8 @@ input.qty {
 .woocommerce-variation-add-to-cart,
 .product-type-simple .summary form.cart {
     display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
 }
 
 .product-type-simple .summary form.cart {
@@ -90,4 +90,8 @@ input.qty {
 
 .woocommerce-variation-price {
     text-align: right;
+}
+
+.woocommerce div.product form.cart .variations label {
+    font-weight: 400;
 }

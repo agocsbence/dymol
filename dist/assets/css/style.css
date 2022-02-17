@@ -676,7 +676,7 @@ form input[type="submit"] {
   background: #ed1c24 !important;
   color: #fff !important;
   border: 2px solid #ed1c24 !important;
-  font-size: 13px !important;
+  font-size: 17px !important;
   padding: .8rem !important;
   border-radius: 12px !important;
   font-weight: 700 !important;
@@ -689,9 +689,9 @@ form input[type="submit"] {
 input.qty {
   background: #fff !important;
   color: #ed1c24 !important;
-  border: 2px solid #ed1c24 !important;
-  font-size: 13px !important;
-  padding: .8rem !important;
+  border: 1px solid #ed1c24 !important;
+  font-size: 17px !important;
+  padding: 3px 12px !important;
   border-radius: 12px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
@@ -703,8 +703,8 @@ input.qty {
 .woocommerce-variation-add-to-cart,
 .product-type-simple .summary form.cart {
   display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important; }
+  align-items: flex-start !important;
+  flex-direction: column !important; }
 
 @media screen and (min-width: 991px) {
   .product-type-simple .summary form.cart {
@@ -715,6 +715,9 @@ input.qty {
 
 .woocommerce-variation-price {
   text-align: right; }
+
+.woocommerce div.product form.cart .variations label {
+  font-weight: 400; }
 
 @media screen and (min-width: 991px) {
   .rolunk-lead {
