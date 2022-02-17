@@ -37,40 +37,42 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 
 
 ?>
 
-<img src="<?php echo $image[0]; ?>" alt="<?php the_title() ?>">
-
-<div class="swiper mb-1" id="productSwiper">
-    <div class="swiper-wrapper">
-		<?php
-            foreach($attachment_ids as $attachment_id) {
-                $image_url = wp_get_attachment_url($attachment_id);
-                ?>
-                <div class="swiper-slide">
-                    <a class="" data-fancybox="gallery" href="<?php echo $image_url; ?>" style="background: url(<?php echo $image_url; ?>) center no-repeat;background-size:cover;">
-                        <img src="<?php echo $image_url; ?>" alt="gallery" class="product-image">
-                    </a>
-                </div>
-            <?php }
-        ?>
+<?php if ($attachment_ids) { ?>
+	<div class="swiper mb-1" id="productSwiper">
+		<div class="swiper-wrapper">
+			<?php
+				foreach($attachment_ids as $attachment_id) {
+					$image_url = wp_get_attachment_url($attachment_id);
+					?>
+					<div class="swiper-slide">
+						<a class="" data-fancybox="gallery" href="<?php echo $image_url; ?>" style="background: url(<?php echo $image_url; ?>) center no-repeat;background-size:cover;">
+							<img src="<?php echo $image_url; ?>" alt="gallery" class="product-image">
+						</a>
+					</div>
+				<?php }
+			?>
+		</div>
+		<div class="swiper-pagination"></div>
+		<!-- <div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div> -->
 	</div>
-	<div class="swiper-pagination"></div>
-	<!-- <div class="swiper-button-next"></div>
-	<div class="swiper-button-prev"></div> -->
-</div>
 
-<div class="swiper" id="productThumbnailSwiper">
-	<div class="swiper-wrapper">
-		<?php
-            foreach($attachment_ids as $attachment_id) {
-                $image_url = wp_get_attachment_url($attachment_id);
-                ?>
-                <div class="swiper-slide thumbnail-slide">
-                    <img src="<?php echo $image_url; ?>" alt="gallery" class="product-image">
-                </div>
-            <?php }
-        ?>
+	<div class="swiper" id="productThumbnailSwiper">
+		<div class="swiper-wrapper">
+			<?php
+				foreach($attachment_ids as $attachment_id) {
+					$image_url = wp_get_attachment_url($attachment_id);
+					?>
+					<div class="swiper-slide thumbnail-slide">
+						<img src="<?php echo $image_url; ?>" alt="gallery" class="product-image">
+					</div>
+				<?php }
+			?>
+		</div>
 	</div>
-</div>
+<?php } else { ?>
+	<img src="<?php echo $image[0]; ?>" alt="<?php the_title() ?>">
+<?php } ?>
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
