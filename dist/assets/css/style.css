@@ -420,10 +420,12 @@ footer {
   margin: 1rem 0;
   cursor: pointer !important;
   display: inline-block !important; }
-  .btn.btn-dark, .btn:hover,
+  .btn.btn-dark, .btn.active, .btn:hover,
   .button.btn-dark,
+  .button.active,
   .button:hover,
   .button.alt.btn-dark,
+  .button.alt.active,
   .button.alt:hover {
     border: 1px solid #ed1c24 !important;
     background: #ed1c24 !important;

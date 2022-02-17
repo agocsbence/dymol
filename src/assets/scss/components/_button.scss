@@ -14,6 +14,7 @@
     cursor: pointer !important;
     display: inline-block !important;
     &.btn-dark,
+    &.active,
     &:hover {
         border: 1px solid $red !important;
         background: $red !important;
