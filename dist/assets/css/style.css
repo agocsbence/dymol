@@ -181,8 +181,7 @@ table {
     border-top: 2px solid #ed1c24; } }
 
 .woocommerce table.shop_table td {
-  border-top: 2px solid #ed1c24;
-  padding-top: 3rem;
+  border-top: 1px solid #ed1c24;
   font-weight: 400; }
   @media screen and (max-width: 991px) {
     .woocommerce table.shop_table td {

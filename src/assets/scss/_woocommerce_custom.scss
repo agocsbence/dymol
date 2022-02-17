@@ -63,8 +63,7 @@
 }
 
 .woocommerce table.shop_table td {
-    border-top: 2px solid $red;
-    padding-top: 3rem;
+    border-top: 1px solid $red;
     font-weight: 400;
     @media screen and (max-width: $tablet) {
         border: 0;
