@@ -36,6 +36,8 @@ $attachment_ids = $product->get_gallery_image_ids();
 
 ?>
 <?php var_dump( $product->get_image_id() ) ?>
+<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 'single-post-thumbnail' );?>
+<img src="<?php echo $image[0]; ?>" data-id="<?php echo $loop->post->ID; ?>">
 
 <div class="swiper mb-1" id="productSwiper">
     <div class="swiper-wrapper">
