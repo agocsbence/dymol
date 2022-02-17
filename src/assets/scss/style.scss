@@ -8,7 +8,7 @@ $green: green;
 $green1: lightgreen;
 $green2: turquoise;
 $green-dark: darkgreen;
-$font-size: 14px;
+$font-size: 17px;
 $font-size-mobile: 12px;
 $mobile: 767px;
 $tablet: 991px;
@@ -28,7 +28,6 @@ $desktop-large: 2200px;
 @import 'woocommerce_custom';
 //import pages and components
 @import 'components/header';
-@import 'components/menu';
 @import 'components/footer';
 @import 'components/product';
 @import 'components/button';
@@ -64,7 +63,7 @@ $desktop-large: 2200px;
 
 html {
     scroll-behavior: smooth;
-    background: $green;
+    background: $red;
 }
 
 body {
@@ -110,10 +109,10 @@ h6 {
 h1,
 h2,
 h3 {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 35px;
-    font-weight: 700;
-    color: $green-dark;
+    font-weight: 400;
+    color: $red;
 }
 
 h1.lead {
@@ -125,7 +124,7 @@ h3.sub {
     font-size: 28px;
     line-height: 32px;
     font-weight: 300;
-    color: $green-dark;
+    color: $red;
 }
 
 li,
@@ -601,4 +600,12 @@ marquee {
 
 .show {
     display: block;
+}
+
+.border-top {
+    border-top: 1px solid $red;
+}
+
+.section-title {
+    text-transform: uppercase;
 }

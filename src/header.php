@@ -21,11 +21,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?php bloginfo('template_url') ?>/assets/icon/mstile-144x144.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.3.2">
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.0.0">
 </head>
 
 <body <?php body_class(); ?>>
@@ -33,56 +30,43 @@
 <style>
     #wpadminbar {display: none;}
 </style>
-
-    <header class="grid header-grid mb-3" id="header">
-        <div class="header-logo">
-            <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc"></a>
-        </div>
-        <div class="header-icons">
-            <a href="<?php echo get_home_url(); ?>/fiokom" class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/profile.svg" alt="Profil"></a>
-            <a href="<?php echo get_home_url(); ?>/kosar" class="header-icon rel">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icons/cart.svg" alt="Kosár">
-                <?php
-                    global $woocommerce;
-                    if($woocommerce->cart->cart_contents_count > 0) { ?>
-                        <div class="cart-counter">
-                            <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
-                        </div>
-                    <?php }
-                ?>
-            </a>
-            <div class="header-icon hide"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/heart.svg" alt="Kedvencek"></div>
-            <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü"></div>
-        </div>
-        <div id="desktopMenuToggler" class="header-menu desktop-only menu-toggler">
-            <img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü">
-        </div>
-        <div class="header-search">
-            <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <input type="search" class="search-field" placeholder="Keresés" value="<?php echo get_search_query(); ?>" name="s" />
-                <!-- <button type="submit" class="search-submit btn">Keresés</button> -->
-            </form>
+    <header>
+        <div class="flex container">
+            <div class="header-logo">
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="hidden"></a>
+            </div>
+            <div class="navbar" id="navbar">
+                <div class="pre-menu">
+                    <a href="" class="nav-item btn btn-dark">HU</a>
+                    <a href="" class="nav-item btn">EN</a>
+                    <a href="" class="nav-item btn">Partner rendelés</a>
+                    <a href="" class="nav-item btn btn-dark">Belépés</a>
+                    <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
+                    <a href="" class="nav-item btn btn-dark">Keresés</a>
+                    <a href="" class="nav-icon">
+                        <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
+                        <?php
+                            global $woocommerce;
+                            if($woocommerce->cart->cart_contents_count > 0) { ?>
+                                <div class="cart-counter">
+                                    <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+                                </div>
+                            <?php }
+                        ?>
+                    </a>
+                </div>
+                <nav>
+                    <a href="" class="nav-item btn">Termékek</a>
+                    <a href="" class="nav-item btn">Cégünkről</a>
+                    <a href="" class="nav-item btn">Bérgyártás</a>
+                    <a href="" class="nav-item btn">Médiatár</a>
+                </nav>
+                <!-- <div id="mobileMenuToggler" class="header-menu desktop-only menu-toggler">
+                    <img src="<?php // bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü">
+                </div>
+                <div id="mobileMenuClose" class="header-icon mobile-only menu-toggler"><img src="<?php // bloginfo('template_url') ?>/assets/img/icons/close.svg" alt="Bezár"></div> -->
+            </div>
         </div>
     </header>
-    <div class="navbar" id="navbar">
-        <div class="nav-header grid header-grid">
-            <div id="desktopMenuClose" class="header-icon desktop-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/close.svg" alt="Bezár"></div>
-            <div class="header-logo">
-                <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc"></a>
-            </div>
-            <div class="header-icons">
-                <div id="mobileMenuClose" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/close.svg" alt="Bezár"></div>
-            </div>
-        </div>
-        <nav>
-            <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item">Termékek</a>
-            <a href="<?php echo get_home_url(); ?>/kenderlanc-szolgaltatasok" class="nav-item">Szolgáltatások</a>
-            <a href="<?php echo get_home_url(); ?>/magazin" class="nav-item">Magazin</a>
-        </nav>
-        <div class="sub-menu">
-            <a href="<?php echo get_home_url(); ?>/partnerek">Partnerek</a>
-            <a href="<?php echo get_home_url(); ?>/rolunk">Rólunk</a>
-            <a href="<?php echo get_home_url(); ?>/kapcsolat">Kapcsolat</a>
-        </div>
-    </div>
-    <div id="page-content-wrapper">
+    <main>

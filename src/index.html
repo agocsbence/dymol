@@ -7,107 +7,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dymol</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../dist/assets/css/style.css">
 </head>
 
 <body>
 
-    <header class="grid header-grid">
-        <div class="header-logo">
-            <img src="assets/img/logo.svg" alt="Dymol">
-        </div>
-        <div class="header-icons">
-            <div class="header-icon"><img src="assets/img/icons/profile.svg" alt="Profil"></div>
-            <div class="header-icon"><img src="assets/img/icons/cart.svg" alt="Kosár"></div>
-            <div class="header-icon"><img src="assets/img/icons/heart.svg" alt="Kedvencek"></div>
-            <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="assets/img/icons/menu.svg" alt="Menü"></div>
-        </div>
-        <div id="desktopMenuToggler" class="header-menu desktop-only menu-toggler">
-            <img src="assets/img/icons/menu.svg" alt="Menü">
-        </div>
-        <div class="header-search">
-            <input type="text" name="s" id="searchInput">
+    <header>
+        <div class="flex container">
+            <div class="header-logo">
+                <img src="../dist/assets/img/logo-icon.png" alt="Dymol" id="logoIcon">
+                <img src="../dist/assets/img/logo-text.png" alt="Dymol" id="logoText" class="hidden">
+            </div>
+            <div class="navbar" id="navbar">
+                <div class="pre-menu">
+                    <a href="" class="nav-item btn btn-dark">HU</a>
+                    <a href="" class="nav-item btn">EN</a>
+                    <a href="" class="nav-item btn">Partner rendelés</a>
+                    <a href="" class="nav-item btn btn-dark">Belépés</a>
+                    <a href="" class="nav-icon"><img src="../dist/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
+                    <a href="" class="nav-item btn btn-dark">Keresés</a>
+                    <a href="" class="nav-icon"><img src="../dist/assets/img/cart.svg" alt="Kosár"></a>
+                </div>
+                <nav>
+                    <a href="" class="nav-item btn">Termékek</a>
+                    <a href="" class="nav-item btn">Cégünkről</a>
+                    <a href="" class="nav-item btn">Bérgyártás</a>
+                    <a href="" class="nav-item btn">Médiatár</a>
+                </nav>
+                <!-- <div id="mobileMenuToggler" class="header-menu desktop-only menu-toggler">
+                    <img src="../dist/assets/img/icons/menu.svg" alt="Menü">
+                </div>
+                <div id="mobileMenuClose" class="header-icon mobile-only menu-toggler"><img src="../dist/assets/img/icons/close.svg" alt="Bezár"></div> -->
+            </div>
         </div>
     </header>
-    <div class="navbar" id="navbar">
-        <div class="nav-header grid header-grid">
-            <div class="header-logo">
-                <img src="assets/img/logo.svg" alt="Dymol">
-            </div>
-            <div class="header-icons">
-                <div id="mobileMenuClose" class="header-icon mobile-only menu-toggler"><img src="assets/img/icons/close.svg" alt="Bezár"></div>
-            </div>
-        </div>
-        <nav>
-            <a href="" class="nav-item">Termékek</a>
-            <a href="" class="nav-item">Szolgáltatások</a>
-            <a href="" class="nav-item">Magazin</a>
-        </nav>
-        <div class="sub-menu">
-            <a href="">Partnerek</a>
-            <a href="">Rólunk</a>
-            <a href="">Kapcsolat</a>
-            <a href="">Nagyker</a>
-            <a href="">Ügyfélszolgálat</a>
-        </div>
-    </div>
     <main>
-        <section id="home-hero">
+        <section id="home-hero" style="background-image: url('../dist/assets/img/hero.jpg');">
+            <img src="../dist/assets/img/bigtext.png" alt="Dymol text logo" id="bigText">
+        </section>
+        <section class="py-4">
             <div class="container">
-                <h1>Magyar ipari kender a hétköznapokra.</h1>
-                <div class="grid grid--home-tiles">
-                    <a href="" class="grid-tile big-tile title-top bg--image" style="background-image: url('assets/img/szolgaltatasok.png');">
-                        <h2>Szolgáltatások</h2>
-                    </a>
-                    <a href="" class="grid-tile bg--color bg--color-orange">
-                        <h2>Tudástár</h2>
-                    </a>
-                    <a href="" class="grid-tile bg--image" style="background-image: url('assets/img/nepszeru_termekek.png');">
-                        <h2>Népszerű Termékek</h2>
-                    </a>
-                    <a href="" id="grid-extra" class="grid-tile big-tile text-dark">
-                        <img src="assets/img/extra_tartalmak.svg" alt="Extra tartalmak">
-                        <h2>Extra tartalmak</h2>
-                    </a>
-                    <a href="" class="grid-tile bg--image" style="background-image: url('assets/img/partnereink.png');">
-                        <h2>Partnereink</h2>
-                    </a>
-                    <a href="" class="grid-tile bg--color bg--color-green">
-                        <h2>Lexikon</h2>
-                    </a>
+                <div class="grid grid-2 grid-gap-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="../dist/assets/img/haztartasi.jpg" alt="Háztartási termékek">
+                            <div class="btn">Háztartási termékek</div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <img src="../dist/assets/img/ipari.jpg" alt="Ipari termékek">
+                            <div class="btn">Ipari termékek</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-4">
+            <div class="container border-top">
+                <h2 class="section-title">Új termékek</h2>
+                <div class="grid grid-3 grid-gap-1 py-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="../dist/assets/img/termek-1.png" alt="Dymosept">
+                            <div class="product-details grid grid-2 grid-gap-1">
+                                <div class="product-data">
+                                    <div class="btn">Dymosept</div>
+                                    <div class="btn">2999Ft</div>
+                                </div>
+                                <div class="product-variants">
+                                    <div class="variant" style="background-color: #FEDE17;"></div>
+                                    <div class="variant" style="background-color: #52D3DB;"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <img src="../dist/assets/img/termek-2.png" alt="Zum kitchen">
+                            <div class="product-details grid grid-2 grid-gap-1">
+                                <div class="product-data">
+                                    <div class="btn">Zum kitchen</div>
+                                    <div class="btn">8888Ft</div>
+                                </div>
+                                <div class="product-variants">
+                                    <div class="variant" style="background-color: #84B25D;"></div>
+                                    <div class="variant" style="background-color: #BC3F39;"></div>
+                                    <div class="variant" style="background-color: #FE7817;"></div>
+                                    <div class="variant" style="background-color: #6552DB;"></div>
+                                    <div class="variant" style="background-color: #426E54;"></div>
+                                    <div class="variant" style="background-color: #FEDE17;"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-4">
+            <div class="container border-top">
+                <h2 class="section-title">Kiemelt termékek</h2>
+                <div class="grid grid-3 grid-gap-1 py-2">
+                    <div class="card">
+                        <a href="">
+                            <img src="../dist/assets/img/termek-3.png" alt="Dymosept">
+                            <div class="product-details grid grid-2 grid-gap-1">
+                                <div class="product-data">
+                                    <div class="btn product-title">Zum dishwasher</div>
+                                    <div class="btn product-price">8888Ft</div>
+                                </div>
+                                <div class="product-variants">
+                                    <div class="variant" style="background-color: #FEDE17;"></div>
+                                    <div class="variant" style="background-color: #52D3DB;"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <img src="../dist/assets/img/termek-4.png" alt="Zum kitchen">
+                            <div class="product-details grid grid-2 grid-gap-1">
+                                <div class="product-data">
+                                    <div class="btn product-title">Zum dishwasher</div>
+                                    <div class="btn product-price">8888Ft</div>
+                                </div>
+                                <div class="product-variants">
+                                    <div class="variant" style="background-color: #84B25D;"></div>
+                                    <div class="variant" style="background-color: #BC3F39;"></div>
+                                    <div class="variant" style="background-color: #FE7817;"></div>
+                                    <div class="variant" style="background-color: #6552DB;"></div>
+                                    <div class="variant" style="background-color: #426E54;"></div>
+                                    <div class="variant" style="background-color: #FEDE17;"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <img src="../dist/assets/img/termek-4.png" alt="Zum dishwasher">
+                            <div class="product-details grid grid-2 grid-gap-1">
+                                <div class="product-data">
+                                    <div class="btn product-title">Zum dishwasher</div>
+                                    <div class="btn btn-disabled product-discount-price">8888Ft</div>
+                                    <div class="btn product-price">8888Ft</div>
+                                </div>
+                                <div class="product-variants">
+                                    <div class="variant" style="background-color: #84B25D;"></div>
+                                    <div class="variant" style="background-color: #BC3F39;"></div>
+                                    <div class="variant" style="background-color: #FE7817;"></div>
+                                    <div class="variant" style="background-color: #6552DB;"></div>
+                                    <div class="variant" style="background-color: #426E54;"></div>
+                                    <div class="variant" style="background-color: #FEDE17;"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container">
-            <div class="grid grid-2">
-                <div>
-                    <div class="footer-icons">
-                        <div class="icon-list flex flex-row flex-row-center mb-1">
-                            <a href="" class="mr-1"><img src="assets/img/icons/facebook.svg" alt="Facebook"></a>
-                            <a href="" class="mr-1"><img src="assets/img/icons/youtube.svg" alt="Youtube"></a>
-                            <a href="" class="mr-1"><img src="assets/img/icons/instagram.svg" alt="Instagram"></a>
-                        </div>
-                        <img src="assets/img/icons/cards.png" alt="Fizetési módok" class="mb-1">
+            <div class="grid grid-2-1">
+                <div class="footer-menu">
+                    <h2>Információk</h2>
+                    <div class="grid grid-2">
+                        <ul>
+                            <li><a href="">Cégünkről</a></li>
+                            <li><a href="">Dymol Kft. politikája</a></li>
+                            <li><a href="">ÁSzF</a></li>
+                            <li><a href="">Biztonsági adatlapok</a></li>
+                            <li><a href="">Panaszkezelési eljárás</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Bérgyártás</a></li>
+                            <li><a href="">Dymol termékek</a></li>
+                            <li><a href="">Adatkezelési tájékoztató</a></li>
+                            <li><a href="">Tájékoztató kamerás megfigyelőrendszerről</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div>
-                    <div class="footer-newsletter">
-                        <label for="email">Iratkozz fel hírlevelünkre:</label>
-                        <input type="email" placeholder="E-mail cím" class="mt-1 mb-2">
-                        <span class="">2021 &copy; Dymol</span>
-                    </div>
-                    <div class="footer-menu flex flex-row flex-space-between mt-2">
-                        <a href="">Adatvédelmi nyilatkozat</a>
-                        <a href="">Cookie szabályzat</a>
-                    </div>
+                <div class="footer-contact">
+                    <h2>Kapcsolat</h2>
+                    <ul>
+                        <li><a href="">+3628470500</a></li>
+                        <li><a href="">+36209363102</a></li>
+                        <li><a href="">dymol@dymol.hu</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/scripts.js"></script>
+    <script src="../dist/assets/js/scripts.js"></script>
 </body>
 
 </html>

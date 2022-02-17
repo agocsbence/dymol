@@ -1,82 +1,57 @@
 header {
-    // position: fixed;
-    top: 0;
-    left: 0;
+    flex-direction: row;
     width: 100%;
-    background: $white;
+    background: transparent;
     z-index: 998;
     transition: all .6s ease;
-}
-
-#page-content-wrapper {
-    // padding-top: 9rem;
-    min-height: 60vh;
-}
-
-.header-grid {
-    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &.fixed {
+        background: $white;
+        position: fixed;
+    }
     .header-logo {
-        grid-area: logo;
-        img {
-            max-width: 5rem;
-        }
-    }
-    #desktopMenuClose {
-        grid-area: menu;
-        align-self: start;
-        justify-self: center;
-        margin-top: 0;
-    }
-    .header-icons {
-        grid-area: icons;
+        max-width: 25vw;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
-        @media screen and (min-width: $tablet) {
-            align-items: flex-start;
-            align-self: start;
-        }
-        .header-icon {
-            margin-left: 1rem;
-            .cart-counter {
-                position: absolute;
-                bottom: 0;
-                left: -10px;
-                font-size: 12px;
-                background: $white;
-                border: 2px solid $green-dark;
-                border-radius: 50%;
-                width: 19px;
-                height: 19px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+        #logoText {
+            transition: all .3s ease;
+            &.hidden {
+                opacity: 0;
             }
         }
     }
-    .header-menu {
-        grid-area: menu;
-        justify-self: end;
-        @media screen and (min-width: $tablet) {
-            align-self: start;
-            justify-self: center;
+    .navbar {
+        flex: 1;
+        align-items: flex-end;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        .pre-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            a {
+                margin: 0;
+                margin-top: 1rem;
+                margin-left: .5rem;
+                &.nav-icon {
+                    img {
+                        height: 2rem;
+                    }
+                }
+            }
         }
-    }
-    .header-search {
-        grid-area: search;
-        justify-self: end;
-        align-self: center;
-        width: 100%;
-        @media screen and (min-width: $tablet) {
-            align-self: start;
-        }
-        input.search-field {
-            background: $grey;
-            padding: .5rem 1rem !important;
-            border-radius: 2rem !important;
-            border: 0 !important;
-            width: 100% !important;
+        nav {
+            a {
+                margin: 0;
+                margin-top: .5rem;
+                margin-bottom: 1rem;
+                margin-left: .5rem;
+            }
         }
     }
 }

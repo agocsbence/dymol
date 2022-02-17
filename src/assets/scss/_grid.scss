@@ -1,7 +1,4 @@
 .grid {
-    color: #000;
-    font-size: 20px;
-    font-weight: bold;
     display: grid !important;
     &>[style^='--aspect-ratio']::before {
         content: "";

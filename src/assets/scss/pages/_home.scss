@@ -1,85 +1,17 @@
-.grid--home-tiles {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    margin-bottom: 6.5rem;
-    @media screen and (min-width: $tablet) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .grid-tile {
-        border-radius: 1rem;
-        background: $green;
-        position: relative;
-        &:before {
-            content: "";
-            display: inline-block;
-            width: 1px;
-            height: 0;
-            padding-top: 100%;
-        }
-        .content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            display: grid;
-            justify-items: start;
-            align-items: end;
-            .content-inside {
-                padding: 2rem 1rem;
-            }
-        }
-        h2 {
-            font-size: 20px;
-            line-height: 26px;
-            font-weight: bold;
-            color: $white;
-        }
-        &.big-tile {
-            grid-column: 1 / span 2;
-            grid-row: span 2;
-            background: $orange;
-        }
-        &.text-dark {
-            h2 {
-                color: $green-dark;
-            }
-        }
-        &.bg--image {
-            background-position: center center !important;
-            background-repeat: no-repeat !important;
-            background-size: cover !important;
-        }
-        &.bg--color {
-            &.bg--color-green {
-                background-color: $green;
-            }
-            &.bg--color-green1 {
-                background-color: $green1;
-            }
-            &.bg--color-green2 {
-                background-color: $green2;
-            }
-            &.bg--color-orange {
-                background-color: $orange;
-            }
-            &.bg--color-red {
-                background-color: $red;
-            }
-        }
-        &#grid-extra {
-            background-color: #fdf6e1;
-            background-size: 60% !important;
-            img {
-                position: absolute;
-                width: 70%;
-                top: 40%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
+#home-hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s ease;
+        &.hidden {
+            opacity: 0;
         }
     }
 }

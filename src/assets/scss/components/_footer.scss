@@ -1,16 +1,23 @@
 footer {
-    background: #d8d8d830;
-    color: $green-dark;
+    background: $grey;
+    color: $red;
     padding: 2rem 0;
-    font-weight: bold;
+    a {
+        font-size: 90%;
+    }
+    h2 {
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+    }
     input {
         width: 100%;
         border: 0;
         border-bottom: 2px solid $green-dark;
         background: transparent;
     }
-    label,
-    .footer-menu {
-        font-size: 70%;
+    .footer-contact {
+        a {
+            font-size: 100%;
+        }
     }
 }
