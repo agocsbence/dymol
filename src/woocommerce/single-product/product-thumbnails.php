@@ -27,6 +27,7 @@ global $post;
 
 $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 $attachment_ids = $product->get_gallery_image_ids();
+$image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 'full' );
 
 // if ( $attachment_ids && $product->get_image_id() ) {
 // 	foreach ( $attachment_ids as $attachment_id ) {
@@ -35,9 +36,8 @@ $attachment_ids = $product->get_gallery_image_ids();
 // }
 
 ?>
-<?php var_dump( $product->get_image_id() ) ?>
-<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 'single-post-thumbnail' );?>
-<img src="<?php echo $image[0]; ?>" data-id="<?php echo $loop->post->ID; ?>">
+
+<img src="<?php echo $image[0]; ?>" alt="<?php the_title() ?>">
 
 <div class="swiper mb-1" id="productSwiper">
     <div class="swiper-wrapper">
