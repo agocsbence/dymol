@@ -347,7 +347,8 @@ header {
   height: 19px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  color: #fff; }
 
 footer {
   background: #d8d8d850;
