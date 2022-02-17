@@ -16,10 +16,10 @@
 
 .swiper-pagination-bullet {
     background: $white;
-    border: 2px solid $green-dark;
+    border: 2px solid $red;
     opacity: 1;
     &.swiper-pagination-bullet-active {
-        background: $green-dark;
+        background: $red;
         opacity: 1;
     }
 }

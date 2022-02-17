@@ -28,8 +28,8 @@
 .variations {
     select {
         background: $white;
-        color: $green-dark;
-        border: 2px solid $green-dark;
+        color: $red;
+        border: 2px solid $red;
         font-size: 13px;
         padding: .4rem .8rem;
         border-radius: 12px;
@@ -43,9 +43,9 @@
 }
 
 .single_add_to_cart_button {
-    background: $green-dark !important;
+    background: $red !important;
     color: $white !important;
-    border: 2px solid $green-dark !important;
+    border: 2px solid $red !important;
     font-size: 13px !important;
     padding: .8rem !important;
     border-radius: 12px !important;
@@ -59,8 +59,8 @@
 
 input.qty {
     background: $white !important;
-    color: $green-dark !important;
-    border: 2px solid $green-dark !important;
+    color: $red !important;
+    border: 2px solid $red !important;
     font-size: 13px !important;
     padding: .8rem !important;
     border-radius: 12px !important;
@@ -93,7 +93,7 @@ input.qty {
     font-size: 28px !important;
     line-height: 35px !important;
     font-weight: 700 !important;
-    color: $green-dark !important;
+    color: $red !important;
 }
 
 .woocommerce-variation-price {
