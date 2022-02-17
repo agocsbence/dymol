@@ -34,7 +34,7 @@
         <div class="flex container">
             <div class="header-logo">
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
-                <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="hidden"></a>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="<?php if (is_home()) { echo 'hidden'; } ?>"></a>
             </div>
             <div class="navbar" id="navbar">
                 <div class="pre-menu">
