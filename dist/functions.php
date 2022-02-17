@@ -77,6 +77,16 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 //remove add to cart button from listing
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
+if ( ! function_exists( 'woocommerce_template_loop_product_title' ) ) {
+
+	/**
+	 * Show the product title in the product loop. By default this is an H2.
+	 */
+	function woocommerce_template_loop_product_title() {
+		echo '<h2 class="' . esc_attr( apply_filters( 'woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title' ) ) . '">' . mb_strimwidth($product->get_name(), 0, 30, '...') . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	}
+}
+
 //order on search result page
 function order_search_by_posttype($orderby){
     if (!is_admin() && is_search()) :
