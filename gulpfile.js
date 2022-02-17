@@ -43,9 +43,9 @@ gulp.task('favicon', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('src/assets/js/**/*.js')
-        .pipe(concat('scripts.js'))
-        .pipe(minify())
+    return gulp.src('src/assets/js/scripts.js')
+        // .pipe(concat('scripts.js'))
+        // .pipe(minify())
         .pipe(gulp.dest('dist/assets/js'))
 });
 
