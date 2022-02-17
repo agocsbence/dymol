@@ -49,6 +49,7 @@ $desktop-large: 2200px;
 *:before,
 *:after {
     box-sizing: border-box;
+    font-weight: 400 !important;
 }
 
 ::-moz-selection {

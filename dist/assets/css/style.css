@@ -791,7 +791,8 @@ input.qty {
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-weight: 400 !important; }
 
 ::-moz-selection {
   background: green;
