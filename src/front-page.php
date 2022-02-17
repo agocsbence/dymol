@@ -49,14 +49,15 @@ get_header();
 					<div class="card">
 						<a href="<?php echo get_permalink(); ?>">
 							<img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
-							<div class="product-details grid grid-2 grid-gap-1">
+							<div class="product-details">
 								<div class="product-data">
-									<div class="btn"><?php the_title(); ?></div>
-									<div class="btn"><?php echo $product->get_price_html(); ?></div>
-								</div>
-								<div class="product-variants">
-									<div class="variant" style="background-color: #FEDE17;"></div>
-									<div class="variant" style="background-color: #52D3DB;"></div>
+									<div class="btn product-title"><?php the_title(); ?></div>
+									<br>
+									<div class="btn product-price"><?php echo $product->get_price_html(); ?></div>
+									<div class="product-variants">
+										<div class="variant" style="background-color: #FEDE17;"></div>
+										<div class="variant" style="background-color: #52D3DB;"></div>
+									</div>
 								</div>
 							</div>
 						</a>
