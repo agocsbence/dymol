@@ -55,8 +55,12 @@ get_header();
 									<br>
 									<div class="btn product-price"><?php echo $product->get_price_html(); ?></div>
 									<div class="product-variants">
-										<div class="variant" style="background-color: #FEDE17;"></div>
-										<div class="variant" style="background-color: #52D3DB;"></div>
+										<?php $colors = get_field('szinek');
+										if ($colors) {
+											foreach ($colors as $color) { ?>
+												<div class="variant" style="background-color: <?php echo $color['szin']; ?>;"></div>
+											<? }
+										}?>
 									</div>
 								</div>
 							</div>
