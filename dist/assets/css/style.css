@@ -289,6 +289,12 @@ input#rememberme {
   margin: 0 !important;
   margin-right: 1rem !important; }
 
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table td,
+.woocommerce table.shop_table tbody th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th,
+.woocommerce ul#shipping_method .amount {
+  font-weight: 400 !important; }
+
 header {
   flex-direction: row;
   width: 100%;
@@ -464,12 +470,11 @@ a.btn {
 form input,
 form textarea {
   width: 100% !important;
-  border: 2px solid #ed1c24 !important;
-  border-radius: 12px !important;
+  border: 1px solid #ed1c24 !important;
+  border-radius: 1rem !important;
   margin-bottom: 1rem !important;
-  padding: .4rem 1rem !important;
-  font-family: 'Open Sans Condensed', sans-serif !important;
-  font-weight: 700 !important; }
+  padding: 3px 12px !important;
+  font-weight: 400 !important; }
   .form input::placeholder,
   .form textarea::placeholder,
   form input::placeholder,
@@ -481,7 +486,7 @@ form textarea {
   form input:required:after,
   form textarea:required:after {
     content: ' *' !important;
-    color: red !important; }
+    color: #ed1c24 !important; }
 
 .form input[type="submit"],
 form input[type="submit"] {
@@ -791,8 +796,7 @@ input.qty {
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  font-weight: 400 !important; }
+  box-sizing: border-box; }
 
 ::-moz-selection {
   background: green;

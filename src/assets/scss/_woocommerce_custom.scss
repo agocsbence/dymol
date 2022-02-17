@@ -200,3 +200,11 @@ input#rememberme {
     margin: 0 !important;
     margin-right: 1rem !important;
 }
+
+//no bold fonts
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table td,
+.woocommerce table.shop_table tbody th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th,
+.woocommerce ul#shipping_method .amount {
+    font-weight: 400 !important;
+}

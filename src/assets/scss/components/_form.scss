@@ -3,19 +3,18 @@ form {
     input,
     textarea {
         width: 100% !important;
-        border: 2px solid $red !important;
-        border-radius: 12px !important;
+        border: 1px solid $red !important;
+        border-radius: 1rem !important;
         margin-bottom: 1rem !important;
-        padding: .4rem 1rem !important;
-        font-family: 'Open Sans Condensed', sans-serif !important;
-        font-weight: 700 !important;
+        padding: 3px 12px !important;
+        font-weight: 400 !important;
         &::placeholder {
             color: #dfdfdb !important;
             text-transform: uppercase !important;
         }
         &:required:after {
             content: ' *' !important;
-            color: red !important;
+            color: $red !important;
         }
     }
     input[type="submit"] {
