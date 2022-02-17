@@ -726,7 +726,7 @@ input.qty {
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
   margin: 0;
-  padding-top: 1rem; }
+  padding: 0; }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
   margin: 0; }
