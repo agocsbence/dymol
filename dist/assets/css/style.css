@@ -443,6 +443,14 @@ footer {
       background: #fff !important;
       color: #ed1c24 !important;
       border: 1px solid #ed1c24 !important; }
+  .btn.zeromargin,
+  .button.zeromargin,
+  .button.alt.zeromargin {
+    margin: 0 !important; }
+  .btn.flex,
+  .button.flex,
+  .button.alt.flex {
+    display: flex !important; }
 
 a.btn {
   cursor: pointer !important; }
