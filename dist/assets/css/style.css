@@ -419,15 +419,12 @@ footer {
   text-transform: uppercase !important;
   text-align: center !important;
   margin: 1rem 0;
-  cursor: pointer !important;
   display: inline-block !important; }
-  .btn.btn-dark, .btn.active, .btn:hover,
+  .btn.btn-dark, .btn.active,
   .button.btn-dark,
   .button.active,
-  .button:hover,
   .button.alt.btn-dark,
-  .button.alt.active,
-  .button.alt:hover {
+  .button.alt.active {
     border: 1px solid #ed1c24 !important;
     background: #ed1c24 !important;
     color: #fff !important; }
@@ -446,6 +443,13 @@ footer {
       background: #fff !important;
       color: #ed1c24 !important;
       border: 1px solid #ed1c24 !important; }
+
+a.btn {
+  cursor: pointer !important; }
+  a.btn:hover {
+    border: 1px solid #ed1c24 !important;
+    background: #ed1c24 !important;
+    color: #fff !important; }
 
 .form input,
 .form textarea,

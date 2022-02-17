@@ -12,11 +12,9 @@
     text-transform: uppercase !important;
     text-align: center !important;
     margin: 1rem 0;
-    cursor: pointer !important;
     display: inline-block !important;
     &.btn-dark,
-    &.active,
-    &:hover {
+    &.active {
         border: 1px solid $red !important;
         background: $red !important;
         color: $white !important;
@@ -32,5 +30,14 @@
             color: $red !important;
             border: 1px solid $red !important;
         }
+    }
+}
+
+a.btn {
+    cursor: pointer !important;
+    &:hover {
+        border: 1px solid $red !important;
+        background: $red !important;
+        color: $white !important;
     }
 }
