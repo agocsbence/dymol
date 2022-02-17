@@ -13,7 +13,7 @@
     flex-direction: row-reverse !important;
     justify-content: space-between !important;
     align-items: center !important;
-    font-weight: 700;
+    font-weight: 400;
     padding: 1rem 2rem !important;
     &:before,
     &:after {
@@ -65,7 +65,7 @@
 .woocommerce table.shop_table td {
     border-top: 2px solid $red;
     padding-top: 3rem;
-    font-weight: 700;
+    font-weight: 400;
     @media screen and (max-width: $tablet) {
         border: 0;
     }
@@ -132,7 +132,7 @@
     border-radius: 12px;
     border: 0;
     font-family: inherit;
-    font-weight: 700;
+    font-weight: 400;
     background: $grey;
 }
 

@@ -144,7 +144,7 @@ table {
   flex-direction: row-reverse !important;
   justify-content: space-between !important;
   align-items: center !important;
-  font-weight: 700;
+  font-weight: 400;
   padding: 1rem 2rem !important; }
   .woocommerce-message:before, .woocommerce-message:after {
     display: none; }
@@ -183,7 +183,7 @@ table {
 .woocommerce table.shop_table td {
   border-top: 2px solid #ed1c24;
   padding-top: 3rem;
-  font-weight: 700; }
+  font-weight: 400; }
   @media screen and (max-width: 991px) {
     .woocommerce table.shop_table td {
       border: 0; } }
@@ -236,7 +236,7 @@ table {
   border-radius: 12px;
   border: 0;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 400;
   background: #d8d8d850; }
 
 .woocommerce ul.products li.product .price {
