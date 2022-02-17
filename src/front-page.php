@@ -52,7 +52,7 @@ get_header();
 							<img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
 							<div class="product-details grid grid-2 grid-gap-1">
 								<div class="product-data">
-									<div class="btn product-title"><?php echo mb_strimwidth(get_the_title(), 0, 14, '...'); ?></div>
+									<div class="btn product-title"><?php echo mb_strimwidth(get_the_title(), 0, 20, '...'); ?></div>
 									<br>
 									<div class="btn product-price"><?php echo $product->get_price_html(); ?></div>
 								</div>
