@@ -32,7 +32,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 	$colors = get_field('szinek');
 	if ($colors) {
 		foreach ($colors as $color) {
-			var_dump($color);
+			var_dump($color['szin']);
 		}
 	}?>
 	<h2>Kiszerelés: <?php the_field('kiszereles'); ?>ml</h2>
