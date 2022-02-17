@@ -761,7 +761,8 @@ input.qty {
   text-transform: uppercase !important;
   text-align: center !important;
   margin: 1rem 0 !important;
-  display: inline-block !important; }
+  display: inline-block !important;
+  line-height: 17px; }
 
 @media screen and (min-width: 991px) {
   .rolunk-lead {
