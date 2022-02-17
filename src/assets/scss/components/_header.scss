@@ -4,12 +4,15 @@ header {
     background: transparent;
     z-index: 998;
     transition: all .6s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    &.fixed {
-        background: $white;
-        position: fixed;
+    position: relative;
+    &.has-hero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        &.fixed {
+            background: $white;
+            position: fixed;
+        }
     }
     .header-logo {
         max-width: 25vw;

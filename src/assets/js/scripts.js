@@ -9,26 +9,27 @@ let bigText = document.querySelector('#bigText'),
 
 console.log(header.offsetHeight);
 
+if (header.classList.contains('has-hero')) {
+    window.addEventListener('scroll', (e) => {
+        var scrollPos = window.scrollY;
+        if (scrollPos >= triggerPos) {
+            bigText.classList.add('hidden');
+            logoText.classList.remove('hidden');
+        } else {
+            bigText.classList.remove('hidden');
+            logoText.classList.add('hidden');
+        }
+    });
     
-window.addEventListener('scroll', (e) => {
-    var scrollPos = window.scrollY;
-    if (scrollPos >= triggerPos) {
-        bigText.classList.add('hidden');
-        logoText.classList.remove('hidden');
-    } else {
-        bigText.classList.remove('hidden');
-        logoText.classList.add('hidden');
-    }
-});
-
-window.addEventListener('scroll', (e) => {
-    var scrollPos = window.scrollY;
-    if (scrollPos >= header.offsetHeight) {
-        header.classList.add('fixed');
-    } else {
-        header.classList.remove('fixed');
-    }
-});
+    window.addEventListener('scroll', (e) => {
+        var scrollPos = window.scrollY;
+        if (scrollPos >= header.offsetHeight) {
+            header.classList.add('fixed');
+        } else {
+            header.classList.remove('fixed');
+        }
+    });
+}
 
 // mobileMenuToggle.addEventListener('click', function() {
 //     navbar.classList.add('opened');
