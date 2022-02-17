@@ -28,13 +28,15 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 <div>
 	<!-- price -->
 	<h1>insert tab here</h1>
-	<?php
-	$colors = get_field('szinek');
-	if ($colors) {
-		foreach ($colors as $color) {
-			echo $color['szin'];
-		}
-	}?>
+	<div class="product-variants">
+		<?php
+		$colors = get_field('szinek');
+		if ($colors) {
+			foreach ($colors as $color) { ?>
+				<div class="variant" style="background-color: <?php echo $color['szin']; ?>;"></div>
+			<? }
+		}?>
+	</div>
 	<h2>Kiszerelés: <?php the_field('kiszereles'); ?>ml</h2>
 	<h2>Termék/karton: <?php the_field('termekkarton'); ?></h2>
 	<h2>Termék/raklap: <?php the_field('termekraklap'); ?></h2>
