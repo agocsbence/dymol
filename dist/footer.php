@@ -1,27 +1,33 @@
-</div>
+</main>
+
     <footer>
         <div class="container">
-            <div class="grid grid-2">
-                <div>
-                    <div class="footer-icons">
-                        <div class="icon-list flex flex-row flex-row-center mb-1">
-                            <a href="https://www.facebook.com/kenderlanc/" target="blank" class="mr-1"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/facebook.svg" alt="Facebook"></a>
-                            <a href="https://www.youtube.com/channel/UCZ-A6k90aFxj8A_ift8gowQ/featured" target="blank" class="mr-1"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/youtube.svg" alt="Youtube"></a>
-                            <a href="https://www.instagram.com/kenderlanc/" target="blank" class="mr-1"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/instagram.svg" alt="Instagram"></a>
-                        </div>
-                        <img src="<?php bloginfo('template_url') ?>/assets/img/icons/cards.png" alt="Fizetési módok" class="mb-1">
+            <div class="grid grid-2-1">
+                <div class="footer-menu">
+                    <h2>Információk</h2>
+                    <div class="grid grid-2">
+                        <ul>
+                            <li><a href="">Cégünkről</a></li>
+                            <li><a href="">Dymol Kft. politikája</a></li>
+                            <li><a href="">ÁSzF</a></li>
+                            <li><a href="">Biztonsági adatlapok</a></li>
+                            <li><a href="">Panaszkezelési eljárás</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Bérgyártás</a></li>
+                            <li><a href="">Dymol termékek</a></li>
+                            <li><a href="">Adatkezelési tájékoztató</a></li>
+                            <li><a href="">Tájékoztató kamerás megfigyelőrendszerről</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div>
-                    <div class="footer-newsletter">
-                        <label for="email">Iratkozz fel hírlevelünkre:</label>
-                        <input type="email" placeholder="E-mail cím" class="mt-1 mb-1">
-                        <div class="footer-menu flex flex-row flex-space-between mt-1">
-                            <span class="">2021 &copy; Kenderlánc</span>
-                            <a href="">Adatvédelmi nyilatkozat</a>
-                            <a href="">Cookie szabályzat</a>
-                        </div>
-                    </div>
+                <div class="footer-contact">
+                    <h2>Kapcsolat</h2>
+                    <ul>
+                        <li><a href="">+3628470500</a></li>
+                        <li><a href="">+36209363102</a></li>
+                        <li><a href="">dymol@dymol.hu</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -30,5 +36,3 @@
     <script src="<?php bloginfo('template_url') ?>/assets/js/scripts.js?v=1.0.0"></script>
     <?php wp_footer(); ?>
 </body>
-
-</html>

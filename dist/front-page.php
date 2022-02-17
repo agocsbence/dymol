@@ -10,55 +10,124 @@ get_header();
 // include get_theme_file_path( '/includes/landing-slider.php' );
 ?>
 
-<section id="home-hero">
+<section id="home-hero" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/hero.jpg');">
+	<img src="<?php bloginfo('template_url') ?>/assets/img/bigtext.png" alt="Dymol text logo" id="bigText">
+</section>
+<section class="py-4">
 	<div class="container">
-		<h1 class="mb-2">Ha kendered van, mindened van!</h1>
-		<div class="grid grid--home-tiles">
-			<?php $src_termekek = wp_get_attachment_image_src( get_post_thumbnail_id(8), 'full', false ); ?>
-			<a href="<?php echo get_home_url(); ?>/termekek" class="grid-tile big-tile title-top bg--image" style="background-image: url('<?php echo $src_termekek[0] ?>');">
-				<div class="content">
-					<div class="content-inside">
-						<h2>Termékek</h2>
+		<div class="grid grid-2 grid-gap-2">
+			<div class="card">
+				<a href="">
+					<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
+					<div class="btn">Háztartási termékek</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="">
+					<img src="<?php bloginfo('template_url') ?>/assets/img/ipari.jpg" alt="Ipari termékek">
+					<div class="btn">Ipari termékek</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="py-4">
+	<div class="container border-top">
+		<h2 class="section-title">Új termékek</h2>
+		<div class="grid grid-3 grid-gap-1 py-2">
+			<!-- loop here -->
+			<?php
+			
+			$loop = new WP_Query( array( 'post_type' => 'product', 'posts_per_page' => 3) );
+			
+			if ( $loop->have_posts() ) :
+				while ( $loop->have_posts() ) : $loop->the_post();
+				global $product; ?>
+
+					<div class="card">
+						<a href="<?php echo get_permalink(); ?>">
+							<img src="<?php echo woocommerce_get_product_thumbnail(); ?>" alt="<?php the_title(); ?>">
+							<div class="product-details grid grid-2 grid-gap-1">
+								<div class="product-data">
+									<div class="btn"><?php echo get_the_title(); ?></div>
+									<div class="btn"><?php $product->get_price(); ?></div>
+								</div>
+								<div class="product-variants">
+									<div class="variant" style="background-color: #FEDE17;"></div>
+									<div class="variant" style="background-color: #52D3DB;"></div>
+								</div>
+							</div>
+						</a>
 					</div>
-				</div>
-			</a>
-			<a href="<?php echo get_home_url(); ?>/tudastar" class="grid-tile bg--color bg--color-orange">
-				<div class="content">
-					<div class="content-inside">
-						<h2>Tudástár</h2>
+
+				<?php 
+				endwhile;
+			endif;
+			wp_reset_postdata();
+			?>
+
+			<!-- end of loop -->
+		</div>
+	</div>
+</section>
+<section class="py-4">
+	<div class="container border-top">
+		<h2 class="section-title">Kiemelt termékek</h2>
+		<div class="grid grid-3 grid-gap-1 py-2">
+			<div class="card">
+				<a href="">
+					<img src="<?php bloginfo('template_url') ?>/assets/img/termek-3.png" alt="Dymosept">
+					<div class="product-details grid grid-2 grid-gap-1">
+						<div class="product-data">
+							<div class="btn product-title">Zum dishwasher</div>
+							<div class="btn product-price">8888Ft</div>
+						</div>
+						<div class="product-variants">
+							<div class="variant" style="background-color: #FEDE17;"></div>
+							<div class="variant" style="background-color: #52D3DB;"></div>
+						</div>
 					</div>
-				</div>
-			</a>
-			<?php $src_szolg = wp_get_attachment_image_src( get_post_thumbnail_id(51), 'full', false ); ?>
-			<a href="<?php echo get_home_url(); ?>/kenderlanc-szolgaltatasok" class="grid-tile bg--image" style="background-image: url('<?php echo $src_szolg[0] ?>');">
-				<div class="content">
-					<div class="content-inside">
-						<h2>Szolgáltatások</h2>
+				</a>
+			</div>
+			<div class="card">
+				<a href="">
+					<img src="<?php bloginfo('template_url') ?>/assets/img/termek-4.png" alt="Zum kitchen">
+					<div class="product-details grid grid-2 grid-gap-1">
+						<div class="product-data">
+							<div class="btn product-title">Zum dishwasher</div>
+							<div class="btn product-price">8888Ft</div>
+						</div>
+						<div class="product-variants">
+							<div class="variant" style="background-color: #84B25D;"></div>
+							<div class="variant" style="background-color: #BC3F39;"></div>
+							<div class="variant" style="background-color: #FE7817;"></div>
+							<div class="variant" style="background-color: #6552DB;"></div>
+							<div class="variant" style="background-color: #426E54;"></div>
+							<div class="variant" style="background-color: #FEDE17;"></div>
+						</div>
 					</div>
-				</div>
-			</a>
-			<a href="<?php echo get_home_url(); ?>/magazin" id="grid-extra" class="grid-tile bg--color-green1 text-dark">
-				<div class="content">
-					<div class="content-inside">
-						<h2>Magazin</h2>
+				</a>
+			</div>
+			<div class="card">
+				<a href="">
+					<img src="<?php bloginfo('template_url') ?>/assets/img/termek-4.png" alt="Zum dishwasher">
+					<div class="product-details grid grid-2 grid-gap-1">
+						<div class="product-data">
+							<div class="btn product-title">Zum dishwasher</div>
+							<div class="btn btn-disabled product-discount-price">8888Ft</div>
+							<div class="btn product-price">8888Ft</div>
+						</div>
+						<div class="product-variants">
+							<div class="variant" style="background-color: #84B25D;"></div>
+							<div class="variant" style="background-color: #BC3F39;"></div>
+							<div class="variant" style="background-color: #FE7817;"></div>
+							<div class="variant" style="background-color: #6552DB;"></div>
+							<div class="variant" style="background-color: #426E54;"></div>
+							<div class="variant" style="background-color: #FEDE17;"></div>
+						</div>
 					</div>
-				</div>
-			</a>
-			<?php // $src_partnerek = wp_get_attachment_image_src( get_post_thumbnail_id(244), 'full', false ); ?>
-			<!-- <a href="<?php // echo get_home_url(); ?>/partnerek" class="grid-tile bg--image" style="background-image: url('<?php // echo $src_partnerek[0] ?>');">
-				<div class="content">
-					<div class="content-inside">
-						<h2>Partnerek</h2>
-					</div>
-				</div>
-			</a> -->
-			<a href="<?php echo get_home_url(); ?>/lexikon" class="grid-tile bg--color bg--color-green">
-				<div class="content">
-					<div class="content-inside">
-						<h2>Lexikon</h2>
-					</div>
-				</div>
-			</a>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
