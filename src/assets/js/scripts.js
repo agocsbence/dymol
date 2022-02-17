@@ -31,6 +31,16 @@ if (header.classList.contains('has-hero')) {
     });
 }
 
+function openTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+    this.classList.toggle('clicked');
+}
+
 // mobileMenuToggle.addEventListener('click', function() {
 //     navbar.classList.add('opened');
 // });

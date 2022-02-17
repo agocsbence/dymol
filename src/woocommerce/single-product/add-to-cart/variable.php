@@ -29,8 +29,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 	<!-- price -->
 	<h1>insert tab here</h1>
 	<div class="flex">
-		<div class="btn" onclick="openTab('description')">Leírás</div>
-		<div class="btn" onclick="openTab('specs')">Specifikáció</div>
+		<div class="btn btn-dark" onclick="openTab('description')">Leírás</div>
+		<div class="btn ml-1" onclick="openTab('specs')">Specifikáció</div>
 	</div>
 	<div class="tabs">
 		<div class="tab" id="description">
