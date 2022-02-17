@@ -23,10 +23,10 @@ if ( ! $product_attributes ) {
 	return;
 }
 ?>
-<div class="woocommerce-product-attributes shop_attributes">
-    <div class="btn woocommerce-product-attributes-item">Kiszerelés: <?php the_field('kiszereles'); ?>ml</div>
-    <div class="btn woocommerce-product-attributes-item">Termék/karton: <?php the_field('termekkarton'); ?></div>
-    <div class="btn woocommerce-product-attributes-item">Termék/raklap: <?php the_field('termekraklap'); ?></div>
+<div class="woocommerce-product-attributes shop_attributes grid grid-2 grid-gap-2">
+    <div class="btn flex flex-space-between woocommerce-product-attributes-item">Kiszerelés: <span><?php the_field('kiszereles'); ?>ml</span></div>
+    <div class="btn flex flex-space-between woocommerce-product-attributes-item">Termék/karton: <span><?php the_field('termekkarton'); ?></span></div>
+    <div class="btn flex flex-space-between woocommerce-product-attributes-item">Termék/raklap: <span><?php the_field('termekraklap'); ?></span></div>
 	<!-- <?php // foreach ( $product_attributes as $product_attribute_key => $product_attribute ) : ?>
 		<div class="btn woocommerce-product-attributes-item woocommerce-product-attributes-item--<?php // echo esc_attr( $product_attribute_key ); ?>">
 			<div class="woocommerce-product-attributes-item__label"><?php // echo wp_kses_post( $product_attribute['label'] ); ?></div>
