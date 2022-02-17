@@ -44,7 +44,7 @@ get_header();
 				while ( $loop->have_posts() ) : $loop->the_post();
 				global $product;
 				$id = get_the_ID();
-				$title = the_title();
+				$title = get_the_title();
             	$image = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full', false ); ?>
 
 					<div class="card">
