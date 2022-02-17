@@ -47,6 +47,23 @@ if ( $related_products ) : ?>
 
 		<?php woocommerce_product_loop_end(); ?>
 
+		<div class="container">
+			<div class="grid grid-2 grid-gap-2">
+				<div class="card">
+					<a href="">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
+						<div class="btn">Háztartási termékek</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/ipari.jpg" alt="Ipari termékek">
+						<div class="btn">Ipari termékek</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
 	</section>
 	<?php
 endif;
