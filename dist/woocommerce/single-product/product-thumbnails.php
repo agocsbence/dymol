@@ -35,6 +35,8 @@ $attachment_ids = $product->get_gallery_image_ids();
 // }
 
 ?>
+<?php var_dump( $product->get_image_id() ) ?>
+
 <div class="swiper mb-1" id="productSwiper">
     <div class="swiper-wrapper">
 		<?php
@@ -53,8 +55,8 @@ $attachment_ids = $product->get_gallery_image_ids();
 	<!-- <div class="swiper-button-next"></div>
 	<div class="swiper-button-prev"></div> -->
 </div>
-<?php if($attachment_ids > 1) { //only show if more than 1 ?>
-	<div class="swiper" id="productThumbnailSwiper">
+
+<div class="swiper" id="productThumbnailSwiper">
 	<div class="swiper-wrapper">
 		<?php
             foreach($attachment_ids as $attachment_id) {
@@ -67,7 +69,6 @@ $attachment_ids = $product->get_gallery_image_ids();
         ?>
 	</div>
 </div>
-<?php }  ?>
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
