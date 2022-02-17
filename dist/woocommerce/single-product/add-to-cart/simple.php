@@ -32,6 +32,17 @@ if ( $product->is_in_stock() ) : ?>
 	<div>
 		<!-- short description -->
 		<div class="woocommerce-product-details__short-description">
+			<h1>insert tab here</h1>
+			<?php
+			$colors = get_field('szinek');
+			if ($colors) {
+				foreach ($colors as $color) {
+					var_dump($color);
+				}
+			}?>
+			<h2>Kiszerelés: <?php the_field('kiszereles'); ?>ml</h2>
+			<h2>Termék/karton: <?php the_field('termekkarton'); ?></h2>
+			<h2>Termék/raklap: <?php the_field('termekraklap'); ?></h2>
 			<?php the_content(); // WPCS: XSS ok. ?>
 		</div>
 		<!-- price -->
