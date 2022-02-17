@@ -28,6 +28,21 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 <div>
 	<!-- price -->
 	<h1>insert tab here</h1>
+	<div class="flex">
+		<div class="btn" onclick="openTab('description')">Leírás</div>
+		<div class="btn" onclick="openTab('specs')">Specifikáció</div>
+	</div>
+	<div class="tabs">
+		<div class="tab" id="description">
+			<?php the_content(); ?>
+		</div>
+		<div class="tab" id="specs" style="display: none">
+			<p>Kiszerelés: <?php the_field('kiszereles'); ?>ml</p>
+			<p>Termék/karton: <?php the_field('termekkarton'); ?></p>
+			<p>Termék/raklap: <?php the_field('termekraklap'); ?></p>
+		</div>
+	</div>
+
 	<div class="product-variants">
 		<?php
 		$colors = get_field('szinek');
@@ -37,10 +52,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 			<? }
 		}?>
 	</div>
-	<h2>Kiszerelés: <?php the_field('kiszereles'); ?>ml</h2>
-	<h2>Termék/karton: <?php the_field('termekkarton'); ?></h2>
-	<h2>Termék/raklap: <?php the_field('termekraklap'); ?></h2>
-	<?php the_content(); ?>
+	
 	<div class="mb-1 btn <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></div>
 
 	<form class="variations_form cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data' data-product_id="<?php echo absint( $product->get_id() ); ?>" data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. ?>">
