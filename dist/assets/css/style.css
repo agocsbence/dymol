@@ -295,12 +295,14 @@ header {
   background: transparent;
   z-index: 998;
   transition: all .6s ease;
-  position: absolute;
-  top: 0;
-  left: 0; }
-  header.fixed {
-    background: #fff;
-    position: fixed; }
+  position: relative; }
+  header.has-hero {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    header.has-hero.fixed {
+      background: #fff;
+      position: fixed; }
   header .header-logo {
     max-width: 25vw;
     display: flex;
