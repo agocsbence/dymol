@@ -16,22 +16,22 @@
                 text-decoration: line-through;
             }
         }
-        .product-variants {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: flex-start;
-            .variant {
-                width: 2rem;
-                height: 2rem;
-                border-radius: 50%;
-                margin-right: 3px;
-                margin-bottom: 3px;
-            }
-        }
     }
 }
 
+.product-variants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    .variant {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+}
 
 //old
 .product-tile {
