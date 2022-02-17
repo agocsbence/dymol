@@ -27,10 +27,10 @@ if ( ! $product_attributes ) {
     <div class="btn woocommerce-product-attributes-item">Kiszerelés: <?php the_field('kiszereles'); ?>ml</div>
     <div class="btn woocommerce-product-attributes-item">Termék/karton: <?php the_field('termekkarton'); ?></div>
     <div class="btn woocommerce-product-attributes-item">Termék/raklap: <?php the_field('termekraklap'); ?></div>
-	<?php foreach ( $product_attributes as $product_attribute_key => $product_attribute ) : ?>
-		<div class="btn woocommerce-product-attributes-item woocommerce-product-attributes-item--<?php echo esc_attr( $product_attribute_key ); ?>">
-			<div class="woocommerce-product-attributes-item__label"><?php echo wp_kses_post( $product_attribute['label'] ); ?></div>
-			<div class="woocommerce-product-attributes-item__value"><?php echo wp_kses_post( $product_attribute['value'] ); ?></div>
+	<!-- <?php // foreach ( $product_attributes as $product_attribute_key => $product_attribute ) : ?>
+		<div class="btn woocommerce-product-attributes-item woocommerce-product-attributes-item--<?php // echo esc_attr( $product_attribute_key ); ?>">
+			<div class="woocommerce-product-attributes-item__label"><?php // echo wp_kses_post( $product_attribute['label'] ); ?></div>
+			<div class="woocommerce-product-attributes-item__value"><?php // echo wp_kses_post( $product_attribute['value'] ); ?></div>
         </div>
-	<?php endforeach; ?>
+	<?php // endforeach; ?> -->
 </div>
