@@ -39,7 +39,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 	<h2>Termék/karton: <?php the_field('termekkarton'); ?></h2>
 	<h2>Termék/raklap: <?php the_field('termekraklap'); ?></h2>
 	<?php the_content(); ?>
-	<h3 class="mb-1 <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></h3>
+	<div class="mb-1 btn <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></div>
 
 	<form class="variations_form cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data' data-product_id="<?php echo absint( $product->get_id() ); ?>" data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. ?>">
 		<?php do_action( 'woocommerce_before_variations_form' ); ?>
