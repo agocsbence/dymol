@@ -30,7 +30,7 @@ if ( ! is_a( $product, 'WC_Product' ) ) {
 
 	<a href="<?php echo esc_url( $product->get_permalink() ); ?>">
 		<?php echo $product->get_image(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-		<span class="product-title"><?php echo mb_strimwidth($product->get_name(), 0, 30, '...'); ?></span>
+		<span class="product-title">Hello <?php echo mb_strimwidth($product->get_name(), 0, 30, '...'); ?></span>
 	</a>
 
 	<?php if ( ! empty( $show_rating ) ) : ?>
