@@ -3,13 +3,12 @@ var mobileMenuToggle = document.querySelector('#mobileMenuToggler');
 var mobileMenuClose = document.querySelector('#mobileMenuClose');
 var header = document.querySelector('header');
 
-let bigText = document.querySelector('#bigText'),
-    logoText = document.querySelector('#logoText'),
-    triggerPos = window.innerHeight - bigText.offsetHeight;
-
-console.log(header.offsetHeight);
-
 if (header.classList.contains('has-hero')) {
+    
+    let bigText = document.querySelector('#bigText'),
+        logoText = document.querySelector('#logoText'),
+        triggerPos = window.innerHeight - bigText.offsetHeight;
+
     window.addEventListener('scroll', (e) => {
         var scrollPos = window.scrollY;
         if (scrollPos >= triggerPos) {
