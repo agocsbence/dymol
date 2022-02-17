@@ -660,13 +660,12 @@ form input[type="submit"] {
 .variations select {
   background: #fff;
   color: #ed1c24;
-  border: 2px solid #ed1c24;
-  font-size: 13px;
-  padding: .4rem .8rem;
+  border: 1px solid #ed1c24;
+  padding: 3px 12px;
   border-radius: 12px;
-  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  font-size: 17px;
   margin: 1rem 0;
   display: inline-block;
   margin-right: 0 !important; }
@@ -711,12 +710,6 @@ input.qty {
 
 .product-type-simple .summary form.cart:before, .product-type-simple .summary form.cart:after {
   display: none !important; }
-
-.price {
-  font-size: 28px !important;
-  line-height: 35px !important;
-  font-weight: 700 !important;
-  color: #ed1c24 !important; }
 
 .woocommerce-variation-price {
   text-align: right; }

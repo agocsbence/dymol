@@ -29,13 +29,12 @@
     select {
         background: $white;
         color: $red;
-        border: 2px solid $red;
-        font-size: 13px;
-        padding: .4rem .8rem;
+        border: 1px solid $red;
+        padding: 3px 12px;
         border-radius: 12px;
-        font-weight: 700;
         text-transform: uppercase;
         text-align: center;
+        font-size: $font-size;
         margin: 1rem 0;
         display: inline-block;
         margin-right: 0 !important;
@@ -87,13 +86,6 @@ input.qty {
     &:after {
         display: none !important;
     }
-}
-
-.price {
-    font-size: 28px !important;
-    line-height: 35px !important;
-    font-weight: 700 !important;
-    color: $red !important;
 }
 
 .woocommerce-variation-price {
