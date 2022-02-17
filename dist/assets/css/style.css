@@ -350,27 +350,26 @@ footer {
   footer .footer-contact a {
     font-size: 100%; }
 
-.card .product-details .product-data .btn {
-  margin-top: 0; }
-
-.card .product-details .product-data .product-title {
-  white-space: nowrap;
+.card {
   overflow: hidden; }
-
-.card .product-details .product-data .product-discount-price {
-  text-decoration: line-through; }
-
-.card .product-details .product-variants {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start; }
-  .card .product-details .product-variants .variant {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    margin-right: 3px;
-    margin-bottom: 3px; }
+  .card .product-details .product-data .btn {
+    margin-top: 0; }
+  .card .product-details .product-data .product-title {
+    white-space: nowrap;
+    overflow: hidden; }
+  .card .product-details .product-data .product-discount-price {
+    text-decoration: line-through; }
+  .card .product-details .product-variants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start; }
+    .card .product-details .product-variants .variant {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      margin-right: 3px;
+      margin-bottom: 3px; }
 
 .product-tile img {
   border-radius: 20px; }

@@ -54,8 +54,6 @@ if ( $product->is_in_stock() ) : ?>
 
 				do_action( 'woocommerce_after_add_to_cart_quantity' );
 				?>
-
-				<span><?php the_field('mertekegyseg'); ?></span>
 			</div>
 
 			<div class="text-right">
