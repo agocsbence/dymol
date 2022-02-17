@@ -369,6 +369,8 @@ footer {
 
 .card {
   overflow: hidden; }
+  .card img {
+    width: 100%; }
   .card .product-details .product-data .btn {
     margin-top: 0; }
   .card .product-details .product-data .product-title {
