@@ -27,6 +27,17 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 <div>
 	<!-- price -->
+	<h1>insert tab here</h1>
+	<?php
+	$colors = get_field('szinek');
+	if ($colors) {
+		foreach ($colors as $color) {
+			var_dump($color);
+		}
+	}?>
+	<h2>Kiszerelés: <?php the_field('kiszereles'); ?>ml</h2>
+	<h2>Termék/karton: <?php the_field('termekkarton'); ?></h2>
+	<h2>Termék/raklap: <?php the_field('termekraklap'); ?></h2>
 	<?php the_content(); ?>
 	<h3 class="mb-1 <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></h3>
 
