@@ -42,14 +42,16 @@ get_header();
 			
 			if ( $loop->have_posts() ) :
 				while ( $loop->have_posts() ) : $loop->the_post();
-				global $product; ?>
+				global $product;
+				$id = get_the_ID();
+            	$image = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full', false ); ?>
 
 					<div class="card">
 						<a href="<?php echo get_permalink(); ?>">
-							<img src="<?php echo woocommerce_get_product_thumbnail(); ?>" alt="<?php the_title(); ?>">
+							<img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
 							<div class="product-details grid grid-2 grid-gap-1">
 								<div class="product-data">
-									<div class="btn"><?php echo get_the_title(); ?></div>
+									<div class="btn"><?php the_title(); ?></div>
 									<div class="btn"><?php $product->get_price(); ?></div>
 								</div>
 								<div class="product-variants">
