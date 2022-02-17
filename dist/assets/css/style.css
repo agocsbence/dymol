@@ -749,6 +749,20 @@ input.qty {
 .woocommerce div.product .woocommerce-tabs ul.tabs::before {
   display: none; }
 
+.woocommerce ul.products li.product .price,
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+  background: #fff !important;
+  color: #ed1c24 !important;
+  border: 1px solid #ed1c24 !important;
+  font-size: 17px !important;
+  padding: 3px 12px !important;
+  border-radius: 1rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  margin: 1rem 0 !important;
+  display: inline-block !important; }
+
 @media screen and (min-width: 991px) {
   .rolunk-lead {
     max-width: 40rem;
