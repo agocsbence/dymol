@@ -11,7 +11,7 @@ if (header.classList.contains('has-hero')) {
 
     window.addEventListener('scroll', (e) => {
         var scrollPos = window.scrollY;
-        if (scrollPos >= triggerPos - 150) {
+        if (scrollPos >= triggerPos - 300) {
             bigText.classList.add('hidden');
             logoText.classList.remove('hidden');
         } else {
