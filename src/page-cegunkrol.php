@@ -46,7 +46,7 @@ get_header(); ?>
     <div class="container">
         <div class="grid grid-2 grid-gap-2 mt-4">
             <div class="textbox">
-                <p><?php the_field('kapcsolat'); ?></p>
+                <p><?php the_field('kapcsolat_adatok'); ?></p>
             </div>
             <div id="map" style="width: 100%; height: 100%;"></div>
         </div>
