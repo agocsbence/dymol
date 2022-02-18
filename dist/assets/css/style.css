@@ -402,7 +402,8 @@ footer {
 .bordered {
   padding: 2rem;
   border: 1px solid #ed1c24;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  color: #ed1c24; }
 
 .btn,
 .button,
