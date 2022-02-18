@@ -399,19 +399,10 @@ footer {
     margin-right: 3px;
     margin-bottom: 3px; }
 
-.product-tile img {
-  border-radius: 20px; }
-
-.product-tile .product-name {
-  font-size: 13px;
-  line-height: 19px;
-  font-weight: bold;
-  margin-left: .6rem; }
-
-.product-tile .product-price {
-  margin-top: .6rem;
-  margin-left: .6rem;
-  display: none; }
+.bordered {
+  padding: 2rem;
+  border: 1px solid #ed1c24;
+  border-radius: 1rem; }
 
 .btn,
 .button,

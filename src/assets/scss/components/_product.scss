@@ -33,20 +33,8 @@
     }
 }
 
-//old
-.product-tile {
-    img {
-        border-radius: 20px;
-    }
-    .product-name {
-        font-size: 13px;
-        line-height: 19px;
-        font-weight: bold;
-        margin-left: .6rem;
-    }
-    .product-price {
-        margin-top: .6rem;
-        margin-left: .6rem;
-        display: none;
-    }
+.bordered {
+    padding: 2rem;
+    border: 1px solid $red;
+    border-radius: 1rem;
 }
