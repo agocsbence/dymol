@@ -84,14 +84,15 @@ get_header();
 			<div class="card">
 				<a href="">
 					<img src="<?php bloginfo('template_url') ?>/assets/img/termek-3.png" alt="Dymosept">
-					<div class="product-details grid grid-2 grid-gap-1">
+					<div class="product-details">
 						<div class="product-data">
 							<div class="btn product-title">Zum dishwasher</div>
+							<br>
 							<div class="btn product-price">8888Ft</div>
-						</div>
-						<div class="product-variants">
-							<div class="variant" style="background-color: #FEDE17;"></div>
-							<div class="variant" style="background-color: #52D3DB;"></div>
+							<div class="product-variants">
+								<div class="variant" style="background-color: #FEDE17;"></div>
+								<div class="variant" style="background-color: #52D3DB;"></div>
+							</div>
 						</div>
 					</div>
 				</a>
@@ -99,18 +100,19 @@ get_header();
 			<div class="card">
 				<a href="">
 					<img src="<?php bloginfo('template_url') ?>/assets/img/termek-4.png" alt="Zum kitchen">
-					<div class="product-details grid grid-2 grid-gap-1">
+					<div class="product-details">
 						<div class="product-data">
 							<div class="btn product-title">Zum dishwasher</div>
+							<br>
 							<div class="btn product-price">8888Ft</div>
-						</div>
-						<div class="product-variants">
-							<div class="variant" style="background-color: #84B25D;"></div>
-							<div class="variant" style="background-color: #BC3F39;"></div>
-							<div class="variant" style="background-color: #FE7817;"></div>
-							<div class="variant" style="background-color: #6552DB;"></div>
-							<div class="variant" style="background-color: #426E54;"></div>
-							<div class="variant" style="background-color: #FEDE17;"></div>
+							<div class="product-variants">
+								<div class="variant" style="background-color: #84B25D;"></div>
+								<div class="variant" style="background-color: #BC3F39;"></div>
+								<div class="variant" style="background-color: #FE7817;"></div>
+								<div class="variant" style="background-color: #6552DB;"></div>
+								<div class="variant" style="background-color: #426E54;"></div>
+								<div class="variant" style="background-color: #FEDE17;"></div>
+							</div>
 						</div>
 					</div>
 				</a>
@@ -118,19 +120,19 @@ get_header();
 			<div class="card">
 				<a href="">
 					<img src="<?php bloginfo('template_url') ?>/assets/img/termek-4.png" alt="Zum dishwasher">
-					<div class="product-details grid grid-2 grid-gap-1">
+					<div class="product-details">
 						<div class="product-data">
 							<div class="btn product-title">Zum dishwasher</div>
-							<div class="btn btn-disabled product-discount-price">8888Ft</div>
+							<br>
 							<div class="btn product-price">8888Ft</div>
-						</div>
-						<div class="product-variants">
-							<div class="variant" style="background-color: #84B25D;"></div>
-							<div class="variant" style="background-color: #BC3F39;"></div>
-							<div class="variant" style="background-color: #FE7817;"></div>
-							<div class="variant" style="background-color: #6552DB;"></div>
-							<div class="variant" style="background-color: #426E54;"></div>
-							<div class="variant" style="background-color: #FEDE17;"></div>
+							<div class="product-variants">
+								<div class="variant" style="background-color: #84B25D;"></div>
+								<div class="variant" style="background-color: #BC3F39;"></div>
+								<div class="variant" style="background-color: #FE7817;"></div>
+								<div class="variant" style="background-color: #6552DB;"></div>
+								<div class="variant" style="background-color: #426E54;"></div>
+								<div class="variant" style="background-color: #FEDE17;"></div>
+							</div>
 						</div>
 					</div>
 				</a>
