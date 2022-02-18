@@ -18,10 +18,10 @@ get_header(); ?>
         <div class="bordered flex flex-column flex-row-center">
             <div class="grid grid-2">
                 <div class="textbox">
-                    <p><?php the_filed('szoveg_bal'); ?></p>
+                    <p><?php the_field('szoveg_bal'); ?></p>
                 </div>
                 <div class="textbox">
-                    <p><?php the_filed('szoveg_jobb'); ?></p>
+                    <p><?php the_field('szoveg_jobb'); ?></p>
                 </div>
             </div>
             <img src="<?php bloginfo('template_url') ?>/assets/img/markak.png" alt="Márkák">
