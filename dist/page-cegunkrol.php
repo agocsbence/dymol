@@ -257,6 +257,6 @@ get_header(); ?>
         });
     }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS283uJIpV2r7KAFOGueUOO8CQnArZc6E&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwbEkqTiiWeRDNMgAYiEHZXuLflGDqkCQ&callback=initMap"></script>
 
 <?php get_footer();
