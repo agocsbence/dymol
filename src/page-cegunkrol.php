@@ -48,7 +48,7 @@ get_header(); ?>
             <div class="textbox">
                 <p><?php the_field('kapcsolat_adatok'); ?></p>
             </div>
-            <div id="map" style="width: 100%; height: 100%;"></div>
+            <div id="map" style="width: 100%; height: 100%; min-height: 400px"></div>
         </div>
     </div>
 </section>
