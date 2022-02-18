@@ -11,11 +11,11 @@ get_header(); ?>
 <section class="py-4">
     <div class="container">
         <div class="border-top">
-            <h1><?php the_title(); ?></h1>
+            <h1 class="uppercase"><?php the_title(); ?></h1>
         </div>
     </div>
     <div class="container">
-        <div class="bordered flex flex-column flex-row-center">
+        <div class="bordered flex flex-column flex-row-center mt-2">
             <div class="grid grid-2">
                 <div class="textbox">
                     <p><?php the_field('szoveg_bal'); ?></p>
@@ -24,7 +24,9 @@ get_header(); ?>
                     <p><?php the_field('szoveg_jobb'); ?></p>
                 </div>
             </div>
-            <img src="<?php bloginfo('template_url') ?>/assets/img/markak.png" alt="Márkák">
+            <div class="container">
+                <img src="<?php bloginfo('template_url') ?>/assets/img/markak.png" alt="Márkák">
+            </div>
         </div>
     </div>
 </section>

@@ -860,6 +860,9 @@ p {
   font-size: 17px;
   line-height: 22px; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 .text-block p {
   font-weight: 300;
   font-size: 20px;
