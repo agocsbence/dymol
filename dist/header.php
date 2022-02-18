@@ -30,7 +30,7 @@
 <style>
     #wpadminbar {display: none;}
 </style>
-    <header class="<?php if (is_home() || is_page_template('page-bergyartas.php') ) { echo 'has-hero'; } ?>">
+    <header class="<?php if (is_home() || is_page_template('page-bergyartas.php') || is_page_template('page-cegunkrol.php') ) { echo 'has-hero'; } ?>">
         <div class="flex container">
             <div class="header-logo">
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
