@@ -3,9 +3,11 @@
         border: 1px solid $red;
         border-radius: 1rem;
         padding: 0 1rem;
+        overflow: hidden;
         .accordion-content {
             height: 0;
             transition: all .3s ease;
+            overflow: hidden;
         }
         .accordion-header {
             display: flex;

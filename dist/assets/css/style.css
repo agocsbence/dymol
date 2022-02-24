@@ -536,10 +536,12 @@ form input[type="submit"] {
 .accordion-wrapper .accordion {
   border: 1px solid #ed1c24;
   border-radius: 1rem;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  overflow: hidden; }
   .accordion-wrapper .accordion .accordion-content {
     height: 0;
-    transition: all .3s ease; }
+    transition: all .3s ease;
+    overflow: hidden; }
   .accordion-wrapper .accordion .accordion-header {
     display: flex;
     flex-direction: row;
