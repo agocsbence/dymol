@@ -10,7 +10,7 @@
             cursor: pointer;
             &.opened {
                 transition: all .3s ease;
-                span {
+                span:last-child {
                     transform: rotate(45deg);
                 }
                 &+.accordion-content {

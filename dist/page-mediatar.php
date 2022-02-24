@@ -40,8 +40,8 @@ get_header(); ?>
                 <div class="accordion">
                     <div class="accordion-header">
                         <h1>Tisztashow kiállítás</h1>
-                        <p>2016</p>
-                        <div class="accordion-arrow"><span>+</span></div>
+                        <span>2016</span>
+                        <span>+</span>
                     </div>
                     <div class="accordion-content">
                         <div class="text-block">

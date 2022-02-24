@@ -543,7 +543,7 @@ form input[type="submit"] {
   cursor: pointer; }
   .accordion-wrapper .accordion .accordion-header.opened {
     transition: all .3s ease; }
-    .accordion-wrapper .accordion .accordion-header.opened span {
+    .accordion-wrapper .accordion .accordion-header.opened span:last-child {
       transform: rotate(45deg); }
     .accordion-wrapper .accordion .accordion-header.opened + .accordion-content {
       height: 100%;
