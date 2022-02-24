@@ -608,6 +608,11 @@ marquee {
     border-top: 1px solid $red;
 }
 
+.bordered {
+    border: 1px solid $red;
+    color: $red;
+}
+
 .section-title {
     text-transform: uppercase;
 }
