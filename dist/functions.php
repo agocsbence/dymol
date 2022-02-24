@@ -118,3 +118,6 @@ function themes_taxonomy() {
     );
 }
 add_action( 'init', 'themes_taxonomy');
+
+// register language strings
+pll_register_string( 'ferdio', 'Katalógus');

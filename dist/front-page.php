@@ -37,9 +37,22 @@ get_header();
 			</div>
 			<div class="card">
 				<h2 class="section-title mb-2">Ipari termékek</h2>
-				<a href="">
-					<img src="<?php bloginfo('template_url') ?>/assets/img/ipari.jpg" alt="Ipari termékek">
-				</a>
+				<img src="<?php bloginfo('template_url') ?>/assets/img/ipari.jpg" alt="Ipari termékek">
+				<div class="flex">
+					<?php
+						$taxonomy = 'product_cat';
+						$terms    = get_terms([
+							'taxonomy'    => $taxonomy,
+							'hide_empty'  => true,
+							'parent'      => 16
+						]);
+
+						foreach ( $terms as $term ) {
+							$term_link = get_term_link( $term, $taxonomy );
+							echo '<a class="btn mr-1 '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
+						}
+					?>
+				</div>
 			</div>
 		</div>
 	</div>
