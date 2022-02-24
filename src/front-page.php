@@ -20,11 +20,16 @@ get_header();
 				<h2 class="section-title mb-2">Háztartási termékek</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
 				<?php
-					$args = array('parent' => 26);
-					$categories = get_categories( $args );
-					var_dump($categories);
-					foreach($categories as $category) { 
-						echo '<a href="' . get_category_link( $category->term_id ) . '" class="btn" title="' . sprintf( __( "Összes termék itt: %s" ), $category->name ) . '" ' . '>' . $category->name. '(' . $category->count . ')' .'</a>';
+					$taxonomy = 'product_cat';
+					$terms    = get_terms([
+						'taxonomy'    => $taxonomy,
+						'hide_empty'  => true,
+						'parent'      => 16
+					]);
+
+					foreach ( $terms as $term ) {
+						$term_link = get_term_link( $term, $taxonomy );
+						echo '<a class="btn '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
 					}
 				?>
 			</div>
