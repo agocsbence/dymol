@@ -17,7 +17,8 @@ get_header(); ?>
             $katalogusok = get_field('katalogus');
             if ($katalogusok) {
                 foreach($katalogusok as $katalogus) {
-                    echo "<a href=". $katalogus['katalogus_fajl'] ." target='blank'><img src=". $katalogus['kep'][0] ." class='bordered' alt='Dymol katalógus'></a>";
+                    var_dump($katalogus['kep']);
+                    echo "<a href=". $katalogus['katalogus_fajl'] ." target='blank'><img src=". $katalogus['kep'] ." class='bordered' alt='Dymol katalógus'></a>";
                 }
             }
 
