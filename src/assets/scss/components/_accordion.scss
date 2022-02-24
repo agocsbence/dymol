@@ -1,12 +1,13 @@
 .accordion-wrapper {
     .accordion {
+        border: 1px solid $red;
+        border-radius: 1rem;
+        padding: 0 1rem;
         .accordion-header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: .6rem;
-            margin-bottom: 1rem;
             cursor: pointer;
             &.opened {
                 transition: all .3s ease;
@@ -22,6 +23,7 @@
         .accordion-content {
             height: 0;
             display: none;
+            margin-top: 2rem;
             margin-bottom: 4rem;
         }
     }

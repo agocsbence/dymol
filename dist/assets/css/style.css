@@ -533,26 +533,28 @@ form input[type="submit"] {
     .filter-wrapper.opened .filter-content {
       display: block; }
 
-.accordion-wrapper .accordion .accordion-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: .6rem;
-  margin-bottom: 1rem;
-  cursor: pointer; }
-  .accordion-wrapper .accordion .accordion-header.opened {
-    transition: all .3s ease; }
-    .accordion-wrapper .accordion .accordion-header.opened span:last-child {
-      transform: rotate(45deg); }
-    .accordion-wrapper .accordion .accordion-header.opened + .accordion-content {
-      height: 100%;
-      display: block; }
-
-.accordion-wrapper .accordion .accordion-content {
-  height: 0;
-  display: none;
-  margin-bottom: 4rem; }
+.accordion-wrapper .accordion {
+  border: 1px solid #ed1c24;
+  border-radius: 1rem;
+  padding: 0 1rem; }
+  .accordion-wrapper .accordion .accordion-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; }
+    .accordion-wrapper .accordion .accordion-header.opened {
+      transition: all .3s ease; }
+      .accordion-wrapper .accordion .accordion-header.opened span:last-child {
+        transform: rotate(45deg); }
+      .accordion-wrapper .accordion .accordion-header.opened + .accordion-content {
+        height: 100%;
+        display: block; }
+  .accordion-wrapper .accordion .accordion-content {
+    height: 0;
+    display: none;
+    margin-top: 2rem;
+    margin-bottom: 4rem; }
 
 .swiper-slide {
   background-size: cover;
