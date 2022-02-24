@@ -20,7 +20,7 @@ get_header();
 				<h2 class="section-title mb-2">Háztartási termékek</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
 				<?php
-					$args = array('parent' => 16);
+					$args = array('parent' => 26);
 					$categories = get_categories( $args );
 					var_dump($categories);
 					foreach($categories as $category) { 
