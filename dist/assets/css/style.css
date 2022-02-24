@@ -399,12 +399,6 @@ footer {
     margin-right: 3px;
     margin-bottom: 3px; }
 
-.bordered {
-  padding: 2rem;
-  border: 1px solid #ed1c24;
-  border-radius: 1rem;
-  color: #ed1c24; }
-
 .btn,
 .button,
 .button.alt {
@@ -546,12 +540,11 @@ form input[type="submit"] {
   align-items: center;
   padding-bottom: .6rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #ed1c24;
   cursor: pointer; }
   .accordion-wrapper .accordion .accordion-header.opened {
     transition: all .3s ease; }
-    .accordion-wrapper .accordion .accordion-header.opened img {
-      transform: rotate(180deg); }
+    .accordion-wrapper .accordion .accordion-header.opened span {
+      transform: rotate(45deg); }
     .accordion-wrapper .accordion .accordion-header.opened + .accordion-content {
       height: 100%;
       display: block; }
@@ -1221,6 +1214,10 @@ marquee img {
 
 .border-top {
   border-top: 1px solid #ed1c24; }
+
+.bordered {
+  border: 1px solid #ed1c24;
+  color: #ed1c24; }
 
 .section-title {
   text-transform: uppercase; }

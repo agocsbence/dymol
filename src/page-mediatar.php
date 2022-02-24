@@ -28,4 +28,32 @@ get_header(); ?>
     </div>
 </section>
 
+<section class="py-4">
+    <div class="container">
+        <div class="border-top">
+            <h1 class="uppercase"><?php _e('Képgaléria', 'dymol'); ?></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mt-4">
+            <div class="accordion-wrapper">
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h1>Tisztashow kiállítás</h1>
+                        <p>2016</p>
+                        <div class="accordion-arrow"><span>+</span></div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="text-block">
+                            <p>lorem</p>
+                            <p>ipsum</p>
+                            <p>dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php get_footer();
