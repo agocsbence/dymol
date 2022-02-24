@@ -554,7 +554,8 @@ form input[type="submit"] {
     height: 0;
     display: none;
     margin-top: 2rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    transition: all .3s ease; }
 
 .swiper-slide {
   background-size: cover;
