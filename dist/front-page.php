@@ -17,15 +17,20 @@ get_header();
 	<div class="container">
 		<div class="grid grid-2 grid-gap-2">
 			<div class="card">
-				<a href="">
-					<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
-					<div class="btn">Háztartási termékek</div>
-				</a>
+				<div class="border-top">Háztartási termékek</div>
+				<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
+				<?php
+					$args = array('parent' => 16);
+					$categories = get_categories( $args );
+					foreach($categories as $category) { 
+						echo '<a href="' . get_category_link( $category->term_id ) . '" class="btn" title="' . sprintf( __( "Összes termék itt: %s" ), $category->name ) . '" ' . '>' . $category->name. '(' . $category->count . ')' .'</a>';
+					}
+				?>
 			</div>
 			<div class="card">
+				<div class="border-top">Ipari termékek</div>
 				<a href="">
 					<img src="<?php bloginfo('template_url') ?>/assets/img/ipari.jpg" alt="Ipari termékek">
-					<div class="btn">Ipari termékek</div>
 				</a>
 			</div>
 		</div>
