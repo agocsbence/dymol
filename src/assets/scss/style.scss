@@ -612,6 +612,12 @@ marquee {
     border: 1px solid $red;
     color: $red;
 }
+.round-bordered {
+    border: 1px solid $red;
+    color: $red;
+    padding: 2rem;
+    border-radius: 1rem;
+}
 
 .section-title {
     text-transform: uppercase;

@@ -1222,5 +1222,11 @@ marquee img {
   border: 1px solid #ed1c24;
   color: #ed1c24; }
 
+.round-bordered {
+  border: 1px solid #ed1c24;
+  color: #ed1c24;
+  padding: 2rem;
+  border-radius: 1rem; }
+
 .section-title {
   text-transform: uppercase; }

@@ -15,7 +15,7 @@ get_header(); ?>
         </div>
     </div>
     <div class="container">
-        <div class="bordered flex flex-column flex-row-center mt-4">
+        <div class="round-bordered flex flex-column flex-row-center mt-4">
             <div class="grid grid-2 grid-gap-2">
                 <div class="textbox">
                     <p><?php the_field('szoveg_bal'); ?></p>
