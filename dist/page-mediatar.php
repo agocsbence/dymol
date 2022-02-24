@@ -7,7 +7,7 @@ get_header(); ?>
 <section class="py-4">
     <div class="container">
         <div class="border-top">
-            <h1 class="uppercase"><?php pll_e('Katalógus', 'dymol'); ?></h1>
+            <h1 class="uppercase"><?php _e('Katalógus', 'dymol'); ?></h1>
         </div>
     </div>
     <div class="container">
@@ -20,7 +20,7 @@ get_header(); ?>
                     echo "<a href=". $katalogus['katalogus_fajl'] ." target='blank'><img src=". $katalogus['kep'] ." class='bordered' alt='Dymol katalógus'></a>";
                 }
             }
-            
+
             ?>
         </div>
     </div>
