@@ -3,6 +3,10 @@
         border: 1px solid $red;
         border-radius: 1rem;
         padding: 0 1rem;
+        .accordion-content {
+            height: 0;
+            transition: all .3s ease;
+        }
         .accordion-header {
             display: flex;
             flex-direction: row;
@@ -16,16 +20,10 @@
                 }
                 &+.accordion-content {
                     height: 100%;
-                    display: block;
+                    margin-top: 2rem;
+                    margin-bottom: 4rem;
                 }
             }
-        }
-        .accordion-content {
-            height: 0;
-            display: none;
-            margin-top: 2rem;
-            margin-bottom: 4rem;
-            transition: all .3s ease;
         }
     }
 }

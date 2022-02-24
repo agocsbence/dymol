@@ -537,6 +537,9 @@ form input[type="submit"] {
   border: 1px solid #ed1c24;
   border-radius: 1rem;
   padding: 0 1rem; }
+  .accordion-wrapper .accordion .accordion-content {
+    height: 0;
+    transition: all .3s ease; }
   .accordion-wrapper .accordion .accordion-header {
     display: flex;
     flex-direction: row;
@@ -549,13 +552,8 @@ form input[type="submit"] {
         transform: rotate(45deg); }
       .accordion-wrapper .accordion .accordion-header.opened + .accordion-content {
         height: 100%;
-        display: block; }
-  .accordion-wrapper .accordion .accordion-content {
-    height: 0;
-    display: none;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    transition: all .3s ease; }
+        margin-top: 2rem;
+        margin-bottom: 4rem; }
 
 .swiper-slide {
   background-size: cover;
