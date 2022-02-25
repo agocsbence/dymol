@@ -60,7 +60,7 @@
                     <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
                     <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
                     <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
-                    <a href="" class="nav-item btn">Médiatár</a>
+                    <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
                 </nav>
                 <!-- <div id="mobileMenuToggler" class="header-menu desktop-only menu-toggler">
                     <img src="<?php // bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü">
