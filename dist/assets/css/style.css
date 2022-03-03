@@ -388,6 +388,14 @@ header {
   .mobile-menu nav {
     display: flex;
     flex-direction: column; }
+    .mobile-menu nav a {
+      margin-left: .6rem; }
+
+.hamburger {
+  padding-right: 0; }
+
+.hamburger-inner {
+  margin-top: 1px; }
 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
   background: #ed1c24;
