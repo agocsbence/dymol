@@ -56,6 +56,7 @@ header {
                 margin-top: 1rem;
                 margin-left: .5rem;
                 &.nav-icon {
+                    position: relative;
                     img {
                         height: 2rem;
                     }
@@ -75,7 +76,7 @@ header {
 
 .cart-counter {
     position: absolute;
-    top: 10px;
+    top: 0;
     right: -7px;
     font-size: 12px;
     background: $red;
