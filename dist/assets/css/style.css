@@ -299,6 +299,9 @@ input#rememberme {
 
 .header-wrapper {
   justify-content: space-between; }
+  @media screen and (max-width: 991px) {
+    .header-wrapper .container {
+      justify-content: space-between; } }
 
 header {
   flex-direction: row;
@@ -368,9 +371,11 @@ header {
 
 .mobile-menu {
   position: absolute;
-  top: 0;
+  top: 59px;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  height: calc(100vh - 59px);
+  background: #fff; }
   .mobile-menu nav {
     display: flex;
     flex-direction: column; }
