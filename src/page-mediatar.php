@@ -39,7 +39,6 @@ get_header(); ?>
             <div class="accordion-wrapper">
                 <?php
                 $mediatar = get_field('mediatar');
-                var_dump($mediatar)['kepek'];
                 if ($mediatar) {
                     foreach($mediatar as $galeria) { ?>
 
@@ -53,7 +52,6 @@ get_header(); ?>
                                 <div class="text-block">
                                     <div class="grid-4 grid-gap-1">
                                         <?php $kepek = $galeria['kepek'];
-                                        var_dump($kepek);
                                         if ($kepek) {
                                             foreach($kepek as $kep) {
                                                 echo '<img src=' . $kep['kep']['url'] . ' alt=' . $galeria['galeria_cim'] . '>';
