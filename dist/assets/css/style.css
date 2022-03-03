@@ -388,8 +388,9 @@ header {
   .mobile-menu nav {
     display: flex;
     flex-direction: column; }
-    .mobile-menu nav a {
-      margin-left: .6rem; }
+
+.mobile-nav-buttons a {
+  margin-left: .6rem; }
 
 .hamburger {
   padding-right: 0; }
