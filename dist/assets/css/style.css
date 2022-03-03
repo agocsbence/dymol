@@ -362,7 +362,8 @@ header {
   color: #fff; }
 
 .mobile-menu {
-  background: red; }
+  display: flex;
+  flex-direction: column; }
 
 footer {
   background: #d8d8d850;
@@ -863,6 +864,12 @@ strong {
 marquee img {
   height: 17px;
   width: auto; }
+
+.z-0 {
+  z-index: 0; }
+
+.z-1 {
+  z-index: 1; }
 
 .p-0 {
   padding: 0; }

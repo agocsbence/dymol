@@ -35,7 +35,7 @@
     #wpadminbar {display: none;}
 </style>
     <header class="<?php if (is_home() || is_page_template('page-bergyartas.php') || is_page_template('page-cegunkrol.php') ) { echo 'has-hero'; } ?>">
-        <div class="flex container">
+        <div class="flex container z-1">
             <div class="header-logo">
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="<?php if (is_home()) { echo 'hidden'; } ?>"></a>
@@ -73,7 +73,7 @@
 				</span>
 			</button>
         </div>
-        <div class="mobile-menu mobile-only">
+        <div class="mobile-menu mobile-only z-0">
             <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
             <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
             <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
