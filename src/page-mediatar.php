@@ -75,8 +75,8 @@ get_header(); ?>
 <script src="<?php bloginfo('template_url') ?>/assets/js/lightgallery.min.js"></script>
 <script type="text/javascript">
     const galleries = document.querySelectorAll('gallery');
-    galleries.forEach(gallery => console.log(gallery.classList);
-    
+    galleries.forEach(gallery => console.log(gallery.classList));
+
     lightGallery(document.getElementById('animated-thumbnials'), {
         thumbnail: true,
         animateThumb: false,
