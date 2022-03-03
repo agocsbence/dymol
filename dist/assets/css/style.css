@@ -601,6 +601,10 @@ form input[type="submit"] {
   #productThumbnailSwiper .swiper-slide-thumb-active {
     opacity: 1; }
 
+.gallery-image {
+  background-position: center center;
+  padding-bottom: 56.25%; }
+
 #home-hero {
   height: 100vh;
   background-size: cover;
@@ -615,36 +619,6 @@ form input[type="submit"] {
     transition: all .3s ease; }
     #home-hero img.hidden {
       opacity: 0; }
-
-.lexikon-wrapper {
-  display: flex;
-  flex-direction: row-reverse; }
-  .lexikon-wrapper .lexikon-alphabet {
-    width: 18px; }
-    .lexikon-wrapper .lexikon-alphabet .alphabet-letters {
-      text-align: right;
-      font-size: 13px;
-      line-height: 15px;
-      font-weight: 700;
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      position: sticky;
-      position: -webkit-sticky;
-      top: 10px; }
-  .lexikon-wrapper .lexikon {
-    margin-right: 1rem; }
-    .lexikon-wrapper .lexikon h2 {
-      border-bottom: 2px solid darkgreen;
-      margin-bottom: 2rem;
-      position: sticky;
-      position: -webkit-sticky;
-      top: -1px;
-      background: #fff; }
-    .lexikon-wrapper .lexikon .lexikon-article {
-      margin-bottom: 2rem; }
-      .lexikon-wrapper .lexikon .lexikon-article p {
-        font-weight: 300 !important; }
 
 @media screen and (min-width: 991px) {
   #product-images-wrapper {
