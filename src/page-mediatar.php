@@ -39,8 +39,10 @@ get_header(); ?>
             <div class="accordion-wrapper">
                 <?php
                 $mediatar = get_field('mediatar');
+                $n = 0;
                 if ($mediatar) {
-                    foreach($mediatar as $galeria) { ?>
+                    foreach($mediatar as $galeria) {
+                        $n++; ?>
 
                         <div class="accordion mb-1">
                             <div class="accordion-header">
@@ -50,7 +52,7 @@ get_header(); ?>
                             </div>
                             <div class="accordion-content">
                                 <div class="text-block">
-                                    <div class="grid grid-4 grid-gap-1">
+                                    <div class="grid grid-4 grid-gap-1" id="gallery-<?php echo $n; ?>">
                                         <?php $kepek = $galeria['kepek'];
                                         if ($kepek) {
                                             foreach($kepek as $kep) { ?>
@@ -69,5 +71,14 @@ get_header(); ?>
         </div>
     </div>
 </section>
+
+<script src="<?php bloginfo('template_url') ?>/assets/js/lightgallery.min.js"></script>
+<script type="text/javascript">
+    lightGallery(document.getElementById('animated-thumbnials'), {
+        thumbnail: true,
+        animateThumb: false,
+        showThumbByDefault: false
+    }); 
+</script>
 
 <?php get_footer();
