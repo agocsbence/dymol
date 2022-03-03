@@ -80,7 +80,7 @@ get_header(); ?>
             thumbnail: true,
             animateThumb: false,
             showThumbByDefault: false
-        });
+        })
     );
 </script>
 
