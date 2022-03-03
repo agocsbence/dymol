@@ -35,7 +35,7 @@
     #wpadminbar {display: none;}
 </style>
     <header class="<?php if (is_home() || is_page_template('page-bergyartas.php') || is_page_template('page-cegunkrol.php') ) { echo 'has-hero'; } ?>">
-        <div class="flex container z-1">
+        <div class="flex container header-wrapper z-1">
             <div class="header-logo">
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="<?php if (is_home()) { echo 'hidden'; } ?>"></a>
@@ -67,17 +67,34 @@
                     <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
                 </nav>
             </div>
-            <button class="hamburger hamburger--squeeze mobile-only" type="button">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</button>
+            <div class="mobile-only mobile-nav-buttons">
+                <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
+                <a href="" class="nav-item btn btn-dark">SRC</a>
+                <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
+                    <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
+                    <?php
+                        global $woocommerce;
+                        if($woocommerce->cart->cart_contents_count > 0) { ?>
+                            <div class="cart-counter">
+                                <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+                            </div>
+                        <?php }
+                    ?>
+                </a>
+                <button class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
         </div>
         <div class="mobile-menu mobile-only z-0">
-            <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
-            <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
-            <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
-            <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
+            <nav>
+                <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
+                <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
+                <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
+                <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
+            </nav>
         </div>
     </header>
     <main>

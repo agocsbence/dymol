@@ -297,6 +297,9 @@ input#rememberme {
 .page-content {
   margin-top: 5rem; }
 
+.header-wrapper {
+  justify-content: space-between; }
+
 header {
   flex-direction: row;
   width: 100%;
@@ -362,8 +365,13 @@ header {
   color: #fff; }
 
 .mobile-menu {
-  display: flex;
-  flex-direction: column; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  .mobile-menu nav {
+    display: flex;
+    flex-direction: column; }
 
 footer {
   background: #d8d8d850;
