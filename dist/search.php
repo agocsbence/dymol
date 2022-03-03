@@ -12,7 +12,7 @@ get_header(); ?>
         </div>
     </div>
     <div class="container">
-        <div class="mt-4">
+        <div class="mt-4 w-50 m-w-100">
             <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <input type="search" class="search-field" placeholder="Keresés..." value="<?php echo get_search_query(); ?>" name="s" />
                 <button type="submit" class="search-submit btn">Keresés</button>
@@ -25,7 +25,7 @@ get_header(); ?>
     <div class="container">
         <?php if ( have_posts() ) : ?>
 
-            <h2 class="mb-2">Termékek</h2>
+            <h2 class="mb-2 border-top">Termékek</h2>
             <div class="grid grid-4 grid-gap-1">
                 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -42,8 +42,7 @@ get_header(); ?>
 
                 <?php endwhile; ?>
             </div>
-            <hr>
-            <h2 class="mb-2">Cikkek</h2>
+            <h2 class="mb-2 border-top">Cikkek</h2>
             <div class="grid grid-4 grid-gap-1">
                 <?php rewind_posts(); ?>
                 <?php while ( have_posts() ) : the_post(); ?>
