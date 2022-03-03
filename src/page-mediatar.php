@@ -52,6 +52,7 @@ get_header(); ?>
                                 <div class="text-block">
                                     <div class="grid-4 grid-gap-1">
                                         <?php $kepek = get_sub_field('kepek');
+                                        var_dump($kepek);
                                         if ($kepek) {
                                             foreach($kepek as $kep) {
                                                 echo '<img src=' . $kep['kep']['url'] . ' alt=' . $galeria['galeria_cim'] . '>';
