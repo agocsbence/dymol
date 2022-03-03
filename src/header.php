@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/lg-fb-comment-box.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/lg-transitions.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/lightgallery.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/hamburgers.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.0.7">
 </head>
 
@@ -66,10 +67,17 @@
                     <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
                 </nav>
             </div>
-            <div id="mobileMenuToggler" class="header-menu mobile-only menu-toggler">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü">
+            <button class="hamburger hamburger--squeeze mobile-only" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+            <div class="mobile-menu mobile-only">
+                <div class="header-logo">
+                    <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
+                    <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="<?php if (is_home()) { echo 'hidden'; } ?>"></a>
+                </div>
             </div>
-            <div id="mobileMenuClose" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/close.svg" alt="Bezár"></div>
         </div>
     </header>
     <main>
