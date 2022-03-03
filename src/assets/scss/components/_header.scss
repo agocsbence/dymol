@@ -18,6 +18,9 @@ header {
         &.fixed {
             background: $white;
             position: fixed;
+            .header-wrapper {
+                background: $white;
+            }
         }
     }
     .header-logo {

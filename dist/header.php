@@ -35,58 +35,60 @@
     #wpadminbar {display: none;}
 </style>
     <header class="<?php if (is_home() || is_page_template('page-bergyartas.php') || is_page_template('page-cegunkrol.php') ) { echo 'has-hero'; } ?>">
-        <div class="flex container header-wrapper z-1">
-            <div class="header-logo">
-                <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
-                <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="<?php if (is_home()) { echo 'hidden'; } ?>"></a>
-            </div>
-            <div class="navbar desktop-only" id="navbar">
-                <div class="pre-menu">
-                    <a href="" class="nav-item btn btn-dark">HU</a>
-                    <a href="" class="nav-item btn">EN</a>
-                    <a href="" class="nav-item btn">Partner rendelés</a>
-                    <a href="" class="nav-item btn btn-dark">Belépés</a>
-                    <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
-                    <a href="" class="nav-item btn btn-dark">Keresés</a>
-                    <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
-                        <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
-                        <?php
-                            global $woocommerce;
-                            if($woocommerce->cart->cart_contents_count > 0) { ?>
-                                <div class="cart-counter">
-                                    <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
-                                </div>
-                            <?php }
-                        ?>
-                    </a>
+        <div class="header-wrapper z-1">
+            <div class="flex container">
+                <div class="header-logo">
+                    <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
+                    <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="<?php if (is_home()) { echo 'hidden'; } ?>"></a>
                 </div>
-                <nav>
-                    <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
-                    <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
-                    <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
-                    <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
-                </nav>
-            </div>
-            <div class="mobile-only">
-                <div class="flex flex-row-center mobile-nav-buttons">
-                    <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
-                    <a href="" class="nav-item btn btn-dark">SRC</a>
-                    <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
-                        <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
-                        <?php
-                            global $woocommerce;
-                            if($woocommerce->cart->cart_contents_count > 0) { ?>
-                                <div class="cart-counter">
-                                    <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
-                                </div>
-                            <?php }
-                        ?>
-                    </a>
-                    <button class="hamburger hamburger--squeeze" type="button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
+                <div class="navbar desktop-only" id="navbar">
+                    <div class="pre-menu">
+                        <a href="" class="nav-item btn btn-dark">HU</a>
+                        <a href="" class="nav-item btn">EN</a>
+                        <a href="" class="nav-item btn">Partner rendelés</a>
+                        <a href="" class="nav-item btn btn-dark">Belépés</a>
+                        <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
+                        <a href="" class="nav-item btn btn-dark">Keresés</a>
+                        <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
+                            <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
+                            <?php
+                                global $woocommerce;
+                                if($woocommerce->cart->cart_contents_count > 0) { ?>
+                                    <div class="cart-counter">
+                                        <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+                                    </div>
+                                <?php }
+                            ?>
+                        </a>
+                    </div>
+                    <nav>
+                        <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
+                        <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
+                        <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
+                        <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
+                    </nav>
+                </div>
+                <div class="mobile-only">
+                    <div class="flex flex-row-center mobile-nav-buttons">
+                        <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
+                        <a href="" class="nav-item btn btn-dark">SRC</a>
+                        <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
+                            <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
+                            <?php
+                                global $woocommerce;
+                                if($woocommerce->cart->cart_contents_count > 0) { ?>
+                                    <div class="cart-counter">
+                                        <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+                                    </div>
+                                <?php }
+                            ?>
+                        </a>
+                        <button class="hamburger hamburger--squeeze" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
