@@ -51,10 +51,10 @@ get_header(); ?>
                             <div class="accordion-content">
                                 <div class="text-block">
                                     <div class="grid-4 grid-gap-1">
-                                        <?php $kepek = get_field('kepek')
+                                        <?php $kepek = get_field('kepek');
                                         if ($kepek) {
                                             foreach($kepek as $kep) {
-                                                echo '<img src=' . $kep['kep']['url'] . ' alt=' . $galeria['galeria_cim'] . '>'      
+                                                echo '<img src=' . $kep['kep']['url'] . ' alt=' . $galeria['galeria_cim'] . '>';
                                             }
                                         }
                                         ?>
