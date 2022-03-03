@@ -12,10 +12,10 @@ get_header(); ?>
         </div>
     </div>
     <div class="container">
-        <div class="mt-4 w-50 m-w-100">
+        <div class="mt-4">
             <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <input type="search" class="search-field" placeholder="Keresés..." value="<?php echo get_search_query(); ?>" name="s" />
-                <button type="submit" class="search-submit btn">Keresés</button>
+                <button type="submit" class="search-submit btn"><?php _e('Keresés', 'dymol'); ?></button>
             </form>
         </div>
     </div>
@@ -25,46 +25,37 @@ get_header(); ?>
     <div class="container">
         <?php if ( have_posts() ) : ?>
 
-            <h2 class="mb-2 border-top">Termékek</h2>
+            <h2 class="mb-2 border-top"><?php _e('Termékek', 'dymol'); ?></h2>
             <div class="grid grid-4 grid-gap-1">
                 <?php while ( have_posts() ) : the_post(); ?>
 
                     <?php if ($post->post_type == 'product') { ?>
-                        <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
-                            <?php echo woocommerce_get_product_thumbnail(); ?>
-                            <h4 class="name"><?php echo get_the_title(); ?></h4>
-                            <?php
-                            // $post_type = get_post_type( $post->ID );
-                            // echo $post_type;
-                            ?>
-                        </a>
+                        <?php $id = get_the_ID(); ?>
+                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full', false ); ?>
+
+                            <div class="card">
+                                <a href="<?php echo get_permalink(); ?>">
+                                    <img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
+                                    <div class="product-details">
+                                        <div class="product-data">
+                                            <div class="btn product-title"><?php echo mb_strimwidth(get_the_title(), 0, 30, '...'); ?></div>
+                                            <br>
+                                            <div class="btn product-price"><?php echo $product->get_price_html(); ?></div>
+                                            <div class="product-variants">
+                                                <?php $colors = get_field('szinek');
+                                                if ($colors) {
+                                                    foreach ($colors as $color) { ?>
+                                                        <div class="variant" style="background-color: <?php echo $color['szin']; ?>;"></div>
+                                                    <? }
+                                                }?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                     <?php } ?>
 
                 <?php endwhile; ?>
-            </div>
-            <h2 class="mb-2 border-top">Cikkek</h2>
-            <div class="grid grid-4 grid-gap-1">
-                <?php rewind_posts(); ?>
-                <?php while ( have_posts() ) : the_post(); ?>
-
-                    <?php if ($post->post_type == 'post') { ?>
-                        <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
-                            <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
-                            <h4 class="name"><?php echo get_the_title(); ?></h4>
-                        </a>
-                    <?php } ?>
-
-                <?php endwhile; ?> 
-            </div>
-
-            <?php else : ?>
-
-            <div id="no-result">
-                <div class="flex flex-row flex-row-start flex-space-between flex-m-column">
-                    <div class="text-content">
-                        <h1 class="lead mb-2">Nincs találat!</h1>
-                    </div>
-                </div>
             </div>
 
         <?php endif; ?>

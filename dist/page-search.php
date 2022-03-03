@@ -13,7 +13,7 @@ get_header();
         <div class="mt-4">
             <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <input type="search" class="search-field" placeholder="Keresés..." value="<?php echo get_search_query(); ?>" name="s" />
-                <button type="submit" class="search-submit btn">Keresés</button>
+                <button type="submit" class="search-submit btn"><?php _e('Keresés', 'dymol'); ?></button>
             </form>
         </div>
     </div>
