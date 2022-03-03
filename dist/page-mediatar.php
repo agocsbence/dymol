@@ -50,11 +50,11 @@ get_header(); ?>
                             </div>
                             <div class="accordion-content">
                                 <div class="text-block">
-                                    <div class="grid-4 grid-gap-1">
+                                    <div class="grid grid-4 grid-gap-1">
                                         <?php $kepek = $galeria['kepek'];
                                         if ($kepek) {
                                             foreach($kepek as $kep) {
-                                                echo '<img src=' . $kep['kep']['url'] . ' alt=' . $galeria['galeria_cim'] . '>';
+                                                echo "<div class='gallery-image' style='background-image: url(" . $kep['kep']['url'] . ");>";
                                             }
                                         }
                                         ?>
