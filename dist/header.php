@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/lg-transitions.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/lightgallery.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/hamburgers.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.0.9">
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.1.0">
 </head>
 
 <body <?php body_class(); ?>>
@@ -112,7 +112,7 @@
                 <div class="btn">Médiatár</div>
             </a>
         </nav>
-        <div class="mobile-pre-menu">
+        <div class="mobile-pre-menu mt-4">
             <div class="container">
                 <a href="" class="nav-item">
                     <div class="btn btn-dark">HU</div>
