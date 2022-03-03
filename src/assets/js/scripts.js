@@ -70,3 +70,11 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
+
+const hamburger = document.querySelector(".hamburger"),
+      mobileMenu = document.querySelector('.mobile-menu');
+
+hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle("is-active");
+    mobileMenu.classList.toggle("is-active");
+});
