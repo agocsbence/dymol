@@ -358,6 +358,9 @@ header {
   justify-content: center;
   color: #fff; }
 
+.mobile-menu {
+  background: red; }
+
 footer {
   background: #d8d8d850;
   color: #ed1c24;

@@ -73,10 +73,10 @@
 				</span>
 			</button>
             <div class="mobile-menu mobile-only">
-                <div class="header-logo">
-                    <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
-                    <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="<?php if (is_home()) { echo 'hidden'; } ?>"></a>
-                </div>
+                <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
+                <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
+                <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
+                <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
             </div>
         </div>
     </header>
