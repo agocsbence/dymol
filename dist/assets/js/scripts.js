@@ -75,6 +75,7 @@ const hamburger = document.querySelector(".hamburger"),
       mobileMenu = document.querySelector('.mobile-menu');
 
 hamburger.addEventListener("click", function() {
+    console.log('hamburger clicked');
     hamburger.classList.toggle("is-active");
     mobileMenu.classList.toggle("is-active");
 });
