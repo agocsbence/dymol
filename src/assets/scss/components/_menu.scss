@@ -20,6 +20,8 @@
 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
     background: $red;
+    border-radius: 0;
+    height: 2px;
 }
 .hamburger.is-active:hover, .hamburger:hover {
     opacity: 1;

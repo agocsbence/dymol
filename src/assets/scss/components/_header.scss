@@ -56,7 +56,6 @@ header {
                 margin-top: 1rem;
                 margin-left: .5rem;
                 &.nav-icon {
-                    position: relative;
                     img {
                         height: 2rem;
                     }
@@ -72,6 +71,10 @@ header {
             }
         }
     }
+}
+
+.nav-icon {
+    position: relative;
 }
 
 .cart-counter {
