@@ -54,7 +54,7 @@ get_header(); ?>
                                         <?php $kepek = $galeria['kepek'];
                                         if ($kepek) {
                                             foreach($kepek as $kep) { ?>
-                                                <?php var_dump($kep['kep']); ?>
+                                                <?php var_dump($kep['kep']['url']); ?>
                                                 <div class="gallery-image" style="background-image: url(<?php $kep['kep']['url'] ?>);"></div>
                                             <?php }
                                         }
