@@ -17,3 +17,10 @@
         flex-direction: column;
     }
 }
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background: $red;
+}
+.hamburger.is-active:hover, .hamburger:hover {
+    opacity: 1;
+}

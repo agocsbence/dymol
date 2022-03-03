@@ -388,6 +388,12 @@ header {
     display: flex;
     flex-direction: column; }
 
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  background: #ed1c24; }
+
+.hamburger.is-active:hover, .hamburger:hover {
+  opacity: 1; }
+
 footer {
   background: #d8d8d850;
   color: #ed1c24;
