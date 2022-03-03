@@ -102,13 +102,13 @@
             <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item">
                 <div class="btn">Termékek</div>
             </a>
-            <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">
+            <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item">
                 <div class="btn">Cégünkről</div>
             </a>
-            <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">
+            <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item">
                 <div class="btn">Bérgyártás</div>
             </a>
-            <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">
+            <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item">
                 <div class="btn">Médiatár</div>
             </a>
         </nav>
