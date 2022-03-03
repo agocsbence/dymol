@@ -71,7 +71,9 @@
                 <div class="mobile-only">
                     <div class="flex flex-row-center mobile-nav-buttons">
                         <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
-                        <a href="" class="nav-item btn btn-dark">SRC</a>
+                        <a href="" class="nav-icon btn btn-dark">
+                            <img src="<?php bloginfo('template_url') ?>/assets/img/search.svg" alt="Keresés">
+                        </a>
                         <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
                             <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
                             <?php
