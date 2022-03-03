@@ -42,7 +42,7 @@ get_header(); ?>
                 if ($mediatar) {
                     foreach($mediatar as $galeria) { ?>
 
-                        <div class="accordion">
+                        <div class="accordion mb-1">
                             <div class="accordion-header">
                                 <h1><?php echo $galeria['galeria_cim'] ?></h1>
                                 <span><?php echo $galeria['galeria_evszam'] ?></span>
@@ -50,9 +50,15 @@ get_header(); ?>
                             </div>
                             <div class="accordion-content">
                                 <div class="text-block">
-                                    <p>lorem</p>
-                                    <p>ipsum</p>
-                                    <p>dolor sit amet</p>
+                                    <div class="grid-4 grid-gap-1">
+                                        <?php $kepek = get_field('kepek')
+                                        if ($kepek) {
+                                            foreach($kepek as $kep) {
+                                                echo '<img src=' . $kep['kep']['url'] . ' alt=' . $galeria['galeria_cim'] . '>'      
+                                            }
+                                        }
+                                        ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
