@@ -39,6 +39,7 @@ get_header(); ?>
             <div class="accordion-wrapper">
                 <?php
                 $mediatar = get_field('mediatar');
+                var_dump($mediatar);
                 if ($mediatar) {
                     foreach($mediatar as $galeria) { ?>
 
