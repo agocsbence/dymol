@@ -113,16 +113,19 @@
             </a>
         </nav>
         <div class="mobile-pre-menu">
-            <a href="" class="nav-item">
-                <div class="btn btn-dark">HU</div>
-            </a>
-            <a href="" class="nav-item">
-                <div class="btn">EN</div>
-            </a>
-            <a href="" class="nav-item">
-                <div class="btn">Partner rendelés</div>
-            </a>
-            <a href="<?php echo get_home_url(); ?>/login" class="nav-item btn btn-dark">Belépés</a>
+            <div class="container">
+                <a href="" class="nav-item">
+                    <div class="btn btn-dark">HU</div>
+                </a>
+                <a href="" class="nav-item">
+                    <div class="btn">EN</div>
+                </a>
+                <br>
+                <a href="" class="nav-item">
+                    <div class="btn">Partner rendelés</div>
+                </a>
+                <a href="<?php echo get_home_url(); ?>/login" class="nav-item btn btn-dark">Belépés</a>
+            </div>
         </div>
     </div>
     <main>
