@@ -378,6 +378,7 @@ header {
   height: 100vh;
   transform: translateY(-100%);
   background: #fff;
+  z-index: 1;
   transition: all .3s ease; }
   .mobile-menu.is-active {
     transform: translateY(0); }
