@@ -39,7 +39,7 @@
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-icon.png" alt="Dymol" id="logoIcon"></a>
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo-text.png" alt="Dymol" id="logoText" class="<?php if (is_home()) { echo 'hidden'; } ?>"></a>
             </div>
-            <div class="navbar" id="navbar">
+            <div class="navbar desktop-only" id="navbar">
                 <div class="pre-menu">
                     <a href="" class="nav-item btn btn-dark">HU</a>
                     <a href="" class="nav-item btn">EN</a>
@@ -65,11 +65,11 @@
                     <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
                     <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
                 </nav>
-                <!-- <div id="mobileMenuToggler" class="header-menu desktop-only menu-toggler">
-                    <img src="<?php // bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü">
-                </div>
-                <div id="mobileMenuClose" class="header-icon mobile-only menu-toggler"><img src="<?php // bloginfo('template_url') ?>/assets/img/icons/close.svg" alt="Bezár"></div> -->
             </div>
+            <div id="mobileMenuToggler" class="header-menu mobile-only menu-toggler">
+                <img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü">
+            </div>
+            <div id="mobileMenuClose" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/close.svg" alt="Bezár"></div>
         </div>
     </header>
     <main>
