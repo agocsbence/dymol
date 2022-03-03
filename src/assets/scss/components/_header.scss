@@ -5,6 +5,9 @@ header {
     z-index: 998;
     transition: all .6s ease;
     position: relative;
+    @media screen and (max-width: $tablet) {
+        background: $white;
+    }
     &.has-hero {
         position: absolute;
         top: 0;

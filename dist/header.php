@@ -72,12 +72,12 @@
 					<span class="hamburger-inner"></span>
 				</span>
 			</button>
-            <div class="mobile-menu mobile-only">
-                <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
-                <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
-                <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
-                <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
-            </div>
+        </div>
+        <div class="mobile-menu mobile-only">
+            <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
+            <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
+            <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
+            <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
         </div>
     </header>
     <main>
