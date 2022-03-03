@@ -75,15 +75,13 @@ get_header(); ?>
 <script src="<?php bloginfo('template_url') ?>/assets/js/lightgallery.min.js"></script>
 <script type="text/javascript">
     const galleries = document.querySelectorAll('.gallery');
-    galleries.forEach(gallery => createLightbox(this)));
-
-    function createLightbox(e) {
-        lightGallery(e, {
+    galleries.forEach(gallery => 
+        lightGallery(gallery, {
             thumbnail: true,
             animateThumb: false,
             showThumbByDefault: false
         });
-    } 
+    );
 </script>
 
 <?php get_footer();
