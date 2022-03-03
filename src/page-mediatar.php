@@ -52,7 +52,7 @@ get_header(); ?>
                             <div class="accordion-content">
                                 <div class="text-block">
                                     <div class="grid-4 grid-gap-1">
-                                        <?php $kepek = get_sub_field('kepek');
+                                        <?php $kepek = $galeria['kepek'];
                                         var_dump($kepek);
                                         if ($kepek) {
                                             foreach($kepek as $kep) {
