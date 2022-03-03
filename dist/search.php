@@ -26,7 +26,7 @@ get_header(); ?>
         <?php if ( have_posts() ) : ?>
 
             <h2 class="mb-2 border-top"><?php _e('Termékek', 'dymol'); ?></h2>
-            <div class="grid grid-4 grid-gap-1">
+            <div class="grid grid-4 grid-gap-1 mb-3">
                 <?php while ( have_posts() ) : the_post(); ?>
 
                     <?php if ($post->post_type == 'product') { ?>
