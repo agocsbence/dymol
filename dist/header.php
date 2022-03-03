@@ -67,25 +67,27 @@
                     <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
                 </nav>
             </div>
-            <div class="mobile-only mobile-nav-buttons">
-                <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
-                <a href="" class="nav-item btn btn-dark">SRC</a>
-                <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
-                    <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
-                    <?php
-                        global $woocommerce;
-                        if($woocommerce->cart->cart_contents_count > 0) { ?>
-                            <div class="cart-counter">
-                                <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
-                            </div>
-                        <?php }
-                    ?>
-                </a>
-                <button class="hamburger hamburger--squeeze" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
+            <div class="mobile-only">
+                <div class="flex flex-row-center mobile-nav-buttons">
+                    <a href="" class="nav-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a>
+                    <a href="" class="nav-item btn btn-dark">SRC</a>
+                    <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
+                        <img src="<?php bloginfo('template_url') ?>/assets/img/cart.svg" alt="Kosár">
+                        <?php
+                            global $woocommerce;
+                            if($woocommerce->cart->cart_contents_count > 0) { ?>
+                                <div class="cart-counter">
+                                    <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+                                </div>
+                            <?php }
+                        ?>
+                    </a>
+                    <button class="hamburger hamburger--squeeze" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="mobile-menu mobile-only z-0">
