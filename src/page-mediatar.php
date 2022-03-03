@@ -37,20 +37,28 @@ get_header(); ?>
     <div class="container">
         <div class="mt-4">
             <div class="accordion-wrapper">
-                <div class="accordion">
-                    <div class="accordion-header">
-                        <h1>Tisztashow kiállítás</h1>
-                        <span>2016</span>
-                        <span>+</span>
-                    </div>
-                    <div class="accordion-content">
-                        <div class="text-block">
-                            <p>lorem</p>
-                            <p>ipsum</p>
-                            <p>dolor sit amet</p>
+                <?php
+                $mediatar = get_field('mediatar');
+                if ($mediatar) {
+                    foreach($mediatar as $galeria) { ?>
+
+                        <div class="accordion">
+                            <div class="accordion-header">
+                                <h1><?php echo $galeria['galeria_cim'] ?></h1>
+                                <span><?php echo $galeria['galeria_evszam'] ?></span>
+                                <span>+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="text-block">
+                                    <p>lorem</p>
+                                    <p>ipsum</p>
+                                    <p>dolor sit amet</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+
+                    <?php }
+                } ?>
             </div>
         </div>
     </div>
