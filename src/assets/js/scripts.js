@@ -48,17 +48,6 @@ for (i = 0; i < accordionToggle.length; i++) {
     });
 }
 
-mobileMenuToggle.addEventListener('click', function() {
-    navbar.classList.add('opened');
-});
-mobileMenuClose.addEventListener('click', function() {
-    navbar.classList.remove('opened');
-});
-
-//toggle menu opening
-var mobileMenuToggle = document.querySelector('#mobileMenuToggler');
-var mobileMenuClose = document.querySelector('#mobileMenuClose');
-
 //show/hide navbar on scroll back
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -71,6 +60,7 @@ window.onscroll = function() {
     prevScrollpos = currentScrollPos;
 }
 
+//toggle menu opening
 const hamburger = document.querySelector(".hamburger"),
       mobileMenu = document.querySelector('.mobile-menu');
 
