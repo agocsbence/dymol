@@ -52,7 +52,7 @@ get_header(); ?>
                             </div>
                             <div class="accordion-content">
                                 <div class="text-block">
-                                    <div class="grid grid-4 grid-gap-1" id="gallery-<?php echo $n; ?>">
+                                    <div class="grid grid-4 grid-gap-1 gallery" id="gallery-<?php echo $n; ?>">
                                         <?php $kepek = $galeria['kepek'];
                                         if ($kepek) {
                                             foreach($kepek as $kep) { ?>
@@ -74,6 +74,9 @@ get_header(); ?>
 
 <script src="<?php bloginfo('template_url') ?>/assets/js/lightgallery.min.js"></script>
 <script type="text/javascript">
+    const galleries = document.querySelectorAll('gallery');
+    galleries.forEach(gallery => console.log(gallery.classList);
+    
     lightGallery(document.getElementById('animated-thumbnials'), {
         thumbnail: true,
         animateThumb: false,
