@@ -74,7 +74,7 @@ get_header(); ?>
 
 <script src="<?php bloginfo('template_url') ?>/assets/js/lightgallery.min.js"></script>
 <script type="text/javascript">
-    const galleries = document.querySelectorAll('.gallery');
+    const galleries = document.querySelectorAll('.galler');
     galleries.forEach(gallery => 
         lightGallery(gallery, {
             thumbnail: true,
