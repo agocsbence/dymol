@@ -24,11 +24,11 @@ do_action( 'woocommerce_before_account_navigation' );
 
 <div class="flex flex-row flex-row-start flex-column"><!-- start of flex container -->
 
-    <nav class="woocommerce-MyAccount-navigation">
+    <nav class="woocommerce-MyAccount-navigation mb-3">
         <ul class="flex flex-wrap">
             <?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
                 <li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?> font-300" style="margin-right: .3rem;">
-                    <a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>" class="btn"><?php echo esc_html( $label ); ?></a>
+                    <a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>" class="btn mb-0"><?php echo esc_html( $label ); ?></a>
                 </li>
             <?php endforeach; ?>
         </ul>
