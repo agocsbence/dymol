@@ -148,3 +148,19 @@ function dymol_template_loop_product_colors() {
         } 
     echo "</div>";
 }
+
+/**
+ * Change number of related products output
+ */ 
+function woo_related_products_limit() {
+    global $product;
+      
+      $args['posts_per_page'] = 3;
+      return $args;
+  }
+  add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
+    function jk_related_products_args( $args ) {
+      $args['posts_per_page'] = 3;
+      $args['columns'] = 3;
+      return $args;
+  }
