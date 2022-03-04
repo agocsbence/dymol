@@ -12,9 +12,18 @@
         .accordion-header {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             cursor: pointer;
+            h1, div {
+                flex: 1;
+            }
+            h1, span {
+                color: $red;
+            }
+            span:last-child {
+                color: $black;
+            }
             &.opened {
                 transition: all .3s ease;
                 span:last-child {

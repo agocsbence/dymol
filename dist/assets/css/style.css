@@ -601,9 +601,15 @@ form input[type="submit"] {
   .accordion-wrapper .accordion .accordion-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     cursor: pointer; }
+    .accordion-wrapper .accordion .accordion-header h1, .accordion-wrapper .accordion .accordion-header div {
+      flex: 1; }
+    .accordion-wrapper .accordion .accordion-header h1, .accordion-wrapper .accordion .accordion-header span {
+      color: #ed1c24; }
+    .accordion-wrapper .accordion .accordion-header span:last-child {
+      color: #000; }
     .accordion-wrapper .accordion .accordion-header.opened {
       transition: all .3s ease; }
       .accordion-wrapper .accordion .accordion-header.opened span:last-child {
