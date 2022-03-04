@@ -132,8 +132,8 @@ add_action( 'woocommerce_before_shop_loop_item', 'dymol_switch_loop_title' );
 
 function dymol_template_loop_product_title() {
     // echo '<h2 class="' . esc_attr( apply_filters( 'woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title' ) ) . '">' . get_the_title() . '</h2>';
-    echo '<h2 class="btn product-title mobile-only">' . mb_strimwidth(get_the_title(), 0, 14, '...') . '</h2>';
-    echo '<h2 class="btn product-title desktop-only">' . mb_strimwidth(get_the_title(), 0, 30, '...') . '</h2>';
+    echo '<h2 class="btn product-title mobile-only">' . mb_strimwidth(get_the_title(), 0, 14, '...') . '</h2></br>';
+    echo '<h2 class="btn product-title desktop-only">' . mb_strimwidth(get_the_title(), 0, 30, '...') . '</h2></br>';
 }
 
 function dymol_template_loop_product_colors() {
