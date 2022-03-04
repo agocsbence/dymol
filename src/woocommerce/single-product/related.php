@@ -47,7 +47,7 @@ if ( $related_products ) : ?>
 
 		<?php woocommerce_product_loop_end(); ?>
 
-		<div class="grid grid-2 grid-gap-2">
+		<div class="grid grid-2 grid-gap-2 my-4">
 			<div class="card">
 				<a href="<?php echo get_home_url(); ?>/termekkategoria/haztartasi-termekek/">
 					<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
