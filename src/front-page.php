@@ -19,7 +19,7 @@ get_header();
 			<div class="card">
 				<h2 class="section-title mb-2">Háztartási termékek</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
-				<div class="flex">
+				<div class="flex flex-wrap">
 					<?php
 						$taxonomy = 'product_cat';
 						$terms    = get_terms([
@@ -38,7 +38,7 @@ get_header();
 			<div class="card">
 				<h2 class="section-title mb-2">Ipari termékek</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/img/ipari.jpg" alt="Ipari termékek">
-				<div class="flex">
+				<div class="flex flex-wrap">
 					<?php
 						$taxonomy = 'product_cat';
 						$terms    = get_terms([
