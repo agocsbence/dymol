@@ -297,6 +297,11 @@ input#rememberme {
 .page-content {
   margin-top: 5rem; }
 
+#add_payment_method #payment ul.payment_methods li input,
+.woocommerce-cart #payment ul.payment_methods li input,
+.woocommerce-checkout #payment ul.payment_methods li input {
+  width: auto !important; }
+
 .header-wrapper {
   justify-content: space-between; }
   @media screen and (max-width: 991px) {
