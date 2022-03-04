@@ -606,9 +606,9 @@ form input[type="submit"] {
     cursor: pointer; }
     .accordion-wrapper .accordion .accordion-header h1, .accordion-wrapper .accordion .accordion-header .rightside {
       flex: 1; }
-      @media screen and (max-width: 991px) {
-        .accordion-wrapper .accordion .accordion-header h1 h1, .accordion-wrapper .accordion .accordion-header .rightside h1 {
-          flex: 6; } }
+    @media screen and (max-width: 991px) {
+      .accordion-wrapper .accordion .accordion-header h1 {
+        flex: 6; } }
     .accordion-wrapper .accordion .accordion-header .rightside {
       display: flex;
       justify-content: space-between; }

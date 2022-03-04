@@ -17,10 +17,10 @@
             cursor: pointer;
             h1, .rightside {
                 flex: 1;
-                @media screen and (max-width: $tablet) {
-                    h1 {
-                        flex: 6;
-                    }
+            }
+            @media screen and (max-width: $tablet) {
+                h1 {
+                    flex: 6;
                 }
             }
             .rightside {
