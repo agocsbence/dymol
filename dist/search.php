@@ -57,7 +57,7 @@ get_header(); ?>
 
                 <?php endwhile; ?>
             </div>
-
+            <?php else : echo 'Sajnos a keresett kifejezésre nem található eredmény.'; ?>
         <?php endif; ?>
     </div>
 </section>
