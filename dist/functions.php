@@ -137,12 +137,12 @@ function dymol_template_loop_product_title() {
 }
 
 function dymol_template_loop_product_colors() {
-    echo "<div class='product-variants'>" .
-        $colors = get_field('szinek');
+    $colors = get_field('szinek');
+    echo "<div class='product-variants'>" ;
         if ($colors) {
             foreach ($colors as $color) {
-                . "<div class='variant' style='background-color:".  echo $color['szin']; . ";'></div>" .
+                echo "<div class='variant' style='background-color:".  echo $color['szin']; . ";'></div>";
             }
         } 
-    . "</div>"
+    echo "</div>";
 }
