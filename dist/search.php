@@ -38,7 +38,7 @@ get_header(); ?>
                                     <img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
                                     <div class="product-details">
                                         <div class="product-data">
-                                            <div class="btn product-title"><?php echo mb_strimwidth(get_the_title(), 0, 30, '...'); ?></div>
+                                            <div class="btn product-title"><?php echo mb_strimwidth(get_the_title(), 0, 18, '...'); ?></div>
                                             <br>
                                             <div class="btn product-price"><?php echo $product->get_price_html(); ?></div>
                                             <div class="product-variants">
