@@ -73,7 +73,7 @@ hamburger.addEventListener("click", function() {
 //check if 'ipari' tag on body class to change logo
 const body = document.querySelector('body'),
     logoIcon = document.querySelector('#logoIcon');
-if(body.classList.contains('product_parent_cat_ipari-termekek')) {
-    console.log('ipari');
+
+if(body.classList.contains('product_parent_cat_ipari-tisztitoszerek')) {
     logoIcon.attributes.src.value = logoIcon.dataset.proicon;
 }
