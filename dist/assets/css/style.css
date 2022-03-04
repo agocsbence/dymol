@@ -500,9 +500,11 @@ footer {
   .button.alt.flex {
     display: flex !important; }
 
-a.btn {
+a.btn,
+.button {
   cursor: pointer !important; }
-  a.btn:hover {
+  a.btn:hover,
+  .button:hover {
     border: 1px solid #ed1c24 !important;
     background: #ed1c24 !important;
     color: #fff !important; }

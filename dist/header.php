@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/lg-transitions.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/lightgallery.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/hamburgers.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.1.0">
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.1.1">
 </head>
 
 <body <?php body_class(); ?>>

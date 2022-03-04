@@ -39,7 +39,8 @@
     }
 }
 
-a.btn {
+a.btn,
+.button {
     cursor: pointer !important;
     &:hover {
         border: 1px solid $red !important;
