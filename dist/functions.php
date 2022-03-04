@@ -126,6 +126,7 @@ add_action( 'init', 'themes_taxonomy');
 function dymol_switch_loop_title(){
     remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
     add_action( 'woocommerce_shop_loop_item_title', 'dymol_template_loop_product_title', 10 );
+    add_action( 'woocommerce_after_shop_loop_item_title', 'dymol_template_loop_product_colors', 10 );
 }
 add_action( 'woocommerce_before_shop_loop_item', 'dymol_switch_loop_title' );
 
@@ -133,4 +134,15 @@ function dymol_template_loop_product_title() {
     // echo '<h2 class="' . esc_attr( apply_filters( 'woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title' ) ) . '">' . get_the_title() . '</h2>';
     echo '<h2 class="btn product-title mobile-only">' . mb_strimwidth(get_the_title(), 0, 14, '...') . '</h2>';
     echo '<h2 class="btn product-title desktop-only">' . mb_strimwidth(get_the_title(), 0, 30, '...') . '</h2>';
+}
+
+function dymol_template_loop_product_colors() {
+    echo "<div class='product-variants'>" .
+        $colors = get_field('szinek');
+        if ($colors) {
+            foreach ($colors as $color) { .
+                "<div class='variant' style='background-color:".  echo $color['szin']; . ";'></div>" .
+            }
+        } 
+    . "</div>"
 }
