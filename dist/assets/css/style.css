@@ -718,7 +718,8 @@ form input[type="submit"] {
 .woocommerce div.product form.cart .reset_variations {
   display: none !important; }
 
-.variations select {
+.variations select,
+.woocommerce .woocommerce-ordering select {
   background: #fff;
   color: #ed1c24;
   border: 1px solid #ed1c24;

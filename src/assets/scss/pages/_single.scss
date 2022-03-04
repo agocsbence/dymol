@@ -25,7 +25,8 @@
     display: none !important;
 }
 
-.variations {
+.variations,
+.woocommerce .woocommerce-ordering {
     select {
         background: $white;
         color: $red;
