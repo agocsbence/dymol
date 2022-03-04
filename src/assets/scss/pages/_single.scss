@@ -42,6 +42,12 @@
     }
 }
 
+.woocommerce .woocommerce-ordering select {
+    @media screen and (max-width: $tablet) {
+        font-size: 13px;
+    }
+}
+
 .single_add_to_cart_button {
     background: $red !important;
     color: $white !important;

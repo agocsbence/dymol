@@ -732,6 +732,10 @@ form input[type="submit"] {
   display: inline-block;
   margin-right: 0 !important; }
 
+@media screen and (max-width: 991px) {
+  .woocommerce .woocommerce-ordering select {
+    font-size: 13px; } }
+
 .single_add_to_cart_button {
   background: #ed1c24 !important;
   color: #fff !important;
