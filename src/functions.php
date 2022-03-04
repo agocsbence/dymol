@@ -140,8 +140,8 @@ function dymol_template_loop_product_colors() {
     echo "<div class='product-variants'>" .
         $colors = get_field('szinek');
         if ($colors) {
-            foreach ($colors as $color) { .
-                "<div class='variant' style='background-color:".  echo $color['szin']; . ";'></div>" .
+            foreach ($colors as $color) {
+                . "<div class='variant' style='background-color:".  echo $color['szin']; . ";'></div>" .
             }
         } 
     . "</div>"
