@@ -49,13 +49,13 @@ if ( $related_products ) : ?>
 
 		<div class="grid grid-2 grid-gap-2">
 			<div class="card">
-				<a href="">
+				<a href="<?php echo get_home_url(); ?>/termekkategoria/haztartasi-termekek/">
 					<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
 					<div class="btn">Háztartási termékek</div>
 				</a>
 			</div>
 			<div class="card">
-				<a href="">
+				<a href="<?php echo get_home_url(); ?>/termekkategoria/ipari-tisztitoszerek/">
 					<img src="<?php bloginfo('template_url') ?>/assets/img/ipari.jpg" alt="Ipari termékek">
 					<div class="btn">Ipari termékek</div>
 				</a>
