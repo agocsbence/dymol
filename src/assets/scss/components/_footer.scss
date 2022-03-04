@@ -16,6 +16,9 @@ footer {
         background: transparent;
     }
     .footer-contact {
+        @media screen and (max-width: $tablet) {
+            margin-top: 4rem;
+        }
         a {
             font-size: 100%;
         }

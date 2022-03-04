@@ -426,6 +426,9 @@ footer {
     border: 0;
     border-bottom: 2px solid #ed1c24;
     background: transparent; }
+  @media screen and (max-width: 991px) {
+    footer .footer-contact {
+      margin-top: 4rem; } }
   footer .footer-contact a {
     font-size: 100%; }
 
