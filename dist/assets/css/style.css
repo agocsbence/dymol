@@ -807,6 +807,14 @@ input.qty {
         width: calc(100% - 6rem);
         margin: 3rem; } }
 
+.woocommerce-MyAccount-navigation li.is-active .btn {
+  border: 1px solid #ed1c24 !important;
+  background: #ed1c24 !important;
+  color: #fff !important; }
+
+.woocommerce-MyAccount-content {
+  width: 100% !important; }
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
