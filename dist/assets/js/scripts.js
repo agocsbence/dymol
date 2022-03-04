@@ -71,7 +71,9 @@ hamburger.addEventListener("click", function() {
 });
 
 //check if 'ipari' tag on body class to change logo
-const body = document.querySelector('body');
-if(body.classList.contains('product_parent_cat_haztartasi-termekek')) {
-    console.log('haztartasi');
+const body = document.querySelector('body'),
+    logoIcon = document.querySelector('#logoIcon');
+if(body.classList.contains('product_parent_cat_ipari-termekek')) {
+    console.log('ipari');
+    logoIcon.attributes.src.value = logoIcon.dataset.proicon;
 }
