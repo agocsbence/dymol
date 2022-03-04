@@ -31,9 +31,6 @@
 
 <body <?php body_class(); ?>>
 
-<style>
-    #wpadminbar {display: none;}
-</style>
     <header class="<?php if (is_home() || is_page_template('page-bergyartas.php') || is_page_template('page-cegunkrol.php') ) { echo 'has-hero'; } ?>">
         <div class="header-wrapper">
             <div class="flex container">
