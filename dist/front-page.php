@@ -44,7 +44,7 @@ get_header();
 						$terms    = get_terms([
 							'taxonomy'    => $taxonomy,
 							'hide_empty'  => true,
-							'parent'      => 16
+							'parent'      => 28
 						]);
 
 						foreach ( $terms as $term ) {

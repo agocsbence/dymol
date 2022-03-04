@@ -817,12 +817,12 @@ input.qty {
   box-sizing: border-box; }
 
 ::-moz-selection {
-  background: green;
-  color: #000; }
+  background: #ed1c24;
+  color: #fff; }
 
 ::selection {
-  background: green;
-  color: #000; }
+  background: #ed1c24;
+  color: #fff; }
 
 html {
   scroll-behavior: smooth;

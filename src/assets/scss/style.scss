@@ -53,13 +53,13 @@ $desktop-large: 2200px;
 }
 
 ::-moz-selection {
-    background: $green;
-    color: $black;
+    background: $red;
+    color: $white;
 }
 
 ::selection {
-    background: $green;
-    color: $black;
+    background: $red;
+    color: $white;
 }
 
 html {
