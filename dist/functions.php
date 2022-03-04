@@ -125,7 +125,7 @@ add_action( 'init', 'themes_taxonomy');
 //override wc-template-functions title loop
 function dymol_switch_loop_title(){
     remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
-    add_action( 'woocommerce_after_shop_loop_item_title', 'dymol_template_loop_product_title', 10 );
+    add_action( 'woocommerce_after_shop_loop_item_title', 'dymol_template_loop_product_title', 5 );
 }
 add_action( 'woocommerce_before_shop_loop_item', 'dymol_switch_loop_title' );
 
