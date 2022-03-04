@@ -47,8 +47,10 @@ get_header(); ?>
                         <div class="accordion mb-1">
                             <div class="accordion-header">
                                 <h1><?php echo $galeria['galeria_cim'] ?></h1>
-                                <span><?php echo $galeria['galeria_evszam'] ?></span>
-                                <span>+</span>
+                                <div class="right">
+                                    <span style="margin-right: 2rem;"><?php echo $galeria['galeria_evszam'] ?></span>
+                                    <span>+</span>
+                                </div>
                             </div>
                             <div class="accordion-content">
                                 <div class="text-block">
