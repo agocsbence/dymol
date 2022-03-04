@@ -15,11 +15,28 @@
             justify-content: flex-start;
             align-items: center;
             cursor: pointer;
-            h1, div {
+            h1, .rightside {
                 flex: 1;
+                @media screen and (max-width: $tablet) {
+                    h1 {
+                        flex: 6;
+                    }
+                }
             }
-            h1, span {
+            .rightside {
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width: $tablet) {
+                    justify-content: flex-end;
+                }
+            }
+            h1, .yeardate {
                 color: $red;
+            }
+            .yeardate {
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
             }
             span:last-child {
                 color: $black;

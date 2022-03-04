@@ -47,8 +47,8 @@ get_header(); ?>
                         <div class="accordion mb-1">
                             <div class="accordion-header">
                                 <h1><?php echo $galeria['galeria_cim'] ?></h1>
-                                <div class="flex flex-space-between">
-                                    <span style="margin-right: 2rem;"><?php echo $galeria['galeria_evszam'] ?></span>
+                                <div class="rightside">
+                                    <span class="yeardate" style="margin-right: 2rem;"><?php echo $galeria['galeria_evszam'] ?></span>
                                     <span>+</span>
                                 </div>
                             </div>

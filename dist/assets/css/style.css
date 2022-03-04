@@ -604,10 +604,22 @@ form input[type="submit"] {
     justify-content: flex-start;
     align-items: center;
     cursor: pointer; }
-    .accordion-wrapper .accordion .accordion-header h1, .accordion-wrapper .accordion .accordion-header div {
+    .accordion-wrapper .accordion .accordion-header h1, .accordion-wrapper .accordion .accordion-header .rightside {
       flex: 1; }
-    .accordion-wrapper .accordion .accordion-header h1, .accordion-wrapper .accordion .accordion-header span {
+      @media screen and (max-width: 991px) {
+        .accordion-wrapper .accordion .accordion-header h1 h1, .accordion-wrapper .accordion .accordion-header .rightside h1 {
+          flex: 6; } }
+    .accordion-wrapper .accordion .accordion-header .rightside {
+      display: flex;
+      justify-content: space-between; }
+      @media screen and (max-width: 991px) {
+        .accordion-wrapper .accordion .accordion-header .rightside {
+          justify-content: flex-end; } }
+    .accordion-wrapper .accordion .accordion-header h1, .accordion-wrapper .accordion .accordion-header .yeardate {
       color: #ed1c24; }
+    @media screen and (max-width: 991px) {
+      .accordion-wrapper .accordion .accordion-header .yeardate {
+        display: none; } }
     .accordion-wrapper .accordion .accordion-header span:last-child {
       color: #000; }
     .accordion-wrapper .accordion .accordion-header.opened {
