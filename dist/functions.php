@@ -154,13 +154,36 @@ function dymol_template_loop_product_colors() {
  */ 
 function woo_related_products_limit() {
     global $product;
-      
-      $args['posts_per_page'] = 3;
-      return $args;
-  }
-  add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
-    function jk_related_products_args( $args ) {
-      $args['posts_per_page'] = 3;
-      $args['columns'] = 3;
-      return $args;
-  }
+    
+    $args['posts_per_page'] = 3;
+    return $args;
+}
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
+function jk_related_products_args( $args ) {
+    $args['posts_per_page'] = 3;
+    $args['columns'] = 3;
+    return $args;
+}
+
+//add parent category to body class
+function woo_custom_taxonomy_in_body_class( $classes ){
+    $custom_terms = get_the_terms(0, 'product_cat');
+    if ($custom_terms) {
+      foreach ($custom_terms as $custom_term) {
+
+        // Check if the parent category exists:
+        if( $custom_term->parent > 0 ) {
+            // Get the parent product category:
+            $parent = get_term( $custom_term->parent, 'product_cat' );
+            // Append the parent class:
+            if ( ! is_wp_error( $parent ) )
+                $classes[] = 'product_parent_cat_' . $parent->slug;   
+        }
+
+        $classes[] = 'product_cat_' . $custom_term->slug;
+      }
+    }
+    return $classes;
+}
+
+add_filter( 'body_class', 'woo_custom_taxonomy_in_body_class' );
