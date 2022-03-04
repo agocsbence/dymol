@@ -69,3 +69,9 @@ hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("is-active");
     mobileMenu.classList.toggle("is-active");
 });
+
+//check if 'ipari' tag on body class to change logo
+const body = document.querySelector('body');
+if(body.classList.contains('product_parent_cat_haztartasi-termekek')) {
+    console.log('haztartasi');
+}
