@@ -43,7 +43,7 @@
                         <a href="" class="nav-item btn btn-dark">HU</a>
                         <a href="" class="nav-item btn">EN</a>
                         <a href="" class="nav-item btn">Partner rendelés</a>
-                        <a href="<?php echo get_home_url(); ?>/login" class="nav-item btn btn-dark">Belépés</a>
+                        <a href="<?php echo get_home_url(); ?>/fiokom" class="nav-item btn btn-dark">Belépés</a>
                         <!-- <a href="" class="nav-icon"><img src="<?php // bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a> -->
                         <a href="<?php echo get_home_url(); ?>/kereses" class="nav-item btn btn-dark">Keresés</a>
                         <a href="<?php echo get_home_url(); ?>/kosar" class="nav-icon">
@@ -121,7 +121,7 @@
                 <a href="" class="nav-item">
                     <div class="btn">Partner rendelés</div>
                 </a>
-                <a href="<?php echo get_home_url(); ?>/login" class="nav-item btn btn-dark">Belépés</a>
+                <a href="<?php echo get_home_url(); ?>/fiokom" class="nav-item btn btn-dark">Belépés</a>
             </div>
         </div>
     </div>

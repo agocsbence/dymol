@@ -55,9 +55,6 @@ $allowed_html = array(
 		esc_url( wc_get_endpoint_url( 'edit-account' ) )
 	);
 	?>
-    <div class="image-content my-2">
-        <img src="<?php bloginfo('template_url') ?>/assets/img/user.png" alt="Fiókom">
-    </div>
 </p>
 
 <?php
