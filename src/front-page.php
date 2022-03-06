@@ -7,14 +7,13 @@ Template Name: Main Page
 
 get_header();
 
-$haztartasi = wp_get_attachment_image_src( 16, 'single-post-thumbnail' );
-$ipari = wp_get_attachment_image_src( get_post_thumbnail_id( 28 ), 'single-post-thumbnail' );
+$hazt_id = 16;
+$hazt_thumbnail_id = get_woocommerce_term_meta( $hazt_id, 'thumbnail_id', true );
+$haztartasi = wp_get_attachment_url( $hazt_thumbnail_id );
+$ipari_id = 28;
+$ipari_thumbnail_id = get_woocommerce_term_meta( $ipari_id, 'thumbnail_id', true );
+$ipari = wp_get_attachment_url( $ipari_thumbnail_id );
 
-$idcat = 16;
-$thumbnail_id = get_woocommerce_term_meta( $idcat, 'thumbnail_id', true );
-$image = wp_get_attachment_url( $thumbnail_id );
-
-var_dump( $image );
 // include get_theme_file_path( '/includes/landing-slider.php' );
 ?>
 
@@ -27,7 +26,7 @@ var_dump( $image );
 			<div class="card">
 				<h2 class="section-title mb-2">Háztartási termékek</h2>
 
-				<img src="<?php echo $image; ?>" alt="Háztartási termékek">
+				<img src="<?php echo $haztartasi; ?>" alt="Háztartási termékek">
 				<div class="flex flex-wrap">
 					<?php
 						$taxonomy = 'product_cat';
@@ -46,7 +45,7 @@ var_dump( $image );
 			</div>
 			<div class="card">
 				<h2 class="section-title mb-2">Ipari termékek</h2>
-				<img src="<?php bloginfo('template_url') ?>/assets/img/ipari.jpg" alt="Ipari termékek">
+				<img src="<?php echo $ipari; ?>" alt="Ipari termékek">
 				<div class="flex flex-wrap">
 					<?php
 						$taxonomy = 'product_cat';
