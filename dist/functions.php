@@ -168,7 +168,6 @@ function jk_related_products_args( $args ) {
 //add parent category to body class
 function woo_custom_taxonomy_in_body_class( $classes ){
     $custom_terms = get_the_terms($post->ID, 'product_cat');
-    var_dump($post);
     if ($custom_terms) {
       foreach ($custom_terms as $custom_term) {
 

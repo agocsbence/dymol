@@ -132,3 +132,5 @@
         </div>
     </div>
     <main>
+
+    <?php var_dump($post);
