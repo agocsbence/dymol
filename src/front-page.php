@@ -7,10 +7,10 @@ Template Name: Main Page
 
 get_header();
 
-$haztartasi = wp_get_attachment_image_src( get_post_thumbnail_id( 16 ), 'single-post-thumbnail' );
+$haztartasi = wp_get_attachment_image_src( 16, 'single-post-thumbnail' );
 $ipari = wp_get_attachment_image_src( get_post_thumbnail_id( 28 ), 'single-post-thumbnail' );
 
-var_dump( get_post_thumbnail_id( 16 ) );
+var_dump( $haztartasi );
 // include get_theme_file_path( '/includes/landing-slider.php' );
 ?>
 
