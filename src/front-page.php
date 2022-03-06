@@ -7,6 +7,9 @@ Template Name: Main Page
 
 get_header();
 
+$haztartasi = wp_get_attachment_image_src( get_post_thumbnail_id( 16 ), 'single-post-thumbnail' );
+$ipari = wp_get_attachment_image_src( get_post_thumbnail_id( 28 ), 'single-post-thumbnail' );
+
 // include get_theme_file_path( '/includes/landing-slider.php' );
 ?>
 
@@ -18,7 +21,8 @@ get_header();
 		<div class="grid grid-2 grid-gap-2 border-top">
 			<div class="card">
 				<h2 class="section-title mb-2">Háztartási termékek</h2>
-				<img src="<?php echo wp_get_attachment_url( 16 ); ?>" alt="Háztartási termékek">
+
+				<img src="<?php echo $haztartasi[0]; ?>" alt="Háztartási termékek">
 				<div class="flex flex-wrap">
 					<?php
 						$taxonomy = 'product_cat';
