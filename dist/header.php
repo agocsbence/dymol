@@ -133,4 +133,4 @@
     </div>
     <main>
 
-    <?php var_dump($post);
+    <?php var_dump($product);
