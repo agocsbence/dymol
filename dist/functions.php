@@ -167,21 +167,23 @@ function jk_related_products_args( $args ) {
 
 //add parent category to body class
 function woo_custom_taxonomy_in_body_class( $classes ){
-    if ( !is_shop() ) {
-        $custom_terms = get_the_terms(0, 'product_cat');
-        if ($custom_terms) {
+    $custom_terms = get_the_terms(0, 'product_cat');
+    if ($custom_terms) {
+        if (is_shop()) {
+            //add nothing
+        } else {
             foreach ($custom_terms as $custom_term) {
                 if( $custom_term->parent > 0 ) {
                     $parent = get_term( $custom_term->parent, 'product_cat' );
                     if ( ! is_wp_error( $parent ) )
                         $classes[] = 'product_parent_cat_' . $parent->slug;   
                 }
-
+    
                 $classes[] = 'product_cat_' . $custom_term->slug;
             }
         }
-        return $classes;
     }
+    return $classes;
 }
 
 add_filter( 'body_class', 'woo_custom_taxonomy_in_body_class' );
