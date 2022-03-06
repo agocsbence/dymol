@@ -30,7 +30,7 @@ get_header();
 
 						foreach ( $terms as $term ) {
 							$term_link = get_term_link( $term, $taxonomy );
-							echo '<a class="btn mr-1 '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
+							echo '<a class="btn btn-list '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
 						}
 					?>
 				</div>
@@ -49,7 +49,7 @@ get_header();
 
 						foreach ( $terms as $term ) {
 							$term_link = get_term_link( $term, $taxonomy );
-							echo '<a class="btn mr-1 '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
+							echo '<a class="btn btn-list '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
 						}
 					?>
 				</div>

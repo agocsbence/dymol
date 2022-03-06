@@ -499,6 +499,12 @@ footer {
       background: #fff !important;
       color: #ed1c24 !important;
       border: 1px solid #ed1c24 !important; }
+  .btn.btn-list,
+  .button.btn-list,
+  .button.alt.btn-list {
+    margin-bottom: 0;
+    margin-top: 0.3rem;
+    margin-right: 0.3rem; }
   .btn.zeromargin,
   .button.zeromargin,
   .button.alt.zeromargin {
