@@ -133,4 +133,4 @@
     </div>
     <main>
 
-    <?php var_dump($product);
+    <?php echo is_products_page();
