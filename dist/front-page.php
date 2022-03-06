@@ -18,7 +18,7 @@ get_header();
 		<div class="grid grid-2 grid-gap-2 border-top">
 			<div class="card">
 				<h2 class="section-title mb-2">Háztartási termékek</h2>
-				<img src="<?php bloginfo('template_url') ?>/assets/img/haztartasi.jpg" alt="Háztartási termékek">
+				<img src="<?php echo wp_get_attachment_url( 16 ); ?>" alt="Háztartási termékek">
 				<div class="flex flex-wrap">
 					<?php
 						$taxonomy = 'product_cat';
