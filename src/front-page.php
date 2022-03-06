@@ -10,7 +10,11 @@ get_header();
 $haztartasi = wp_get_attachment_image_src( 16, 'single-post-thumbnail' );
 $ipari = wp_get_attachment_image_src( get_post_thumbnail_id( 28 ), 'single-post-thumbnail' );
 
-var_dump( $haztartasi );
+$idcat = 16;
+$thumbnail_id = get_woocommerce_term_meta( $idcat, 'thumbnail_id', true );
+$image = wp_get_attachment_url( $thumbnail_id );
+
+var_dump( $image );
 // include get_theme_file_path( '/includes/landing-slider.php' );
 ?>
 
@@ -23,7 +27,7 @@ var_dump( $haztartasi );
 			<div class="card">
 				<h2 class="section-title mb-2">Háztartási termékek</h2>
 
-				<img src="<?php echo $haztartasi[0]; ?>" alt="Háztartási termékek">
+				<img src="<?php echo $image; ?>" alt="Háztartási termékek">
 				<div class="flex flex-wrap">
 					<?php
 						$taxonomy = 'product_cat';
