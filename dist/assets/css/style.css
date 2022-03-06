@@ -312,6 +312,10 @@ input#rememberme {
 .woocommerce-page form .show-password-input {
   top: .3em; }
 
+.woocommerce table.shop_table {
+  border: none;
+  margin-top: 1rem; }
+
 .header-wrapper {
   justify-content: space-between; }
   @media screen and (max-width: 991px) {
@@ -629,6 +633,10 @@ form input[type="submit"] {
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #ed1c24; }
+
+.woocommerce ul#shipping_method li input {
+  width: auto !important;
+  vertical-align: baseline !important; }
 
 .accordion-wrapper .accordion {
   border: 1px solid #ed1c24;
