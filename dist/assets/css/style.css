@@ -305,7 +305,6 @@ input#rememberme {
 .woocommerce form.login,
 .woocommerce form.register {
   border: none;
-  border-top: 1px solid #ed1c24;
   border-radius: 0;
   padding: 0; }
 
@@ -546,7 +545,7 @@ form textarea {
   .form textarea::placeholder,
   form input::placeholder,
   form textarea::placeholder {
-    color: #dfdfdb !important;
+    color: #ed1c24 !important;
     text-transform: uppercase !important; }
   .form input:required:after,
   .form textarea:required:after,
@@ -558,9 +557,6 @@ form textarea {
 .form input[type="submit"],
 form input[type="submit"] {
   max-width: 140px; }
-
-::placeholder {
-  color: #ed1c24; }
 
 .filter-wrapper {
   padding: .8rem 1rem;

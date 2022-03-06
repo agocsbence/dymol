@@ -11,7 +11,7 @@ form {
         color: $red;
         font-size: inherit;
         &::placeholder {
-            color: #dfdfdb !important;
+            color: $red !important;
             text-transform: uppercase !important;
         }
         &:required:after {
@@ -22,10 +22,6 @@ form {
     input[type="submit"] {
         max-width: 140px;
     }
-}
-
-::placeholder {
-    color: $red;
 }
 
 .filter-wrapper {
