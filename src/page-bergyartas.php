@@ -4,7 +4,7 @@
 
 get_header(); ?>
 
-<section id="home-hero" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/bergyartas.jpg');">
+<section id="home-hero" style="background-image: url('<?php the_field('kep'); ?>');">
 	<img src="<?php bloginfo('template_url') ?>/assets/img/bigtext.png" alt="Dymol text logo" id="bigText">
 </section>
 
