@@ -782,8 +782,8 @@ input.qty {
 .product-type-simple .summary form.cart:before, .product-type-simple .summary form.cart:after {
   display: none !important; }
 
-.woocommerce-variation-price {
-  text-align: right; }
+.woocommerce-variation-price .price {
+  color: inherit; }
 
 .woocommerce div.product form.cart .variations label {
   font-weight: 400; }

@@ -96,7 +96,9 @@ input.qty {
 }
 
 .woocommerce-variation-price {
-    text-align: right;
+    .price {
+        color: inherit;
+    }
 }
 
 .woocommerce div.product form.cart .variations label {
