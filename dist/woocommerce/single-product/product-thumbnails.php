@@ -43,15 +43,18 @@ foreach ( $variations as $variation ) {
 
     // get variation ID
     $variation_ID = $variation->ID;
+	echo $variation_ID;
 
     // get variations meta
     $product_variation = new WC_Product_Variation( $variation_ID );
 
     // get variation featured image
     $variation_image = $product_variation->get_image();
+	echo $variation_image;
 
     // get variation price
     $variation_price = $product_variation->get_price_html();
+	echo $variation_price;
 
     get_post_meta( $variation_ID , '_text_field_date_expire', true );
 
