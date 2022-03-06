@@ -211,3 +211,8 @@ input#rememberme {
 .woocommerce-checkout #payment ul.payment_methods li input {
     width: auto !important;
 }
+
+//myaccount reg form inputs
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
+    float: none;
+}
