@@ -301,6 +301,14 @@ input#rememberme {
 .woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
   float: none; }
 
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+  border: none;
+  border-top: 1px solid #ed1c24;
+  border-radius: 0;
+  padding: 0; }
+
 .header-wrapper {
   justify-content: space-between; }
   @media screen and (max-width: 991px) {
