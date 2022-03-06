@@ -539,7 +539,9 @@ form textarea {
   border-radius: 1rem !important;
   margin-bottom: 1rem !important;
   padding: 3px 12px !important;
-  font-weight: 400 !important; }
+  font-weight: 400 !important;
+  color: #ed1c24;
+  font-size: inherit; }
   .form input::placeholder,
   .form textarea::placeholder,
   form input::placeholder,
@@ -556,6 +558,9 @@ form textarea {
 .form input[type="submit"],
 form input[type="submit"] {
   max-width: 140px; }
+
+::placeholder {
+  color: #ed1c24; }
 
 .filter-wrapper {
   padding: .8rem 1rem;

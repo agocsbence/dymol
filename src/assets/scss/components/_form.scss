@@ -8,6 +8,8 @@ form {
         margin-bottom: 1rem !important;
         padding: 3px 12px !important;
         font-weight: 400 !important;
+        color: $red;
+        font-size: inherit;
         &::placeholder {
             color: #dfdfdb !important;
             text-transform: uppercase !important;
@@ -20,6 +22,10 @@ form {
     input[type="submit"] {
         max-width: 140px;
     }
+}
+
+::placeholder {
+    color: $red;
 }
 
 .filter-wrapper {
