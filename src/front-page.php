@@ -10,7 +10,7 @@ get_header();
 $haztartasi = wp_get_attachment_image_src( get_post_thumbnail_id( 16 ), 'single-post-thumbnail' );
 $ipari = wp_get_attachment_image_src( get_post_thumbnail_id( 28 ), 'single-post-thumbnail' );
 
-var_dump($haztartasi);
+var_dump( get_post_thumbnail_id( 16 ) );
 // include get_theme_file_path( '/includes/landing-slider.php' );
 ?>
 
