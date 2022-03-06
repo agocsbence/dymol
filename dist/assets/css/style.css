@@ -783,7 +783,8 @@ input.qty {
   display: none !important; }
 
 .woocommerce-variation-price .price {
-  color: inherit; }
+  color: inherit !important;
+  font-size: inherit !important; }
 
 .woocommerce div.product form.cart .variations label {
   font-weight: 400; }

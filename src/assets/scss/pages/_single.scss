@@ -97,7 +97,8 @@ input.qty {
 
 .woocommerce-variation-price {
     .price {
-        color: inherit;
+        color: inherit !important;
+        font-size: inherit !important;
     }
 }
 
