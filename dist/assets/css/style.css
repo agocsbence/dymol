@@ -544,13 +544,13 @@ form textarea {
   padding: 3px 12px !important;
   font-weight: 400 !important;
   color: #ed1c24;
-  font-size: inherit; }
+  font-size: inherit;
+  font-family: 'Neue-Haas-Grotesk-Regular', sans-serif; }
   .form input::placeholder,
   .form textarea::placeholder,
   form input::placeholder,
   form textarea::placeholder {
-    color: #ed1c24 !important;
-    text-transform: uppercase !important; }
+    color: #ed1c24 !important; }
   .form input:required:after,
   .form textarea:required:after,
   form input:required:after,
@@ -614,6 +614,20 @@ form input[type="submit"] {
         max-width: 20rem; } }
     .filter-wrapper.opened .filter-content {
       display: block; }
+
+.select2-container--default .select2-selection--single {
+  background: #fff !important;
+  color: #ed1c24 !important;
+  border: 1px solid #ed1c24 !important;
+  font-size: 17px !important;
+  line-height: 17px !important;
+  border-radius: 1rem !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  display: inline-block !important; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #ed1c24; }
 
 .accordion-wrapper .accordion {
   border: 1px solid #ed1c24;
