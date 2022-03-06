@@ -14,7 +14,8 @@
     margin: 1rem 0;
     display: inline-block !important;
     &.btn-dark,
-    &.active {
+    &.active,
+    &#place_order {
         border: 1px solid $red !important;
         background: $red !important;
         color: $white !important;

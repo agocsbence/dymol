@@ -500,11 +500,13 @@ footer {
   text-align: center !important;
   margin: 1rem 0;
   display: inline-block !important; }
-  .btn.btn-dark, .btn.active,
+  .btn.btn-dark, .btn.active, .btn#place_order,
   .button.btn-dark,
   .button.active,
+  .button#place_order,
   .button.alt.btn-dark,
-  .button.alt.active {
+  .button.alt.active,
+  .button.alt#place_order {
     border: 1px solid #ed1c24 !important;
     background: #ed1c24 !important;
     color: #fff !important; }
