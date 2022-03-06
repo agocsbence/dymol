@@ -133,4 +133,4 @@
     </div>
     <main>
 
-    <?php echo is_products_page();
+    <?php if (is_products_page()) { echo 'products page'} else { echo 'not products page' };
