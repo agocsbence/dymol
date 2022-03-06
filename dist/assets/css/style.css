@@ -266,10 +266,6 @@ table {
   font-size: 16px;
   margin-bottom: 2rem; }
 
-.woocommerce ul.products li.product a img,
-.product-image {
-  border-radius: 1rem; }
-
 .woocommerce .woocommerce-breadcrumb {
   margin: 0 auto !important;
   max-width: 90%;
