@@ -29,6 +29,11 @@ $short_description = apply_filters( 'woocommerce_short_description', $post->post
 $attachment_ids = $product->get_gallery_image_ids();
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 'full' );
 
+$variation_id = $_GET["var_id"];
+$variation = new WC_Product_Variation( $variation_id );
+$image_tag = $variation->get_image();
+echo $image_tag;
+
 // if ( $attachment_ids && $product->get_image_id() ) {
 // 	foreach ( $attachment_ids as $attachment_id ) {
 // 		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
