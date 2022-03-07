@@ -248,3 +248,10 @@ form.checkout {
 .woocommerce-shipping-fields {
     margin-top: 2rem;
 }
+
+.page-content {
+    h1:first-child {
+        border-top: 1px solid $red;
+        text-transform: uppercase;
+    }
+}
