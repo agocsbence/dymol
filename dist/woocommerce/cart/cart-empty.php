@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 <div id="empty-cart">
     <div class="flex flex-row flex-row-start flex-space-between flex-m-column-reverse">
         <div class="text-content">
-            <h1 class="lead mb-2">Jelenleg üres a kosarad!</h1>
+            <h2 class="lead mb-2">Jelenleg üres a kosarad!</h2>
             <h3 class="sub">Vásárolj Tőlünk valamit, és legyen szép napod!</h3>
         </div>
     </div>
