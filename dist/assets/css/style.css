@@ -291,7 +291,7 @@ input#rememberme {
   font-weight: 400 !important; }
 
 .page-content {
-  margin-top: 5rem; }
+  margin-top: 3rem; }
 
 #add_payment_method #payment ul.payment_methods li input,
 .woocommerce-cart #payment ul.payment_methods li input,
