@@ -50,7 +50,7 @@
                         <a href="" class="nav-item btn">EN</a>
                         <a href="" class="nav-item btn">Partner rendelés</a>
                         <a href="<?php echo get_home_url(); ?>/fiokom" class="nav-item btn btn-dark">
-                            <?php if(user_logged_in()) { echo 'Fiókom'; } else { echo 'Belépés'; } ?>
+                            <?php if(is_user_logged_in()) { echo 'Fiókom'; } else { echo 'Belépés'; } ?>
                         </a>
                         <!-- <a href="" class="nav-icon"><img src="<?php // bloginfo('template_url') ?>/assets/img/wcag.svg" alt="WCAG - Akadálymentesítés"></a> -->
                         <a href="<?php echo get_home_url(); ?>/kereses" class="nav-item btn btn-dark">Keresés</a>
