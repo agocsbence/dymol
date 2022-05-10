@@ -1,23 +1,9 @@
 //desktop navbar position
 var header = document.querySelector('header');
 
-if (header.classList.contains('has-hero')) {
-    
-    let bigText = document.querySelector('#bigText'),
-        logoText = document.querySelector('#logoText'),
-        triggerPos = window.innerHeight - bigText.offsetHeight;
+// if (header.classList.contains('has-hero')) {
+if (header) {
 
-    window.addEventListener('scroll', (e) => {
-        var scrollPos = window.scrollY;
-        if (scrollPos >= triggerPos - 300) {
-            bigText.classList.add('hidden');
-            logoText.classList.remove('hidden');
-        } else {
-            bigText.classList.remove('hidden');
-            logoText.classList.add('hidden');
-        }
-    });
-    
     window.addEventListener('scroll', (e) => {
         var scrollPos = window.scrollY;
         if (scrollPos >= header.offsetHeight) {
@@ -26,6 +12,23 @@ if (header.classList.contains('has-hero')) {
             header.classList.remove('fixed');
         }
     });
+    
+    if (header.classList.contains('has-hero')) {
+        let bigText = document.querySelector('#bigText'),
+            logoText = document.querySelector('#logoText'),
+            triggerPos = window.innerHeight - bigText.offsetHeight;
+
+        window.addEventListener('scroll', (e) => {
+            var scrollPos = window.scrollY;
+            if (scrollPos >= triggerPos - 300) {
+                bigText.classList.add('hidden');
+                logoText.classList.remove('hidden');
+            } else {
+                bigText.classList.remove('hidden');
+                logoText.classList.add('hidden');
+            }
+        });
+    }
 }
 
 function openTab(tabName) {
