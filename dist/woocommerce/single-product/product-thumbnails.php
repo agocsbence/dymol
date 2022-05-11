@@ -29,36 +29,36 @@ $short_description = apply_filters( 'woocommerce_short_description', $post->post
 $attachment_ids = $product->get_gallery_image_ids();
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 'full' );
 
-$args = array(
-    'post_type'     => 'product_variation',
-    'post_status'   => array( 'private', 'publish' ),
-    'numberposts'   => -1,
-    'orderby'       => 'menu_order',
-    'order'         => 'asc',
-    'post_parent'   => get_the_ID() // get parent post-ID
-);
-$variations = get_posts( $args );
+// $args = array(
+//     'post_type'     => 'product_variation',
+//     'post_status'   => array( 'private', 'publish' ),
+//     'numberposts'   => -1,
+//     'orderby'       => 'menu_order',
+//     'order'         => 'asc',
+//     'post_parent'   => get_the_ID() // get parent post-ID
+// );
+// $variations = get_posts( $args );
 
-foreach ( $variations as $variation ) {
+// foreach ( $variations as $variation ) {
 
-    // get variation ID
-    $variation_ID = $variation->ID;
-	echo $variation_ID;
+//     // get variation ID
+//     $variation_ID = $variation->ID;
+// 	echo $variation_ID;
 
-    // get variations meta
-    $product_variation = new WC_Product_Variation( $variation_ID );
+//     // get variations meta
+//     $product_variation = new WC_Product_Variation( $variation_ID );
 
-    // get variation featured image
-    $variation_image = $product_variation->get_image();
-	echo $variation_image;
+//     // get variation featured image
+//     $variation_image = $product_variation->get_image();
+// 	echo $variation_image;
 
-    // get variation price
-    $variation_price = $product_variation->get_price_html();
-	echo $variation_price;
+//     // get variation price
+//     $variation_price = $product_variation->get_price_html();
+// 	echo $variation_price;
 
-    get_post_meta( $variation_ID , '_text_field_date_expire', true );
+//     get_post_meta( $variation_ID , '_text_field_date_expire', true );
 
-}
+// }
 
 // if ( $attachment_ids && $product->get_image_id() ) {
 // 	foreach ( $attachment_ids as $attachment_id ) {
