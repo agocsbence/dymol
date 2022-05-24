@@ -67,11 +67,52 @@
                         </a>
                     </div>
                     <nav>
-                        <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a>
+                        <!-- <a href="<?php // echo get_home_url(); ?>/termekek" class="nav-item btn">Termékek</a> -->
+                        <div class="nav-item btn" id="productNav">Termékek</div>
                         <a href="<?php echo get_home_url(); ?>/cegunkrol" class="nav-item btn">Cégünkről</a>
                         <a href="<?php echo get_home_url(); ?>/bergyartas" class="nav-item btn">Bérgyártás</a>
                         <a href="<?php echo get_home_url(); ?>/mediatar" class="nav-item btn">Médiatár</a>
                     </nav>
+                </div>
+                <div class="megamenu desktop-only hidden">
+                    <div class="grid grid-2">
+                        <div class="box">
+                            <h2 class="mb-2">Háztartási termékek</h2>
+                            <div class="flex flex-wrap">
+                                <?php
+                                    $taxonomy = 'product_cat';
+                                    $terms    = get_terms([
+                                        'taxonomy'    => $taxonomy,
+                                        'hide_empty'  => true,
+                                        'parent'      => 16
+                                    ]);
+
+                                    foreach ( $terms as $term ) {
+                                        $term_link = get_term_link( $term, $taxonomy );
+                                        echo '<a class="btn btn-list '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h2 class="mb-2">Ipari termékek</h2>
+                            <div class="flex flex-wrap">
+                                <?php
+                                    $taxonomy = 'product_cat';
+                                    $terms    = get_terms([
+                                        'taxonomy'    => $taxonomy,
+                                        'hide_empty'  => true,
+                                        'parent'      => 28
+                                    ]);
+
+                                    foreach ( $terms as $term ) {
+                                        $term_link = get_term_link( $term, $taxonomy );
+                                        echo '<a class="btn btn-list '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="mobile-only">
                     <div class="flex flex-row-center mobile-nav-buttons">

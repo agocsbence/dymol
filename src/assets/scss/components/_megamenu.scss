@@ -1,0 +1,11 @@
+.megamenu {
+    z-index: 0;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    transition: top .3s ease;
+    &.visible {
+        top: 0;
+    }
+}

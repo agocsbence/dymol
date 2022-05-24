@@ -744,6 +744,16 @@ form input[type="submit"] {
   background-position: center center;
   padding-bottom: 56.25%; }
 
+.megamenu {
+  z-index: 0;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  transition: top .3s ease; }
+  .megamenu.visible {
+    top: 0; }
+
 #home-hero {
   height: 100vh;
   background-size: cover;

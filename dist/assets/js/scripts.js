@@ -80,3 +80,12 @@ const body = document.querySelector('body'),
 if(body.classList.contains('product_parent_cat_ipari-tisztitoszerek')) {
     logoIcon.attributes.src.value = logoIcon.dataset.proicon;
 }
+
+//custom script for product dropdown
+const menuButton = document.querySelector('#productNav'),
+    megaMenu = document.querySelector('.megamenu');
+
+menuButton.addEventListener('mouseover', function() {
+    megaMenu.classList.toggle('visible');
+    console.log("menu toggled");
+})
