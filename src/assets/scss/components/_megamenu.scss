@@ -1,3 +1,13 @@
+#productNav {
+    cursor: pointer;
+    &:hover,
+    &:active,
+    &:focus {
+        border: 1px solid $red !important;
+        background: $red !important;
+        color: $white !important;
+    }
+}
 .megamenu {
     z-index: 0;
     position: absolute;

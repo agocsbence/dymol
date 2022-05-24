@@ -744,6 +744,13 @@ form input[type="submit"] {
   background-position: center center;
   padding-bottom: 56.25%; }
 
+#productNav {
+  cursor: pointer; }
+  #productNav:hover, #productNav:active, #productNav:focus {
+    border: 1px solid #ed1c24 !important;
+    background: #ed1c24 !important;
+    color: #fff !important; }
+
 .megamenu {
   z-index: 0;
   position: absolute;

@@ -33,11 +33,11 @@
 
     <header class="<?php if (is_home() || is_page_template('page-bergyartas.php') || is_page_template('page-cegunkrol.php') ) { echo 'has-hero'; } ?>">
         <div class="header-wrapper">
-            <div class="megamenu desktop-only hidden">
+            <div class="megamenu desktop-only hidden py-3">
                 <div class="container">
                     <div class="grid grid-2">
                         <div class="box">
-                            <h2 class="mb-2">Háztartási termékek</h2>
+                            <h2 class="section-title mb-2">Háztartási termékek</h2>
                             <div class="flex flex-wrap">
                                 <?php
                                     $taxonomy = 'product_cat';
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                         <div class="box">
-                            <h2 class="mb-2">Ipari termékek</h2>
+                            <h2 class="section-title mb-2">Ipari termékek</h2>
                             <div class="flex flex-wrap">
                                 <?php
                                     $taxonomy = 'product_cat';
