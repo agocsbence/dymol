@@ -750,7 +750,8 @@ form input[type="submit"] {
   top: -100%;
   left: 0;
   width: 100%;
-  transition: top .3s ease; }
+  transition: top .3s ease;
+  background: #fff; }
   .megamenu.visible {
     top: 0; }
 

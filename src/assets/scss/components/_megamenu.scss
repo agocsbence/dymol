@@ -5,6 +5,7 @@
     left: 0;
     width: 100%;
     transition: top .3s ease;
+    background: $white;
     &.visible {
         top: 0;
     }

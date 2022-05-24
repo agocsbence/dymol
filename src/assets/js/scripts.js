@@ -88,4 +88,8 @@ const menuButton = document.querySelector('#productNav'),
 menuButton.addEventListener('mouseover', function() {
     megaMenu.classList.toggle('visible');
     console.log("menu toggled");
-})
+});
+
+megaMenu.addEventListener('mouseleave', function() {
+    megaMenu.classList.toggle('visible');
+});
