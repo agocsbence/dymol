@@ -33,6 +33,6 @@
         </div>
     </footer>
 
-    <script src="<?php bloginfo('template_url') ?>/assets/js/scripts.js?v=1.0.3"></script>
+    <script src="<?php bloginfo('template_url') ?>/assets/js/scripts.js?v=1.0.4"></script>
     <?php wp_footer(); ?>
 </body>

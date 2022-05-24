@@ -56,9 +56,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-        console.log('top0');
+        // console.log('top0');
     } else {
-        console.log('top--');
+        // console.log('top--');
     }
     prevScrollpos = currentScrollPos;
 }
