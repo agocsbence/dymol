@@ -87,7 +87,6 @@ const menuButton = document.querySelector('#productNav'),
 
 menuButton.addEventListener('mouseover', function() {
     megaMenu.classList.toggle('visible');
-    megaMenu.style.top = header.offsetHeight;
 });
 
 megaMenu.addEventListener('mouseleave', function() {

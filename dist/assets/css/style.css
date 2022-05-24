@@ -747,11 +747,13 @@ form input[type="submit"] {
 .megamenu {
   z-index: 0;
   position: absolute;
-  top: -150%;
+  top: -130%;
   left: 0;
   width: 100%;
   transition: top .3s ease;
   background: #fff; }
+  .megamenu.visible {
+    top: 115px; }
 
 #home-hero {
   height: 100vh;
