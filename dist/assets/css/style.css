@@ -760,7 +760,7 @@ form input[type="submit"] {
   transition: top .3s ease;
   background: #fff; }
   .megamenu.visible {
-    top: 115px;
+    top: 0;
     padding-top: 145px; }
 
 #home-hero {
