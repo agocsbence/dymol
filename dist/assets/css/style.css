@@ -350,11 +350,13 @@ header {
     position: absolute;
     top: 0;
     left: 0; }
-    header.has-hero.fixed {
-      background: #fff;
-      position: fixed; }
-      header.has-hero.fixed .header-wrapper {
-        background: #fff; }
+  header.fixed {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0; }
+    header.fixed .header-wrapper {
+      background: #fff; }
   header .header-logo {
     max-width: 25vw;
     display: flex;

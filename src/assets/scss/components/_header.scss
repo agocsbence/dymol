@@ -20,12 +20,14 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        &.fixed {
+    }
+    &.fixed {
+        background: $white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        .header-wrapper {
             background: $white;
-            position: fixed;
-            .header-wrapper {
-                background: $white;
-            }
         }
     }
     .header-logo {
