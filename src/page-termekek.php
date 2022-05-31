@@ -3,30 +3,50 @@
 get_header();
 ?>
 
-<section class="container py-3">
-    <h1 class="mb-1">Termékek</h1>
-    <div class="grid grid-4 grid-gap-1">
-        <?php  
-            $args = array(
-                'post_type' => 'product'
-            );
+<section class="py-4">
+	<div class="container">
+		<div class="grid grid-2 grid-gap-2 border-top">
+			<div class="card">
+				<h2 class="section-title mb-2">Háztartási termékek</h2>
 
-            $loop = new WP_Query( $args );
+				<img src="<?php echo $haztartasi; ?>" alt="Háztartási termékek">
+				<div class="flex flex-wrap">
+					<?php
+						$taxonomy = 'product_cat';
+						$terms    = get_terms([
+							'taxonomy'    => $taxonomy,
+							'hide_empty'  => true,
+							'parent'      => 16
+						]);
 
-            while ( $loop->have_posts() ) : $loop->the_post();
-                global $product; ?>
-                
-                <a href="<?php echo get_permalink(); ?>" class="product-tile">
-                    <img src="<?php echo woocommerce_get_product_thumbnail(); ?>" alt="Termék neve" class="product-image">
-                    <h2 class="product-name"><?php echo get_the_title(); ?></h2>
-                    <p class="product-price"><?php $product->get_price(); ?></p>
-                </a>
-                
-            <?php endwhile;
+						foreach ( $terms as $term ) {
+							$term_link = get_term_link( $term, $taxonomy );
+							echo '<a class="btn btn-list '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
+						}
+					?>
+				</div>
+			</div>
+			<div class="card">
+				<h2 class="section-title mb-2">Ipari termékek</h2>
+				<img src="<?php echo $ipari; ?>" alt="Ipari termékek">
+				<div class="flex flex-wrap">
+					<?php
+						$taxonomy = 'product_cat';
+						$terms    = get_terms([
+							'taxonomy'    => $taxonomy,
+							'hide_empty'  => true,
+							'parent'      => 28
+						]);
 
-            wp_reset_query();
-        ?>
-    </div>
+						foreach ( $terms as $term ) {
+							$term_link = get_term_link( $term, $taxonomy );
+							echo '<a class="btn btn-list '. $term->slug .'" href="'. $term_link .'">'. $term->name .'</a>';
+						}
+					?>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <?php get_footer(); ?>
