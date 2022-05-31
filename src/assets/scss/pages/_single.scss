@@ -11,7 +11,7 @@
 #single-product-wrapper {
     @media screen and (min-width: $tablet) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         grid-template-rows: auto;
         grid-gap: 1rem;
     }

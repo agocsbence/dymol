@@ -791,7 +791,7 @@ form input[type="submit"] {
 @media screen and (min-width: 991px) {
   #single-product-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     grid-gap: 1rem; } }
 
