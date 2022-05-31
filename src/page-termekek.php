@@ -13,7 +13,7 @@ $ipari = wp_get_attachment_url( $ipari_thumbnail_id );
 
 <section class="py-4">
 	<div class="container">
-		<div class="grid grid-2 grid-gap-2 border-top">
+		<div class="grid grid-2 grid-gap-2 border-top container">
 			<div class="card">
 				<h2 class="section-title mb-2">Háztartási termékek</h2>
 
