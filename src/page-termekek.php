@@ -1,6 +1,14 @@
 <?php
 /* Template Name: Termékek */
 get_header();
+
+$hazt_id = 16;
+$hazt_thumbnail_id = get_woocommerce_term_meta( $hazt_id, 'thumbnail_id', true );
+$haztartasi = wp_get_attachment_url( $hazt_thumbnail_id );
+$ipari_id = 28;
+$ipari_thumbnail_id = get_woocommerce_term_meta( $ipari_id, 'thumbnail_id', true );
+$ipari = wp_get_attachment_url( $ipari_thumbnail_id );
+
 ?>
 
 <section class="py-4">
