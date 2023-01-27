@@ -902,6 +902,13 @@ input.qty {
 .woocommerce-product-attributes-item span {
   color: #000; }
 
+#tab-description a {
+  color: #ed1c24;
+  border-bottom: 1px solid #ed1c24; }
+  #tab-description a:hover {
+    border-color: #000;
+    color: #000; }
+
 @media screen and (min-width: 991px) {
   .rolunk-lead {
     max-width: 40rem;

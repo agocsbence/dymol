@@ -1,7 +1,7 @@
 {
-    "name": "kenderlanc",
+    "name": "channelparnters",
     "version": "1.0.0",
-    "description": "wp theme for kenderlanc",
+    "description": "wp theme for channelparnters",
     "main": "gulpfile.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

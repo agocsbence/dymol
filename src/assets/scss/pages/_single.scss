@@ -145,3 +145,14 @@ input.qty {
 .woocommerce-product-attributes-item span {
     color: $black;
 }
+
+#tab-description {
+    a {
+        color: $red;
+        border-bottom: 1px solid $red;
+        &:hover {
+            border-color: $black;
+            color: $black;
+        }
+    }
+}
