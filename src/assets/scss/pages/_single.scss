@@ -156,3 +156,11 @@ input.qty {
         }
     }
 }
+
+.woocommerce ul.products li.product a {
+    display: flex;
+    flex-direction: column;
+    br {
+        display: none;
+    }
+}

@@ -909,6 +909,12 @@ input.qty {
     border-color: #000;
     color: #000; }
 
+.woocommerce ul.products li.product a {
+  display: flex;
+  flex-direction: column; }
+  .woocommerce ul.products li.product a br {
+    display: none; }
+
 @media screen and (min-width: 991px) {
   .rolunk-lead {
     max-width: 40rem;
